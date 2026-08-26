@@ -23,7 +23,7 @@ Store the project, organization, product, or system purpose; users or actors; en
 
 ### `current-goal.md`
 
-Store one active outcome, actor and situation, scope, acceptance criteria, intervention level, and current gate.
+Store one active outcome, actor and situation, scope, acceptance criteria, intervention level, and current gate. While still `CAPTURED`, store the initial observed signal instead of inventing an outcome that has not been shaped.
 
 ### `decisions.md`
 

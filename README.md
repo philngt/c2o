@@ -2,9 +2,9 @@
 
 ![Context flows through decisions and delivery into a verified outcome](assets/c2o-readme-banner.png)
 
-> Turn a rough request into the smallest verified outcome.
+> Start with a rough request or weak signal. Reach the smallest verified outcome.
 
-C2O is an outcome workflow for knowledge, creative, and software work, packaged as a skills-only plugin for Codex, Claude Code, and Google Antigravity (AGY). Give it an idea, creative brief, problem, or change request; it helps clarify the outcome, explore when needed, control scope, produce only what is needed, and verify the result.
+C2O is an outcome workflow for knowledge, creative, and software work, packaged as a skills-only plugin for Codex, Claude Code, and Google Antigravity (AGY). Give it an idea, weak signal, creative brief, problem, or change request; it helps discover what is actually wrong, clarify the outcome, control scope, produce only what is needed, and verify the result.
 
 You do **not** need to learn all eleven skills before using C2O. Start with `c2o-work`; choose a specialist skill only when you already know which stage you need.
 
@@ -51,23 +51,26 @@ The same prompt works in all three hosts:
 ```text
 Use the installed c2o-work skill to turn this rough request into the smallest verified outcome:
 
-"I am new to support operations. I want customers to receive a useful first
-response from support sooner."
+"Something seems wrong with our customer-support onboarding. New agents appear
+to struggle, but I do not know exactly where or how to describe the problem."
 
-Act as an experienced advisor. Explain choices in plain language, research the
-specialist facts, and recommend one option instead of asking me to guess. Ask me
-only about goals, priorities, constraints, acceptable risk, and approval. Do not
-change the live process until the scope is clear.
+Start from what I can observe. Ask one plain-language question at a time and do
+not ask me for the root cause, solution, method, or tool. Inspect any evidence
+you can access, separate observations from hypotheses, and recommend where to
+investigate next. Do not change the live process until the problem is clear.
 ```
 
 C2O will normally:
 
-1. restate what should observably change;
-2. research facts and explain unfamiliar choices plainly;
-3. recommend specialist choices instead of returning an unranked list;
-4. find the smallest useful slice;
-5. create, deliver, or implement only when you ask for action;
-6. verify the result against explicit acceptance criteria.
+1. start from a concrete signal even when you cannot name the problem;
+2. separate observations, reports, hypotheses, and unknowns;
+3. research facts and explain unfamiliar choices plainly;
+4. recommend the next investigation or specialist choice;
+5. find the smallest useful slice;
+6. create, deliver, or implement only when you ask for action;
+7. verify the result against explicit acceptance criteria.
+
+A one-sentence symptom is enough to begin. C2O should not require you to arrive with a diagnosis or proposed solution.
 
 ## New to the domain? You still own the right decisions
 
@@ -82,8 +85,8 @@ You can answer `use your recommendation` when C2O has explained a specialist cho
 ## How the workflow fits together
 
 ```text
-rough request
-    → shaped outcome
+rough request or weak signal
+    → problem direction or shaped outcome
     → optional expert-guided inquiry
     → resolved decision
     → mini-spec or creative contract
@@ -107,6 +110,7 @@ The skill names are the same in all three hosts; only the invocation prefix chan
 
 | Domain | Example outcome |
 | --- | --- |
+| Problem discovery | Turn “something is wrong” into an evidence-backed direction for the next investigation. |
 | Product | Turn a broad feature idea into one testable pilot. |
 | Operations | Design and deliver a bounded process improvement with clear handoffs. |
 | Research and strategy | Separate facts from decisions, compare options, and preserve assumptions. |
@@ -118,14 +122,15 @@ The skill names are the same in all three hosts; only the invocation prefix chan
 
 The examples below use Codex syntax. In Claude Code or Antigravity CLI, replace `$c2o:` with `/c2o:`; the rest of each prompt stays the same.
 
-### Turn a vague idea into a clear brief
+### Clarify a problem you cannot yet describe
 
 ```text
-Use $c2o:c2o-shape to clarify this idea:
-"Make our weekly project updates more useful."
+Use $c2o:c2o-shape to help me understand this problem:
+"Customers seem to abandon onboarding, but I do not know where or why."
 
-Identify the actor, current difficulty, desired observable change, scope,
-non-goals, assumptions, and acceptance signals. Do not design a solution yet.
+Ask one observable question at a time. Start with a representative case, inspect
+available evidence, and separate facts from hypotheses. Do not ask me to diagnose
+the cause or choose a solution. Recommend the next useful investigation.
 ```
 
 ### Compare an important business decision
@@ -218,7 +223,7 @@ Do not repair failures.
 | If you need to… | Codex | Claude Code / AGY CLI |
 | --- | --- | --- |
 | Move a rough request all the way to a verified result | `$c2o:c2o-work` | `/c2o:c2o-work` |
-| Clarify an idea before choosing a solution | `$c2o:c2o-shape` | `/c2o:c2o-shape` |
+| Clarify an idea or a problem you cannot describe yet | `$c2o:c2o-shape` | `/c2o:c2o-shape` |
 | Compare options with meaningful trade-offs | `$c2o:c2o-decide` | `/c2o:c2o-decide` |
 | Get expert-guided advice through several dependent decisions | `$c2o:c2o-grill` | `/c2o:c2o-grill` |
 | Write a small action-ready specification | `$c2o:c2o-spec` | `/c2o:c2o-spec` |
@@ -316,7 +321,7 @@ Start a fresh session with `agy`, then invoke the main workflow with `/c2o:c2o-w
 | Skill | Purpose |
 | --- | --- |
 | `c2o-work` | Orchestrate the complete context-to-outcome loop. |
-| `c2o-shape` | Turn a vague request into an observable, bounded outcome. |
+| `c2o-shape` | Turn a vague request or weak signal into a bounded problem direction. |
 | `c2o-decide` | Compare viable options and resolve consequential trade-offs. |
 | `c2o-grill` | Guide dependent decisions with researched, plain-language expert recommendations. |
 | `c2o-spec` | Produce a concise, action-ready mini-spec. |

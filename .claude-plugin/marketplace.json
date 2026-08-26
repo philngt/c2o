@@ -8,8 +8,8 @@
     {
       "name": "c2o",
       "source": "./",
-      "description": "Guide ambiguous knowledge, creative, or software work to the smallest verified outcome.",
-      "version": "0.8.0",
+      "description": "Clarify poorly described problems and guide work to verified outcomes.",
+      "version": "0.9.0",
       "author": {
         "name": "philngt"
       },

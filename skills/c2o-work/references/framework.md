@@ -63,9 +63,11 @@ Default to plain language. Do not transfer a specialist choice to the user merel
 
 ### Shape
 
-Input: rough intent.
+Input: rough intent, weak signal, complaint, or poorly described problem.
 
-Output: actor, triggering situation, current difficulty, observable outcome, constraints, scope, non-goals, acceptance signals, assumptions, and readiness.
+Output: either a shaped brief or a problem direction containing the initial signal, representative example, actor and trigger, actual result, desired observable change, impact, direct evidence, clearly labeled hypotheses, material unknowns, recommended next investigation or stage, and readiness.
+
+When the user cannot describe the problem, ask one observable question at a time, inspect accessible evidence directly, and never ask them to supply a root cause or preferred solution. Stop when the next useful action is clear.
 
 ### Decide
 

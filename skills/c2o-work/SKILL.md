@@ -1,6 +1,6 @@
 ---
 name: c2o-work
-description: Orchestrate a Context-to-Outcome work loop that turns a rough request into the smallest verified result. Use when knowledge, creative, or software work is ambiguous, spans several stages, needs coordination across discovery, decisions, creation, delivery or implementation, and verification, or when the user wants expert guidance without knowing how to specify the work completely. Avoid for simple questions or one-step actions that can be answered or completed directly.
+description: Orchestrate a Context-to-Outcome work loop that turns a rough request or poorly described problem into the smallest verified result. Use when knowledge, creative, or software work is ambiguous, the user says something feels wrong or does not know where to start, several stages need coordination, or the user wants expert guidance without knowing how to specify the work completely. Avoid for simple questions or one-step actions that can be answered or completed directly.
 ---
 
 # C2O Work
@@ -9,9 +9,9 @@ Own the outcome from intake through evidence. Scale the process to the task; do 
 
 ## Start
 
-1. Classify the request as `answer`, `investigate`, `decide`, `change`, or `review`.
+1. Classify the request provisionally as `answer`, `investigate`, `decide`, `change`, or `review`. Keep it provisional when the initial signal is too weak to distinguish the path.
 2. Default to plain-language guidance. Ask about experience only when it changes safety, viable options, or the useful explanation depth.
-3. State the observable outcome in one sentence.
+3. State the observable outcome in one sentence when possible. Otherwise preserve the initial signal without inventing an outcome and use guided problem discovery.
 4. Separate information into:
    - known;
    - safely inferable or advisor-recommended;
@@ -24,6 +24,22 @@ Own the outcome from intake through evidence. Scale the process to the task; do 
 The user owns outcomes, values, priorities, taste, constraints, acceptable risk, commitments, and approval. C2O owns fact-finding, plain-language explanation, and evidence-backed recommendations about specialist means. Do not ask an inexperienced user to choose a method, tool, architecture, or technique they cannot evaluate; recommend one, explain its practical consequence and confidence, then request acceptance only when needed. Preserve qualified review for consequential regulated or licensed judgments.
 
 When the request asks what should be created or changed, do not jump from a broad desire to one domain solution. First shape the desired change, then compare up to three materially different hypotheses. A recommended hypothesis remains an experiment until evidence supports it.
+
+## Discover an unclear problem first
+
+When the user says they cannot describe the problem, do not know where to start, or only reports that something feels wrong:
+
+1. Apply `c2o-shape` in guided problem-discovery mode.
+2. Ask one observable, plain-language question at a time. Do not ask for a root cause, solution, domain label, tool, method, or architecture.
+3. Anchor on one representative case and inspect available evidence yourself before requesting more description.
+4. Separate observed or reported facts from inference, hypothesis, and unknown.
+5. Return a compact problem direction and recommend the next route:
+   - `investigate` when evidence can reveal why the observed result occurs;
+   - `decide` when one user-owned trade-off blocks progress;
+   - `change` only when the desired result and authorization are clear;
+   - `review` when an existing result must be judged against a contract.
+
+Do not begin implementation merely because one plausible solution appears during discovery.
 
 ## Enter deep inquiry only when needed
 

@@ -1,7 +1,7 @@
 interface:
   display_name: "C2O Work"
   short_description: "Turn a rough request into verified work"
-  default_prompt: "Use $c2o:c2o-work to guide me in plain language from this rough request to the smallest verified outcome."
+  default_prompt: "Use $c2o:c2o-work to help me understand this unclear problem, choose a direction, and reach the smallest verified outcome."
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
 policy:

@@ -1,9 +1,8 @@
 interface:
-  display_name: C2O Shape
-  short_description: Clarify outcomes, scope, and unknowns
-  default_prompt: Use $c2o:c2o-shape to clarify this rough request without designing too
-    much.
-  icon_small: assets/icon.svg
-  icon_large: assets/icon.svg
+  display_name: "C2O Shape"
+  short_description: "Clarify vague problems from observable evidence"
+  default_prompt: "Use $c2o:c2o-shape to help me describe this unclear problem one observable question at a time."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
 policy:
   allow_implicit_invocation: true
