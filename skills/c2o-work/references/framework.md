@@ -4,10 +4,11 @@
 
 1. Intervention levels
 2. Work-state gates
-3. Information classes
-4. Stage contracts
-5. Delegation packet
-6. Completion contract
+3. Decision ownership
+4. Information classes
+5. Stage contracts
+6. Delegation packet
+7. Completion contract
 
 ## Intervention levels
 
@@ -40,11 +41,22 @@ Lower the level when the change is small, reversible, familiar, and locally test
 
 Skip gates when their exit condition is already satisfied. Never force an answer-only request through execution.
 
+## Decision ownership
+
+| Owner | C2O behavior | Examples |
+|---|---|---|
+| User | Explain consequences and obtain the user's judgment or authority | Outcome, values, priorities, taste, budget, risk tolerance, commitments, approval |
+| Advisor-led | Research and recommend one specialist choice; apply only within existing authorization | Method, tool, technique, architecture, implementation detail, reversible professional default |
+| Qualified reviewer | Prepare evidence and options but keep expert approval explicit | Consequential legal, medical, financial, safety, regulatory, or licensed judgment |
+
+Default to plain language. Do not transfer a specialist choice to the user merely because several technical options exist. A recommendation becomes a decision only when the user accepts it, delegates that reversible class of choice, or already authorized the applicable execution boundary.
+
 ## Information classes
 
 - **Known:** Explicit user input or direct evidence.
-- **Safely inferable:** A reversible default with low downside. State it when it affects the outcome.
-- **Requires decision:** Alternatives lead to materially different user outcomes, costs, or irreversible paths.
+- **Safely inferable or advisor-recommended:** A supported professional choice or reversible default. State its consequence and confidence when material.
+- **Requires user decision:** Alternatives depend on the user's values, authority, commitments, or acceptable risk.
+- **Requires qualified review:** A consequential regulated or licensed judgment that C2O must not present as approved.
 - **Verify later:** Information cheaper to learn from a prototype, test, or observation than from discussion.
 
 ## Stage contracts
@@ -65,7 +77,7 @@ Output: criteria, up to three viable options, evidence and assumptions, recommen
 
 Input: a shaped level 4–5 problem with several dependent decisions, or an explicit request to stress-test thinking.
 
-Output: a prerequisite-aware decision tree, researched facts, explicit experiments for unanswerable uncertainties, accepted choices, deferred branches, and user confirmation of shared understanding.
+Output: a prerequisite-aware decision tree, researched facts, plain-language expert recommendations, explicit experiments for unanswerable uncertainties, accepted choices, qualified-review boundaries, deferred branches, and user confirmation of shared understanding.
 
 Skip this stage for simple, reversible, or independently decidable work. Do not proceed from Grill to Spec, Create, Deliver, or Execute without confirmation.
 
@@ -144,4 +156,5 @@ A task is complete only when:
 4. untested areas are explicit;
 5. material decisions and changed assumptions are retained;
 6. shared understanding was confirmed when the optional deep-inquiry gate was used;
-7. no unsafe or destructive follow-up is implied as already authorized.
+7. required qualified review remains explicit and is not claimed as completed;
+8. no unsafe or destructive follow-up is implied as already authorized.

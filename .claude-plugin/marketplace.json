@@ -8,8 +8,8 @@
     {
       "name": "c2o",
       "source": "./",
-      "description": "Turn ambiguous knowledge, creative, or software work into the smallest verified outcome.",
-      "version": "0.7.0",
+      "description": "Guide ambiguous knowledge, creative, or software work to the smallest verified outcome.",
+      "version": "0.8.0",
       "author": {
         "name": "philngt"
       },

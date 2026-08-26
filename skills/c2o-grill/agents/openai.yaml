@@ -1,7 +1,7 @@
 interface:
   display_name: "C2O Grill"
-  short_description: "Stress-test complex decisions before action"
-  default_prompt: "Use $c2o:c2o-grill to stress-test this plan and expose dependent decisions before we act."
+  short_description: "Guide complex decisions with expert advice"
+  default_prompt: "Use $c2o:c2o-grill to guide me through this unfamiliar decision in plain language and recommend the specialist choices."
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
 policy:

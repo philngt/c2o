@@ -1,6 +1,6 @@
 ---
 name: c2o-work
-description: Orchestrate a Context-to-Outcome work loop that turns a rough request into the smallest verified result. Use when knowledge, creative, or software work is ambiguous, spans several stages, needs coordination across discovery, decisions, creation, delivery or implementation, and verification, or when the user asks to manage work without already knowing how to specify it completely. Avoid for simple questions or one-step actions that can be answered or completed directly.
+description: Orchestrate a Context-to-Outcome work loop that turns a rough request into the smallest verified result. Use when knowledge, creative, or software work is ambiguous, spans several stages, needs coordination across discovery, decisions, creation, delivery or implementation, and verification, or when the user wants expert guidance without knowing how to specify the work completely. Avoid for simple questions or one-step actions that can be answered or completed directly.
 ---
 
 # C2O Work
@@ -10,14 +10,18 @@ Own the outcome from intake through evidence. Scale the process to the task; do 
 ## Start
 
 1. Classify the request as `answer`, `investigate`, `decide`, `change`, or `review`.
-2. State the observable outcome in one sentence.
-3. Separate information into:
+2. Default to plain-language guidance. Ask about experience only when it changes safety, viable options, or the useful explanation depth.
+3. State the observable outcome in one sentence.
+4. Separate information into:
    - known;
-   - safely inferable;
-   - requires a user decision;
+   - safely inferable or advisor-recommended;
+   - requires the user's values or authority;
+   - requires qualified human review;
    - can be verified after a prototype, creation, delivery, or implementation.
-4. Select the lowest sufficient intervention level from [framework.md](references/framework.md).
-5. Continue without questions when a reversible default is safe. Ask only questions that change the next action; offer at most three mutually exclusive choices and recommend one.
+5. Select the lowest sufficient intervention level from [framework.md](references/framework.md).
+6. Continue without questions when a reversible default is safe. Ask only questions that change the next action and belong to the user; offer at most three mutually exclusive choices, explain their practical consequences, and recommend one only when the user's stated priorities support it.
+
+The user owns outcomes, values, priorities, taste, constraints, acceptable risk, commitments, and approval. C2O owns fact-finding, plain-language explanation, and evidence-backed recommendations about specialist means. Do not ask an inexperienced user to choose a method, tool, architecture, or technique they cannot evaluate; recommend one, explain its practical consequence and confidence, then request acceptance only when needed. Preserve qualified review for consequential regulated or licensed judgments.
 
 When the request asks what should be created or changed, do not jump from a broad desire to one domain solution. First shape the desired change, then compare up to three materially different hypotheses. A recommended hypothesis remains an experiment until evidence supports it.
 
@@ -25,16 +29,18 @@ When the request asks what should be created or changed, do not jump from a broa
 
 Insert the optional `INQUIRING` gate when the user explicitly asks to be grilled or when intervention level 4–5 contains several consequential decisions with dependencies. Apply the sibling `c2o-grill` skill when available, using the host's normal invocation (`$c2o:c2o-grill` in Codex or `/c2o:c2o-grill` in Claude Code and Antigravity CLI).
 
-Do not grill merely because a request is vague. Stay in the normal flow when shaping, one decision, a safe reversible default, or a prototype can resolve the uncertainty more cheaply.
+Do not grill merely because a request is vague or the user wants plain-language advice. Stay in the normal flow when shaping, one decision, a safe reversible default, or a prototype can resolve the uncertainty more cheaply; apply the same expert-guidance rules without creating an inquiry stage.
 
 If a sibling skill cannot be loaded, preserve the minimum protocol:
 
 1. Map fact, decision, and experiment nodes with prerequisites.
-2. Research facts instead of asking the user.
-3. Ask only the currently unblocked, independent decisions and give a recommendation for each.
-4. Route questions that talking cannot settle to a prototype or vertical slice.
-5. Recompute dependent decisions after every answer.
-6. Require the user to confirm shared understanding before specification, creation, delivery, or implementation.
+2. Classify decisions as user-owned, advisor-led, or requiring qualified review.
+3. Research facts instead of asking the user.
+4. Recommend advisor-led choices with evidence, trade-off, confidence, and a revisit trigger.
+5. Ask only the currently unblocked user-owned decisions; explain their practical consequences plainly.
+6. Route questions that talking cannot settle to a prototype or vertical slice.
+7. Recompute dependent decisions after every answer.
+8. Require the user to confirm shared understanding before specification, creation, delivery, or implementation.
 
 ## Run the loop
 
@@ -71,6 +77,7 @@ Return a compact handoff containing:
 - outcome reached;
 - evidence or artifact produced;
 - decisions and assumptions that materially affected it;
+- any qualified review still required;
 - unresolved risk, if any;
 - the next meaningful step only when one exists.
 

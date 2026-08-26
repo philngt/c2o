@@ -1,8 +1,8 @@
 interface:
-  display_name: C2O Decide
-  short_description: Compare options and record a decision
-  default_prompt: Use $c2o:c2o-decide to compare the viable options and recommend one.
-  icon_small: assets/icon.svg
-  icon_large: assets/icon.svg
+  display_name: "C2O Decide"
+  short_description: "Compare options with expert guidance"
+  default_prompt: "Use $c2o:c2o-decide to explain this choice plainly, compare the viable options, and recommend one."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
 policy:
   allow_implicit_invocation: true

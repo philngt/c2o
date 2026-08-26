@@ -51,26 +51,40 @@ The same prompt works in all three hosts:
 ```text
 Use the installed c2o-work skill to turn this rough request into the smallest verified outcome:
 
-"I want customers to receive a useful first response from support sooner."
+"I am new to support operations. I want customers to receive a useful first
+response from support sooner."
 
-First clarify the observable outcome and acceptance signals. Ask only questions
-that would change the next action. Do not change the live process until the scope is clear.
+Act as an experienced advisor. Explain choices in plain language, research the
+specialist facts, and recommend one option instead of asking me to guess. Ask me
+only about goals, priorities, constraints, acceptable risk, and approval. Do not
+change the live process until the scope is clear.
 ```
 
 C2O will normally:
 
 1. restate what should observably change;
-2. separate facts, assumptions, and decisions;
-3. find the smallest useful slice;
-4. create, deliver, or implement only when you ask for action;
-5. verify the result against explicit acceptance criteria.
+2. research facts and explain unfamiliar choices plainly;
+3. recommend specialist choices instead of returning an unranked list;
+4. find the smallest useful slice;
+5. create, deliver, or implement only when you ask for action;
+6. verify the result against explicit acceptance criteria.
+
+## New to the domain? You still own the right decisions
+
+| Decision owner | What that means |
+| --- | --- |
+| You | Choose the outcome, values, priorities, taste, budget, acceptable risk, commitments, and approvals. |
+| C2O as advisor | Research and recommend methods, tools, techniques, architecture, and other specialist means. |
+| Qualified professional | Review consequential legal, medical, financial, safety, regulatory, or licensed judgments. |
+
+You can answer `use your recommendation` when C2O has explained a specialist choice and its trade-off. C2O will not treat that as permission to publish, spend money, change production, cross another action boundary, or waive qualified review.
 
 ## How the workflow fits together
 
 ```text
 rough request
     → shaped outcome
-    → optional deep inquiry
+    → optional expert-guided inquiry
     → resolved decision
     → mini-spec or creative contract
     → smallest end-to-end slice
@@ -129,12 +143,14 @@ ramp-up time, cost, and reversibility. Separate evidence from assumptions.
 ```text
 Use $c2o:c2o-grill to challenge our plan to enter the German market before we act.
 
-Map the dependent fact, decision, and experiment nodes. Research facts instead
-of asking me. Interview me only about decisions whose prerequisites are settled,
-and do not move to delivery until I confirm our shared understanding.
+I have not led an international expansion before. Act as an experienced market-entry
+advisor: research facts, explain each decision in plain language, and recommend the
+specialist choices with evidence, trade-offs, and confidence. Ask me only about our
+goals, constraints, acceptable risk, and approvals. Do not move to delivery until
+I confirm our shared understanding.
 ```
 
-Use Grill for branching, consequential decisions—not for a vague request that shaping or a cheap prototype can resolve faster.
+Use Grill for branching, consequential decisions—not for a vague request that shaping, one expert recommendation, or a cheap prototype can resolve faster.
 
 ### Prepare work for handoff
 
@@ -204,7 +220,7 @@ Do not repair failures.
 | Move a rough request all the way to a verified result | `$c2o:c2o-work` | `/c2o:c2o-work` |
 | Clarify an idea before choosing a solution | `$c2o:c2o-shape` | `/c2o:c2o-shape` |
 | Compare options with meaningful trade-offs | `$c2o:c2o-decide` | `/c2o:c2o-decide` |
-| Stress-test several dependent decisions before action | `$c2o:c2o-grill` | `/c2o:c2o-grill` |
+| Get expert-guided advice through several dependent decisions | `$c2o:c2o-grill` | `/c2o:c2o-grill` |
 | Write a small action-ready specification | `$c2o:c2o-spec` | `/c2o:c2o-spec` |
 | Cut a large initiative into one valuable end-to-end slice | `$c2o:c2o-slice` | `/c2o:c2o-slice` |
 | Explore, select, and refine a design or creative direction | `$c2o:c2o-create` | `/c2o:c2o-create` |
@@ -302,7 +318,7 @@ Start a fresh session with `agy`, then invoke the main workflow with `/c2o:c2o-w
 | `c2o-work` | Orchestrate the complete context-to-outcome loop. |
 | `c2o-shape` | Turn a vague request into an observable, bounded outcome. |
 | `c2o-decide` | Compare viable options and resolve consequential trade-offs. |
-| `c2o-grill` | Expose dependent decisions through prerequisite-aware inquiry. |
+| `c2o-grill` | Guide dependent decisions with researched, plain-language expert recommendations. |
 | `c2o-spec` | Produce a concise, action-ready mini-spec. |
 | `c2o-slice` | Reduce large work to the smallest valuable end-to-end slice. |
 | `c2o-create` | Explore, select, produce, and critique a creative outcome. |

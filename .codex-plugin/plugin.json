@@ -1,7 +1,7 @@
 {
   "name": "c2o",
-  "version": "0.7.0",
-  "description": "A skill suite for turning ambiguous knowledge, creative, or software work into the smallest verified outcome.",
+  "version": "0.8.0",
+  "description": "An expert-guided skill suite for turning ambiguous knowledge, creative, or software work into the smallest verified outcome.",
   "author": {
     "name": "philngt",
     "url": "https://github.com/philngt"
@@ -14,6 +14,8 @@
     "knowledge-work",
     "creative-work",
     "design",
+    "expert-guidance",
+    "decision-interview",
     "execution",
     "verification",
     "workflow"
@@ -21,8 +23,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Context to Outcome (C2O)",
-    "shortDescription": "Turn rough requests into verified outcomes.",
-    "longDescription": "C2O provides eleven coordinated skills for shaping ambiguous knowledge, creative, or software work, stress-testing decisions, exploring and refining creative directions, delivering non-software outcomes, implementing software safely, verifying evidence, and preserving useful learning.",
+    "shortDescription": "Turn rough requests into guided, verified outcomes.",
+    "longDescription": "C2O provides eleven coordinated skills for shaping ambiguous knowledge, creative, or software work, guiding newcomers through consequential decisions with researched plain-language recommendations, exploring creative directions, delivering outcomes, implementing software safely, verifying evidence, and preserving useful learning.",
     "developerName": "philngt",
     "category": "Productivity",
     "capabilities": [
@@ -31,9 +33,9 @@
     ],
     "websiteURL": "https://github.com/philngt/c2o",
     "defaultPrompt": [
-      "Turn this rough request into the smallest verified outcome.",
-      "Explore and refine this creative brief into a verified artifact.",
-      "Deliver the smallest useful outcome from this approved brief."
+      "Guide me through this unfamiliar problem to a verified outcome.",
+      "Interview me plainly and recommend the specialist choices.",
+      "Explore and refine this creative brief into a verified artifact."
     ],
     "brandColor": "#3C5CD8",
     "composerIcon": "./assets/icon.svg"

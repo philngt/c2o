@@ -32,9 +32,11 @@ Use one entry per consequential choice:
 ```markdown
 ## YYYY-MM-DD — Decision title
 - Status: proposed | accepted | superseded
+- Owner: user | advisor-led | qualified-review
 - Context:
 - Decision:
 - Reason:
+- Confidence: low | medium | high
 - Alternatives rejected:
 - Accepted trade-off:
 - Revisit when:
