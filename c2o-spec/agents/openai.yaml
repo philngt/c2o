@@ -1,0 +1,14 @@
+interface:
+  display_name: C2O Spec
+  short_description: Convert outcomes into an actionable mini-spec
+  default_prompt: Use $c2o-spec to turn this clarified outcome into an actionable
+    mini-spec.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
