@@ -1,0 +1,20 @@
+{
+  "name": "c2o",
+  "owner": {
+    "name": "philngt"
+  },
+  "description": "Context to Outcome plugins for Claude Code.",
+  "plugins": [
+    {
+      "name": "c2o",
+      "source": "./",
+      "description": "Turn rough requests into the smallest verified outcome.",
+      "version": "0.4.0",
+      "author": {
+        "name": "philngt"
+      },
+      "homepage": "https://github.com/philngt/c2o",
+      "repository": "https://github.com/philngt/c2o"
+    }
+  ]
+}
