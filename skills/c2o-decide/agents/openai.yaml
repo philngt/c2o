@@ -1,7 +1,7 @@
 interface:
   display_name: C2O Decide
   short_description: Compare options and record a decision
-  default_prompt: Use $c2o-decide to compare the viable options and recommend one.
+  default_prompt: Use $c2o:c2o-decide to compare the viable options and recommend one.
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:

@@ -1,7 +1,7 @@
 interface:
   display_name: C2O Verify
   short_description: Verify results against explicit criteria
-  default_prompt: Use $c2o-verify to verify this result against its acceptance criteria.
+  default_prompt: Use $c2o:c2o-verify to verify this result against its acceptance criteria.
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:

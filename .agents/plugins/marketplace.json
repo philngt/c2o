@@ -1,0 +1,21 @@
+{
+  "name": "c2o",
+  "interface": {
+    "displayName": "Context to Outcome (C2O)"
+  },
+  "plugins": [
+    {
+      "name": "c2o",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/philngt/c2o.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
