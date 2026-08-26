@@ -1,0 +1,9 @@
+interface:
+  display_name: C2O Learn
+  short_description: Capture feedback into durable project context
+  default_prompt: Use $c2o-learn to capture what this outcome taught us without bloating
+    context.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

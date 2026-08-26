@@ -1,0 +1,9 @@
+interface:
+  display_name: C2O Shape
+  short_description: Clarify outcomes, scope, and unknowns
+  default_prompt: Use $c2o-shape to clarify this rough request without designing too
+    much.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
