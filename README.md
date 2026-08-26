@@ -4,7 +4,7 @@
 
 > Turn a rough request into the smallest verified outcome.
 
-C2O is a skills-only plugin for Codex and Claude Code. It is designed for work that starts fuzzy and needs to end with evidence. Give it an idea, problem, or change request; it helps clarify the outcome, control scope, implement only what is needed, and verify the result.
+C2O is a skills-only plugin for Codex, Claude Code, and Google Antigravity (AGY). It is designed for work that starts fuzzy and needs to end with evidence. Give it an idea, problem, or change request; it helps clarify the outcome, control scope, implement only what is needed, and verify the result.
 
 You do **not** need to learn all nine skills before using C2O. Start with `c2o-work`; choose a specialist skill only when you already know which stage you need.
 
@@ -12,7 +12,7 @@ You do **not** need to learn all nine skills before using C2O. Start with `c2o-w
 
 ### 1. Install C2O in your coding agent
 
-Choose the one you use. You do not need to install both.
+Install only the one you use.
 
 **Codex**
 
@@ -28,39 +28,28 @@ claude plugin marketplace add philngt/c2o@main
 claude plugin install c2o@c2o
 ```
 
+**Google Antigravity (AGY CLI)**
+
+```bash
+agy plugin install https://github.com/philngt/c2o
+```
+
 ### 2. Start a new session
 
-For Codex:
-
-```bash
-codex
-```
-
-For Claude Code:
-
-```bash
-claude
-```
+| Host | Start command |
+| --- | --- |
+| Codex | `codex` |
+| Claude Code | `claude` |
+| Antigravity CLI | `agy` |
 
 Plugins are loaded at session start, so use a fresh session after installation.
 
 ### 3. Paste your first request
 
-If you use **Codex**, paste:
+The same prompt works in all three hosts:
 
 ```text
-Use $c2o:c2o-work to turn this rough request into the smallest verified outcome:
-
-"I want the onboarding flow to be easier for first-time users."
-
-First clarify the observable outcome and acceptance signals. Ask only questions
-that would change the next action. Do not implement until the scope is clear.
-```
-
-If you use **Claude Code**, paste:
-
-```text
-Use /c2o:c2o-work to turn this rough request into the smallest verified outcome:
+Use the installed c2o-work skill to turn this rough request into the smallest verified outcome:
 
 "I want the onboarding flow to be easier for first-time users."
 
@@ -92,16 +81,17 @@ rough request
 
 `c2o-work` coordinates this flow and skips stages that a small, clear task does not need. It enters deep inquiry only when you explicitly ask to be challenged or several consequential decisions depend on one another.
 
-The skill names are the same in both hosts; only the invocation prefix changes:
+The skill names are the same in all three hosts; only the invocation prefix changes:
 
 | Host | Default workflow | Specialist example |
 | --- | --- | --- |
 | Codex | `$c2o:c2o-work` | `$c2o:c2o-grill` |
 | Claude Code | `/c2o:c2o-work` | `/c2o:c2o-grill` |
+| Antigravity CLI | `/c2o:c2o-work` | `/c2o:c2o-grill` |
 
 ## Copy-paste examples
 
-The examples below use Codex syntax. In Claude Code, replace `$c2o:` with `/c2o:`; the rest of each prompt stays the same.
+The examples below use Codex syntax. In Claude Code or Antigravity CLI, replace `$c2o:` with `/c2o:`; the rest of each prompt stays the same.
 
 ### Turn a vague idea into a clear brief
 
@@ -173,7 +163,7 @@ Do not repair failures.
 
 ## Which skill should I use?
 
-| If you need to… | Codex | Claude Code |
+| If you need to… | Codex | Claude Code / AGY CLI |
 | --- | --- | --- |
 | Move a rough request all the way to a verified result | `$c2o:c2o-work` | `/c2o:c2o-work` |
 | Clarify an idea before choosing a solution | `$c2o:c2o-shape` | `/c2o:c2o-shape` |
@@ -185,13 +175,13 @@ Do not repair failures.
 | Check a result against explicit criteria | `$c2o:c2o-verify` | `/c2o:c2o-verify` |
 | Preserve useful decisions and learning after completion | `$c2o:c2o-learn` | `/c2o:c2o-learn` |
 
-When unsure, use `c2o-work`: `$c2o:c2o-work` in Codex or `/c2o:c2o-work` in Claude Code.
+When unsure, use `c2o-work`: `$c2o:c2o-work` in Codex or `/c2o:c2o-work` in Claude Code and AGY CLI.
 
 ## Installation details
 
 ### Requirements
 
-- [Codex CLI](https://developers.openai.com/codex/cli/) or [Claude Code](https://code.claude.com/docs/en/setup)
+- [Codex CLI](https://developers.openai.com/codex/cli/), [Claude Code](https://code.claude.com/docs/en/setup), or [Antigravity CLI](https://www.agy.dev/docs/cli/installation/)
 - Git access to GitHub
 
 ### Codex
@@ -251,6 +241,22 @@ To try a local clone without installing it:
 claude --plugin-dir .
 ```
 
+### Google Antigravity (AGY CLI)
+
+Install C2O directly from GitHub:
+
+```bash
+agy plugin install https://github.com/philngt/c2o
+```
+
+Confirm that AGY loaded the plugin:
+
+```bash
+agy plugin list
+```
+
+Start a fresh session with `agy`, then invoke the main workflow with `/c2o:c2o-work`.
+
 ## Plugin contents
 
 | Skill | Purpose |
@@ -273,6 +279,7 @@ claude --plugin-dir .
   marketplace.json
   plugin.json
 .codex-plugin/plugin.json
+plugin.json
 assets/
   c2o-readme-banner.png
   icon.svg
@@ -288,4 +295,4 @@ skills/
   c2o-learn/
 ```
 
-The Codex and Claude Code manifests both point to the same `./skills/` directory, so the workflow stays consistent across hosts. Each skill keeps its instructions, UI metadata, references, scripts, and assets together.
+The Codex, Claude Code, and Antigravity manifests all use the same `./skills/` directory, so the workflow stays consistent across hosts. Each skill keeps its instructions, UI metadata, references, scripts, and assets together.

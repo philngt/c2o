@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "c2o",
   "displayName": "Context to Outcome (C2O)",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A skill suite for turning ambiguous requests into the smallest verified outcome.",
   "author": {
     "name": "philngt",

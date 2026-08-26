@@ -23,7 +23,7 @@ When the request asks what should be built, do not jump from a broad desire to o
 
 ## Enter deep inquiry only when needed
 
-Insert the optional `INQUIRING` gate when the user explicitly asks to be grilled or when intervention level 4–5 contains several consequential decisions with dependencies. Apply the sibling `c2o-grill` skill when available, using the host's normal invocation (`$c2o:c2o-grill` in Codex or `/c2o:c2o-grill` in Claude Code).
+Insert the optional `INQUIRING` gate when the user explicitly asks to be grilled or when intervention level 4–5 contains several consequential decisions with dependencies. Apply the sibling `c2o-grill` skill when available, using the host's normal invocation (`$c2o:c2o-grill` in Codex or `/c2o:c2o-grill` in Claude Code and Antigravity CLI).
 
 Do not grill merely because a request is vague. Stay in the normal flow when shaping, one decision, a safe reversible default, or a prototype can resolve the uncertainty more cheaply.
 
@@ -61,7 +61,7 @@ For a long-lived project with no context files, initialize them only when persis
 python3 <skill-dir>/scripts/init_c2o.py <project-root>
 ```
 
-Add `--agents` only in Codex when the user wants project-scoped custom agent templates. Claude Code should use its native subagent support instead. The script creates missing files and never overwrites existing ones.
+Add `--agents` only in Codex when the user wants project-scoped custom agent templates. Claude Code and Antigravity should use their native subagent support instead. The script creates missing files and never overwrites existing ones.
 
 ## Finish
 
