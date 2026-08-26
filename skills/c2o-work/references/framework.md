@@ -30,6 +30,7 @@ Lower the level when the change is small, reversible, familiar, and locally test
 |---|---|
 | `CAPTURED` | The request and task class are understood |
 | `SHAPED` | Actor, situation, outcome, boundary, and success signal are clear |
+| `INQUIRING` | Dependent material decisions are exposed, evidence gaps are explicit, and the user confirms shared understanding |
 | `DECIDED` | Blocking alternatives are resolved or a reversible default is accepted |
 | `SPECIFIED` | Behavior, constraints, failure states, acceptance, and non-goals are explicit |
 | `READY` | A coherent vertical slice can be executed safely |
@@ -59,6 +60,14 @@ Output: actor, triggering situation, current difficulty, observable outcome, con
 Input: one blocking choice.
 
 Output: criteria, up to three viable options, evidence and assumptions, recommendation, accepted trade-off, and revisit trigger.
+
+### Grill
+
+Input: a shaped level 4–5 problem with several dependent decisions, or an explicit request to stress-test thinking.
+
+Output: a prerequisite-aware decision tree, researched facts, explicit experiments for unanswerable uncertainties, accepted choices, deferred branches, and user confirmation of shared understanding.
+
+Skip this stage for simple, reversible, or independently decidable work. Do not proceed from Grill to Spec or Execute without confirmation.
 
 ### Spec
 
@@ -122,4 +131,5 @@ A task is complete only when:
 3. relevant acceptance criteria have evidence;
 4. untested areas are explicit;
 5. material decisions and changed assumptions are retained;
-6. no unsafe or destructive follow-up is implied as already authorized.
+6. shared understanding was confirmed when the optional deep-inquiry gate was used;
+7. no unsafe or destructive follow-up is implied as already authorized.

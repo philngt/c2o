@@ -69,6 +69,7 @@ Store verified completed work, current action, blockers, and one next meaningful
 | Gate | Read first |
 |---|---|
 | Shape | `project.md`, `current-goal.md` |
+| Inquire | `current-goal.md`, `decisions.md`, `assumptions.md`, `open-questions.md` |
 | Decide | `current-goal.md`, `decisions.md`, `assumptions.md` |
 | Spec or slice | `current-goal.md`, `decisions.md`, `acceptance.md` |
 | Execute | `current-goal.md`, `acceptance.md`, relevant decisions |

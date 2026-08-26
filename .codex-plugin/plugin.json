@@ -1,6 +1,6 @@
 {
   "name": "c2o",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A skill suite for turning ambiguous requests into the smallest verified outcome.",
   "author": {
     "name": "philngt",
@@ -19,7 +19,7 @@
   "interface": {
     "displayName": "Context to Outcome (C2O)",
     "shortDescription": "Turn rough requests into verified outcomes.",
-    "longDescription": "C2O provides eight coordinated skills for shaping ambiguous work, making decisions, specifying and slicing changes, executing safely, verifying evidence, and preserving useful learning.",
+    "longDescription": "C2O provides nine coordinated skills for shaping ambiguous work, stress-testing dependent decisions, specifying and slicing changes, executing safely, verifying evidence, and preserving useful learning.",
     "developerName": "philngt",
     "category": "Productivity",
     "capabilities": [
@@ -30,7 +30,7 @@
     "defaultPrompt": [
       "Turn this rough request into the smallest verified outcome.",
       "Shape this idea and identify the next decision.",
-      "Create an implementation-ready mini-spec for this change."
+      "Stress-test this consequential plan before implementation."
     ],
     "brandColor": "#3C5CD8",
     "composerIcon": "./assets/icon.svg"

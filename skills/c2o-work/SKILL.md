@@ -21,13 +21,29 @@ Own the outcome from intake through evidence. Scale the process to the task; do 
 
 When the request asks what should be built, do not jump from a broad desire to one domain solution. First shape the desired change, then compare up to three materially different hypotheses. A recommended hypothesis remains an experiment until evidence supports it.
 
+## Enter deep inquiry only when needed
+
+Insert the optional `INQUIRING` gate when the user explicitly asks to be grilled or when intervention level 4–5 contains several consequential decisions with dependencies. Apply `$c2o:c2o-grill` when available.
+
+Do not grill merely because a request is vague. Stay in the normal flow when shaping, one decision, a safe reversible default, or a prototype can resolve the uncertainty more cheaply.
+
+If a sibling skill cannot be loaded, preserve the minimum protocol:
+
+1. Map fact, decision, and experiment nodes with prerequisites.
+2. Research facts instead of asking the user.
+3. Ask only the currently unblocked, independent decisions and give a recommendation for each.
+4. Route questions that talking cannot settle to a prototype or vertical slice.
+5. Recompute dependent decisions after every answer.
+6. Require the user to confirm shared understanding before specification or execution.
+
 ## Run the loop
 
 Move only as far as the task requires:
 
-`CAPTURED -> SHAPED -> DECIDED -> SPECIFIED -> READY -> EXECUTING -> VERIFYING -> DONE`
+`CAPTURED -> SHAPED -> [INQUIRING] -> DECIDED -> SPECIFIED -> READY -> EXECUTING -> VERIFYING -> DONE`
 
 - Skip gates for small, clear, reversible work.
+- Treat `INQUIRING` as optional. Never use it to manufacture questions or delay a cheap experiment.
 - Stop at the requested artifact for answer, planning, diagnosis, or review requests. Do not implement unless the user asked for a change.
 - For a change, define acceptance before editing, implement one coherent slice, then gather evidence.
 - Keep the main thread responsible for scope and synthesis. Delegate only bounded, independent investigations or checks using [agent-contracts.md](references/agent-contracts.md).

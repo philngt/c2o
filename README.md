@@ -6,7 +6,7 @@
 
 C2O is a skills-only Codex plugin for work that starts fuzzy and needs to end with evidence. Give it an idea, problem, or change request; it helps clarify the outcome, control scope, implement only what is needed, and verify the result.
 
-You do **not** need to learn all eight skills before using C2O. Start with `c2o-work`; choose a specialist skill only when you already know which stage you need.
+You do **not** need to learn all nine skills before using C2O. Start with `c2o-work`; choose a specialist skill only when you already know which stage you need.
 
 ## New here? Start with these three steps
 
@@ -49,6 +49,7 @@ C2O will normally:
 ```text
 rough request
     → shaped outcome
+    → optional deep inquiry
     → resolved decision
     → mini-spec
     → smallest vertical slice
@@ -57,7 +58,7 @@ rough request
     → durable learning
 ```
 
-`c2o-work` coordinates this flow and skips stages that a small, clear task does not need.
+`c2o-work` coordinates this flow and skips stages that a small, clear task does not need. It enters deep inquiry only when you explicitly ask to be challenged or several consequential decisions depend on one another.
 
 ## Copy-paste examples
 
@@ -79,6 +80,18 @@ Use $c2o:c2o-decide to compare SQLite and Postgres for this project.
 Base the recommendation on our actual scale, deployment model, operational
 capacity, migration cost, and reversibility. Separate evidence from assumptions.
 ```
+
+### Stress-test a complex plan before action
+
+```text
+Use $c2o:c2o-grill to challenge this multi-region migration plan before we act.
+
+Map the dependent fact, decision, and experiment nodes. Research facts instead
+of asking me. Interview me only about decisions whose prerequisites are settled,
+and do not implement anything until I confirm our shared understanding.
+```
+
+Use Grill for branching, consequential decisions—not for a vague request that shaping or a cheap prototype can resolve faster.
 
 ### Prepare work for implementation
 
@@ -124,6 +137,7 @@ Do not repair failures.
 | Move a rough request all the way to a verified result | `$c2o:c2o-work` |
 | Clarify an idea before choosing a solution | `$c2o:c2o-shape` |
 | Compare options with meaningful trade-offs | `$c2o:c2o-decide` |
+| Stress-test several dependent decisions before action | `$c2o:c2o-grill` |
 | Write a small implementation-ready specification | `$c2o:c2o-spec` |
 | Cut a large feature into one valuable end-to-end slice | `$c2o:c2o-slice` |
 | Implement an already approved slice | `$c2o:c2o-execute` |
@@ -170,6 +184,7 @@ If C2O does not appear immediately, restart Codex or the ChatGPT desktop app and
 | `c2o-work` | Orchestrate the complete context-to-outcome loop. |
 | `c2o-shape` | Turn a vague request into an observable, bounded outcome. |
 | `c2o-decide` | Compare viable options and resolve consequential trade-offs. |
+| `c2o-grill` | Expose dependent decisions through prerequisite-aware inquiry. |
 | `c2o-spec` | Produce a concise, implementation-ready mini-spec. |
 | `c2o-slice` | Reduce large work to the smallest valuable vertical slice. |
 | `c2o-execute` | Implement an approved slice while preserving scope and evidence. |
@@ -188,6 +203,7 @@ skills/
   c2o-work/
   c2o-shape/
   c2o-decide/
+  c2o-grill/
   c2o-spec/
   c2o-slice/
   c2o-execute/
