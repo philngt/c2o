@@ -64,7 +64,7 @@ Offer no more than three viable options per decision unless the domain genuinely
 
 - Research an answerable fact.
 - Propose a cheap reversible experiment when evidence is missing.
-- Route questions about appearance, feel, or emergent behavior to a prototype or C2O vertical slice.
+- Route questions about appearance, feel, voice, or creative direction to `c2o-create`; route other emergent behavior to a prototype or C2O vertical slice.
 - Accept “I do not know” as information; do not pressure the user into false certainty.
 - Mark an irrelevant branch as a non-goal.
 - Split the inquiry when the tree reveals that the original scope contains several independent outcomes.
@@ -90,7 +90,7 @@ Finish only when:
 2. unresolved fact or experiment nodes are explicit;
 3. the user confirms that the shared understanding is sufficient for the next step.
 
-Do not deliver or implement during this skill. Return:
+Do not create, deliver, or implement during this skill. Return:
 
 ```markdown
 ## Grill summary

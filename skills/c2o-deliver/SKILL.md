@@ -1,6 +1,6 @@
 ---
 name: c2o-deliver
-description: Produce an approved, bounded non-software outcome such as a document, research synthesis, decision memo, operating procedure, content package, analysis, or reversible workflow change while controlling scope and returning evidence. Use when the user has authorized concrete knowledge-work or operational delivery and the desired result is clear enough to act. Avoid for source-code implementation, planning-only requests, or external publishing, sending, purchasing, or production actions without explicit authorization.
+description: Produce an approved, bounded non-software outcome such as a document, research synthesis, decision memo, operating procedure, content package, analysis, or reversible workflow change while controlling scope and returning evidence. Use when the user has authorized concrete knowledge-work or operational delivery and the desired result is clear enough to act. Avoid for creative work that still needs concept exploration or art direction, which should use c2o-create, source-code implementation, planning-only requests, or external publishing, sending, purchasing, or production actions without explicit authorization.
 ---
 
 # C2O Deliver
@@ -18,6 +18,8 @@ Turn an approved outcome into a usable non-software result. A draft, recommendat
 3. Confirm acceptance criteria, authoritative inputs, format, destination, constraints, and non-goals.
 4. Distinguish the requested state: `drafted`, `prepared`, `applied`, `published`, or `sent`.
 5. Resolve only ambiguity that changes the result or crosses an action boundary. Route an unclear outcome through `c2o-shape` or `c2o-spec` first.
+
+Use `c2o-create` first when a design or creative artifact still needs divergent directions, selection, prototyping, or critique. Resume delivery after the creative direction is approved when packaging, handoff, publishing, or another operational action remains.
 
 ## Deliver
 

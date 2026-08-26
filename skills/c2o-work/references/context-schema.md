@@ -72,7 +72,7 @@ Store verified completed work, current action, blockers, and one next meaningful
 | Inquire | `current-goal.md`, `decisions.md`, `assumptions.md`, `open-questions.md` |
 | Decide | `current-goal.md`, `decisions.md`, `assumptions.md` |
 | Spec or slice | `current-goal.md`, `decisions.md`, `acceptance.md` |
-| Deliver or execute | `current-goal.md`, `acceptance.md`, relevant decisions |
+| Create, deliver, or execute | `current-goal.md`, `acceptance.md`, relevant decisions |
 | Verify | `acceptance.md`, `current-goal.md` |
 | Learn | all files that may receive a material update |
 

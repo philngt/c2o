@@ -1,6 +1,6 @@
 ---
 name: c2o-shape
-description: Turn a vague idea, complaint, feature request, or desired result into a shaped brief with an observable outcome, scope, constraints, assumptions, acceptance signals, and non-goals. Use before solution design when the user knows what they want broadly but cannot yet specify the work. Do not use when the request is already clear enough for direct execution.
+description: Turn a vague idea, complaint, creative intention, feature request, or desired result into a shaped brief with an observable outcome, scope, constraints, assumptions, acceptance signals, and non-goals. Use before solution or creative-direction design when the user knows what they want broadly but cannot yet specify the work. Do not use when the request is already clear enough for direct action.
 ---
 
 # C2O Shape

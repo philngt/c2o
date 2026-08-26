@@ -10,6 +10,7 @@ Judge the result against the contract, not against effort or plausibility.
 ## Verify
 
 1. Recover the intended outcome, scope, and acceptance criteria. If criteria are absent, derive a minimal review contract and label it as inferred.
+   For creative work, separate objective constraints, judgment criteria, and real-world effects that are not yet observable.
 2. Choose the strongest safe evidence available for each criterion:
    - automated test;
    - static or structural inspection;

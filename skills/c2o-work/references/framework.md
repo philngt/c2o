@@ -18,7 +18,7 @@ Choose the lowest level that still controls likely cost or risk.
 | 0 | Clear question or tiny edit | Direct answer or action |
 | 1 | Several easy-to-miss checks | Short checklist |
 | 2 | Meaningful choice among options | Decision note, up to three options |
-| 3 | Handoff or multi-step delivery | Mini-spec and acceptance criteria |
+| 3 | Handoff or multi-step creation or delivery | Mini-spec or creative contract and acceptance criteria |
 | 4 | Cross-component or cross-workstream change with costly rollback | Spec, end-to-end slice, verification plan |
 | 5 | High-stakes or effectively irreversible work | Independent evidence, risk review, rollout and recovery plan |
 
@@ -34,7 +34,7 @@ Lower the level when the change is small, reversible, familiar, and locally test
 | `DECIDED` | Blocking alternatives are resolved or a reversible default is accepted |
 | `SPECIFIED` | Behavior, constraints, failure states, acceptance, and non-goals are explicit |
 | `READY` | A coherent vertical slice can be executed safely |
-| `EXECUTING` | The approved slice is delivered or implemented without uncontrolled expansion |
+| `EXECUTING` | The approved slice is created, delivered, or implemented without uncontrolled expansion |
 | `VERIFYING` | Each material criterion has evidence or is marked untested |
 | `DONE` | The requested outcome is accepted and durable learning is captured |
 
@@ -67,7 +67,7 @@ Input: a shaped level 4–5 problem with several dependent decisions, or an expl
 
 Output: a prerequisite-aware decision tree, researched facts, explicit experiments for unanswerable uncertainties, accepted choices, deferred branches, and user confirmation of shared understanding.
 
-Skip this stage for simple, reversible, or independently decidable work. Do not proceed from Grill to Spec, Deliver, or Execute without confirmation.
+Skip this stage for simple, reversible, or independently decidable work. Do not proceed from Grill to Spec, Create, Deliver, or Execute without confirmation.
 
 ### Spec
 
@@ -80,6 +80,12 @@ Output: primary scenario, requirements, constraints, failure states, acceptance 
 Input: specification too large for one safe pass.
 
 Output: trigger-to-result path, explicit exclusions, risk learned, acceptance, and demonstration method.
+
+### Create
+
+Input: a shaped creative brief or approved creative outcome.
+
+Output: materially distinct directions when needed, an explicit selection, the produced creative artifact, rendered critique, and an accurate production or publication state.
 
 ### Execute
 

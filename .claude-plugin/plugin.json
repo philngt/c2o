@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "c2o",
   "displayName": "Context to Outcome (C2O)",
-  "version": "0.6.0",
-  "description": "A skill suite for turning ambiguous knowledge or software work into the smallest verified outcome.",
+  "version": "0.7.0",
+  "description": "A skill suite for turning ambiguous knowledge, creative, or software work into the smallest verified outcome.",
   "author": {
     "name": "philngt",
     "url": "https://github.com/philngt"
@@ -14,6 +14,8 @@
     "context",
     "planning",
     "knowledge-work",
+    "creative-work",
+    "design",
     "execution",
     "verification",
     "workflow"

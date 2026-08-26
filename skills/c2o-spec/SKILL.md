@@ -1,11 +1,11 @@
 ---
 name: c2o-spec
-description: Convert a shaped outcome and resolved decisions into a concise, action-ready mini-spec with scope, requirements or deliverables, failure states, constraints, acceptance criteria, and non-goals. Use when software or knowledge work must be handed to another person or agent, executed across several steps, or preserved across sessions. Do not inflate a simple task into a full requirements document.
+description: Convert a shaped outcome and resolved decisions into a concise, action-ready mini-spec with scope, requirements or deliverables, failure states, constraints, acceptance criteria, and non-goals. Use when software, creative, or knowledge work must be handed to another person or agent, executed across several steps, or preserved across sessions. Do not inflate a simple task into a full requirements document.
 ---
 
 # C2O Spec
 
-Write the smallest specification that prevents expensive misunderstanding in delivery or implementation.
+Write the smallest specification that prevents expensive misunderstanding in creation, delivery, or implementation.
 
 ## Readiness gate
 
@@ -16,7 +16,7 @@ Proceed when the actor, triggering situation, outcome, key constraint, and at le
 1. State context and outcome.
 2. Describe the primary scenario as trigger, action, and observable result.
 3. Define in-scope behavior in priority order.
-4. Record data, interface, compatibility, privacy, operational, or technical constraints only when applicable.
+4. Record data, interface, brand, editorial, accessibility, compatibility, privacy, operational, or technical constraints only when applicable.
 5. Describe important empty, error, permission-denied, interrupted, and recovery states.
 6. Map every requirement to an acceptance criterion.
 7. Declare non-goals and deferred decisions.

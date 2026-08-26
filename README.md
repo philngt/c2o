@@ -4,9 +4,9 @@
 
 > Turn a rough request into the smallest verified outcome.
 
-C2O is an outcome workflow for knowledge work and software work, packaged as a skills-only plugin for Codex, Claude Code, and Google Antigravity (AGY). Give it an idea, problem, or change request; it helps clarify the outcome, control scope, deliver or implement only what is needed, and verify the result.
+C2O is an outcome workflow for knowledge, creative, and software work, packaged as a skills-only plugin for Codex, Claude Code, and Google Antigravity (AGY). Give it an idea, creative brief, problem, or change request; it helps clarify the outcome, explore when needed, control scope, produce only what is needed, and verify the result.
 
-You do **not** need to learn all ten skills before using C2O. Start with `c2o-work`; choose a specialist skill only when you already know which stage you need.
+You do **not** need to learn all eleven skills before using C2O. Start with `c2o-work`; choose a specialist skill only when you already know which stage you need.
 
 ## New here? Start with these three steps
 
@@ -62,7 +62,7 @@ C2O will normally:
 1. restate what should observably change;
 2. separate facts, assumptions, and decisions;
 3. find the smallest useful slice;
-4. deliver or implement only when you ask for action;
+4. create, deliver, or implement only when you ask for action;
 5. verify the result against explicit acceptance criteria.
 
 ## How the workflow fits together
@@ -72,9 +72,9 @@ rough request
     → shaped outcome
     → optional deep inquiry
     → resolved decision
-    → mini-spec
+    → mini-spec or creative contract
     → smallest end-to-end slice
-    → delivery or implementation
+    → creation, delivery, or implementation
     → verification evidence
     → durable learning
 ```
@@ -96,6 +96,7 @@ The skill names are the same in all three hosts; only the invocation prefix chan
 | Product | Turn a broad feature idea into one testable pilot. |
 | Operations | Design and deliver a bounded process improvement with clear handoffs. |
 | Research and strategy | Separate facts from decisions, compare options, and preserve assumptions. |
+| Design and creative | Explore distinct directions, select deliberately, produce the artifact, and critique it against the brief. |
 | Content and communication | Produce an approved brief, playbook, or content package without silently publishing it. |
 | Software | Specify, implement, and verify the smallest coherent code change. |
 
@@ -153,6 +154,20 @@ Cover one real path from ticket arrival to a useful first response. The pilot mu
 test the riskiest useful assumption. Explicitly list what is deferred.
 ```
 
+### Develop a creative direction
+
+```text
+Use $c2o:c2o-create to develop a launch visual direction for a privacy-first
+journaling app.
+
+The audience is privacy-conscious first-time users; the intended response is
+"calm, trustworthy, and personal." Create three materially distinct directions
+at style-frame fidelity. Explain the rationale and trade-off of each, recommend
+one, but do not treat it as selected or publish anything until I approve it.
+```
+
+`c2o-create` can use an available image-generation or media skill for production. Use `c2o-execute` after a UI direction is approved and must become product code; use `c2o-deliver` when the finished artifact must be packaged, sent, or published.
+
 ### Deliver a non-software outcome
 
 ```text
@@ -192,6 +207,7 @@ Do not repair failures.
 | Stress-test several dependent decisions before action | `$c2o:c2o-grill` | `/c2o:c2o-grill` |
 | Write a small action-ready specification | `$c2o:c2o-spec` | `/c2o:c2o-spec` |
 | Cut a large initiative into one valuable end-to-end slice | `$c2o:c2o-slice` | `/c2o:c2o-slice` |
+| Explore, select, and refine a design or creative direction | `$c2o:c2o-create` | `/c2o:c2o-create` |
 | Deliver an approved document, analysis, process, or operational change | `$c2o:c2o-deliver` | `/c2o:c2o-deliver` |
 | Implement an approved software slice | `$c2o:c2o-execute` | `/c2o:c2o-execute` |
 | Check a result against explicit criteria | `$c2o:c2o-verify` | `/c2o:c2o-verify` |
@@ -289,6 +305,7 @@ Start a fresh session with `agy`, then invoke the main workflow with `/c2o:c2o-w
 | `c2o-grill` | Expose dependent decisions through prerequisite-aware inquiry. |
 | `c2o-spec` | Produce a concise, action-ready mini-spec. |
 | `c2o-slice` | Reduce large work to the smallest valuable end-to-end slice. |
+| `c2o-create` | Explore, select, produce, and critique a creative outcome. |
 | `c2o-deliver` | Produce an approved non-software outcome within explicit action boundaries. |
 | `c2o-execute` | Implement an approved software slice while preserving scope and evidence. |
 | `c2o-verify` | Verify claims against acceptance criteria using direct evidence. |
@@ -313,6 +330,7 @@ skills/
   c2o-grill/
   c2o-spec/
   c2o-slice/
+  c2o-create/
   c2o-deliver/
   c2o-execute/
   c2o-verify/

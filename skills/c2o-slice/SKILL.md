@@ -1,6 +1,6 @@
 ---
 name: c2o-slice
-description: Reduce a large initiative, project, feature, or specification to the smallest end-to-end slice that delivers observable value and tests the riskiest useful assumption. Use when planned software or knowledge work crosses several layers or workstreams and feels too large to deliver and verify safely in one pass. Avoid horizontal slices that complete only one document, function, or technical layer without a usable result.
+description: Reduce a large initiative, project, feature, creative system, or specification to the smallest end-to-end slice that delivers observable value and tests the riskiest useful assumption. Use when planned software, creative, or knowledge work crosses several layers or workstreams and feels too large to produce and verify safely in one pass. Avoid horizontal slices that complete only one document, asset, function, or technical layer without a usable result.
 ---
 
 # C2O Slice

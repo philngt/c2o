@@ -1,6 +1,6 @@
 ---
 name: c2o-decide
-description: Frame and resolve a consequential choice by comparing viable options against explicit criteria, reversibility, evidence, cost, and risk, then record the recommendation and assumptions. Use for architecture, product, workflow, tooling, prioritization, or implementation decisions where trade-offs matter. Avoid when there is only one viable option or a trivial reversible default.
+description: Frame and resolve a consequential choice by comparing viable options against explicit criteria, reversibility, evidence, cost, and risk, then record the recommendation and assumptions. Use for architecture, product, creative direction, workflow, tooling, prioritization, or implementation decisions where trade-offs matter. Avoid when there is only one viable option or a trivial reversible default.
 ---
 
 # C2O Decide
