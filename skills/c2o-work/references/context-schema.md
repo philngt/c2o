@@ -10,7 +10,7 @@
 ## Context principles
 
 - Store decisions and evidence, not conversation transcripts.
-- Keep source-of-truth facts in their native files; do not duplicate code or configuration.
+- Keep source-of-truth facts in their native artifacts or systems; do not duplicate content, code, or configuration.
 - Record uncertainty explicitly.
 - Prefer one durable sentence over a chronological diary.
 - Date entries when their validity may decay.
@@ -19,7 +19,7 @@
 
 ### `project.md`
 
-Store product or system purpose, users, enduring constraints, architectural principles, and long-term non-goals. Change rarely.
+Store the project, organization, product, or system purpose; users or actors; enduring constraints; working principles; and long-term non-goals. Change rarely.
 
 ### `current-goal.md`
 
@@ -54,7 +54,7 @@ Confidence is `low`, `medium`, or `high`; status is `open`, `confirmed`, or `dis
 
 ### `open-questions.md`
 
-Record only questions that can change scope, architecture, user outcome, or next action. Include owner or evidence needed when known.
+Record only questions that can change scope, design, operations, architecture, user outcome, or next action. Include owner or evidence needed when known.
 
 ### `acceptance.md`
 
@@ -72,7 +72,7 @@ Store verified completed work, current action, blockers, and one next meaningful
 | Inquire | `current-goal.md`, `decisions.md`, `assumptions.md`, `open-questions.md` |
 | Decide | `current-goal.md`, `decisions.md`, `assumptions.md` |
 | Spec or slice | `current-goal.md`, `decisions.md`, `acceptance.md` |
-| Execute | `current-goal.md`, `acceptance.md`, relevant decisions |
+| Deliver or execute | `current-goal.md`, `acceptance.md`, relevant decisions |
 | Verify | `acceptance.md`, `current-goal.md` |
 | Learn | all files that may receive a material update |
 

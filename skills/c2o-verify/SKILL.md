@@ -14,6 +14,8 @@ Judge the result against the contract, not against effort or plausibility.
    - automated test;
    - static or structural inspection;
    - rendered or interactive inspection;
+   - source reconciliation or calculation check;
+   - operational observation or stakeholder review;
    - reproducible manual check;
    - reasoned inference only as a last resort.
 3. Run independent checks where practical. Include negative, permission, empty, interrupted, compatibility, and recovery cases only when relevant.
@@ -21,7 +23,7 @@ Judge the result against the contract, not against effort or plausibility.
 5. Assign each criterion `pass`, `partial`, `fail`, or `not-tested`.
 6. Rank gaps by their impact on the requested outcome.
 
-Do not fix defects during a review-only request. A successful build is not proof of correct behavior; a screenshot is not proof of hidden state; reasoning is not proof that a test passed.
+Do not fix defects during a review-only request. A successful build is not proof of correct behavior; a polished artifact is not proof of real-world effect; a screenshot is not proof of hidden state; reasoning is not proof that a check passed.
 
 ## Output
 

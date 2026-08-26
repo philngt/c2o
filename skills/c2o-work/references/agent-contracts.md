@@ -55,7 +55,7 @@ recommended_changes: []
 
 ## Verifier
 
-Purpose: produce evidence independent of the implementation narrative.
+Purpose: produce evidence independent of the delivery or implementation narrative.
 
 Constraints:
 

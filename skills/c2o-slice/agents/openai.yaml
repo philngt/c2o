@@ -1,7 +1,7 @@
 interface:
   display_name: C2O Slice
   short_description: Find the smallest end-to-end value slice
-  default_prompt: Use $c2o:c2o-slice to find the smallest end-to-end slice worth building.
+  default_prompt: Use $c2o:c2o-slice to find the smallest end-to-end slice worth delivering.
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:

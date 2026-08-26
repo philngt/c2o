@@ -90,7 +90,7 @@ Finish only when:
 2. unresolved fact or experiment nodes are explicit;
 3. the user confirms that the shared understanding is sufficient for the next step.
 
-Do not implement during this skill. Return:
+Do not deliver or implement during this skill. Return:
 
 ```markdown
 ## Grill summary

@@ -1,6 +1,6 @@
 ---
 name: c2o-learn
-description: Distill completed work, feedback, failures, and verification results into durable project context by updating decisions, assumptions, current goals, and progress without preserving noisy conversation history. Use after meaningful evidence changes what future work should know or when closing a work loop. Avoid recording transient details, guesses, or information already recoverable from source code and version history.
+description: Distill completed work, feedback, failures, and verification results into durable project context by updating decisions, assumptions, current goals, and progress without preserving noisy conversation history. Use after meaningful evidence changes what future work should know or when closing a work loop. Avoid recording transient details, guesses, or information already recoverable from source artifacts, operational records, or version history.
 ---
 
 # C2O Learn
@@ -25,7 +25,7 @@ When `.context/` exists, update the smallest applicable set:
 - `progress.md` for verified completion, blockers, and next action;
 - `open-questions.md` only for questions that can change future work.
 
-Do not duplicate code, logs, full conversations, routine commands, or temporary debugging observations.
+Do not duplicate source artifacts, logs, full conversations, routine commands, or temporary working notes.
 
 ## Output
 

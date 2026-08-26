@@ -1,5 +1,5 @@
 {
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "c2o",
-  "description": "A skill suite for turning ambiguous requests into the smallest verified outcome."
+  "description": "A skill suite for turning ambiguous knowledge or software work into the smallest verified outcome."
 }

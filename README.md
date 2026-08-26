@@ -1,16 +1,16 @@
 # Context to Outcome (C2O)
 
-![Context flows through decisions and execution into a verified outcome](assets/c2o-readme-banner.png)
+![Context flows through decisions and delivery into a verified outcome](assets/c2o-readme-banner.png)
 
 > Turn a rough request into the smallest verified outcome.
 
-C2O is a skills-only plugin for Codex, Claude Code, and Google Antigravity (AGY). It is designed for work that starts fuzzy and needs to end with evidence. Give it an idea, problem, or change request; it helps clarify the outcome, control scope, implement only what is needed, and verify the result.
+C2O is an outcome workflow for knowledge work and software work, packaged as a skills-only plugin for Codex, Claude Code, and Google Antigravity (AGY). Give it an idea, problem, or change request; it helps clarify the outcome, control scope, deliver or implement only what is needed, and verify the result.
 
-You do **not** need to learn all nine skills before using C2O. Start with `c2o-work`; choose a specialist skill only when you already know which stage you need.
+You do **not** need to learn all ten skills before using C2O. Start with `c2o-work`; choose a specialist skill only when you already know which stage you need.
 
 ## New here? Start with these three steps
 
-### 1. Install C2O in your coding agent
+### 1. Install C2O in your agent
 
 Install only the one you use.
 
@@ -51,10 +51,10 @@ The same prompt works in all three hosts:
 ```text
 Use the installed c2o-work skill to turn this rough request into the smallest verified outcome:
 
-"I want the onboarding flow to be easier for first-time users."
+"I want customers to receive a useful first response from support sooner."
 
 First clarify the observable outcome and acceptance signals. Ask only questions
-that would change the next action. Do not implement until the scope is clear.
+that would change the next action. Do not change the live process until the scope is clear.
 ```
 
 C2O will normally:
@@ -62,7 +62,7 @@ C2O will normally:
 1. restate what should observably change;
 2. separate facts, assumptions, and decisions;
 3. find the smallest useful slice;
-4. implement only when you ask for a change;
+4. deliver or implement only when you ask for action;
 5. verify the result against explicit acceptance criteria.
 
 ## How the workflow fits together
@@ -73,8 +73,8 @@ rough request
     → optional deep inquiry
     → resolved decision
     → mini-spec
-    → smallest vertical slice
-    → execution
+    → smallest end-to-end slice
+    → delivery or implementation
     → verification evidence
     → durable learning
 ```
@@ -88,6 +88,16 @@ The skill names are the same in all three hosts; only the invocation prefix chan
 | Codex | `$c2o:c2o-work` | `$c2o:c2o-grill` |
 | Claude Code | `/c2o:c2o-work` | `/c2o:c2o-grill` |
 | Antigravity CLI | `/c2o:c2o-work` | `/c2o:c2o-grill` |
+
+## Where C2O helps
+
+| Domain | Example outcome |
+| --- | --- |
+| Product | Turn a broad feature idea into one testable pilot. |
+| Operations | Design and deliver a bounded process improvement with clear handoffs. |
+| Research and strategy | Separate facts from decisions, compare options, and preserve assumptions. |
+| Content and communication | Produce an approved brief, playbook, or content package without silently publishing it. |
+| Software | Specify, implement, and verify the smallest coherent code change. |
 
 ## Copy-paste examples
 
@@ -103,59 +113,70 @@ Identify the actor, current difficulty, desired observable change, scope,
 non-goals, assumptions, and acceptance signals. Do not design a solution yet.
 ```
 
-### Compare an important technical decision
+### Compare an important business decision
 
 ```text
-Use $c2o:c2o-decide to compare SQLite and Postgres for this project.
+Use $c2o:c2o-decide to compare hiring a full-time support specialist,
+using a contractor, and outsourcing the function.
 
-Base the recommendation on our actual scale, deployment model, operational
-capacity, migration cost, and reversibility. Separate evidence from assumptions.
+Base the recommendation on actual demand, coverage hours, quality control,
+ramp-up time, cost, and reversibility. Separate evidence from assumptions.
 ```
 
 ### Stress-test a complex plan before action
 
 ```text
-Use $c2o:c2o-grill to challenge this multi-region migration plan before we act.
+Use $c2o:c2o-grill to challenge our plan to enter the German market before we act.
 
 Map the dependent fact, decision, and experiment nodes. Research facts instead
 of asking me. Interview me only about decisions whose prerequisites are settled,
-and do not implement anything until I confirm our shared understanding.
+and do not move to delivery until I confirm our shared understanding.
 ```
 
 Use Grill for branching, consequential decisions—not for a vague request that shaping or a cheap prototype can resolve faster.
 
-### Prepare work for implementation
+### Prepare work for handoff
 
 ```text
-Use $c2o:c2o-spec to turn the approved onboarding brief into a mini-spec.
+Use $c2o:c2o-spec to turn the approved support-response pilot into a mini-spec.
 
-Include the primary scenario, in-scope behavior, important failure states,
-acceptance criteria, non-goals, and a verification approach.
+Include the target queue, primary scenario, handoffs, deliverables, failure states,
+acceptance criteria, non-goals, and verification approach.
 ```
 
-### Find the smallest valuable implementation
+### Find the smallest valuable pilot
 
 ```text
-Use $c2o:c2o-slice to reduce this feature to one end-to-end slice.
+Use $c2o:c2o-slice to reduce our company-wide support redesign to one end-to-end pilot.
 
-The slice must produce an observable user result and test the riskiest useful
-assumption. Explicitly list what is deferred.
+Cover one real path from ticket arrival to a useful first response. The pilot must
+test the riskiest useful assumption. Explicitly list what is deferred.
 ```
 
-### Implement and verify a bounded change
+### Deliver a non-software outcome
 
 ```text
-Use $c2o:c2o-work to implement the approved mini-spec in this repository.
+Use $c2o:c2o-deliver to produce the approved customer-escalation playbook.
+
+Use our existing policies as the source of truth, cover the required scenarios,
+and return acceptance evidence. Prepare the playbook, but do not publish it or
+notify the team.
+```
+
+### Implement a bounded software change
+
+```text
+Use $c2o:c2o-execute to implement the approved onboarding slice in this repository.
 
 Preserve existing work, implement the smallest coherent slice, run the relevant
-checks, and return criterion-by-criterion evidence.
+checks, and return acceptance evidence.
 ```
 
 ### Review a result without changing it
 
 ```text
-Use $c2o:c2o-verify to review the current implementation against
-docs/onboarding-spec.md.
+Use $c2o:c2o-verify to review the customer-escalation playbook against
+docs/support-pilot-spec.md.
 
 Report each acceptance criterion as pass, partial, fail, or not tested.
 Do not repair failures.
@@ -169,9 +190,10 @@ Do not repair failures.
 | Clarify an idea before choosing a solution | `$c2o:c2o-shape` | `/c2o:c2o-shape` |
 | Compare options with meaningful trade-offs | `$c2o:c2o-decide` | `/c2o:c2o-decide` |
 | Stress-test several dependent decisions before action | `$c2o:c2o-grill` | `/c2o:c2o-grill` |
-| Write a small implementation-ready specification | `$c2o:c2o-spec` | `/c2o:c2o-spec` |
-| Cut a large feature into one valuable end-to-end slice | `$c2o:c2o-slice` | `/c2o:c2o-slice` |
-| Implement an already approved slice | `$c2o:c2o-execute` | `/c2o:c2o-execute` |
+| Write a small action-ready specification | `$c2o:c2o-spec` | `/c2o:c2o-spec` |
+| Cut a large initiative into one valuable end-to-end slice | `$c2o:c2o-slice` | `/c2o:c2o-slice` |
+| Deliver an approved document, analysis, process, or operational change | `$c2o:c2o-deliver` | `/c2o:c2o-deliver` |
+| Implement an approved software slice | `$c2o:c2o-execute` | `/c2o:c2o-execute` |
 | Check a result against explicit criteria | `$c2o:c2o-verify` | `/c2o:c2o-verify` |
 | Preserve useful decisions and learning after completion | `$c2o:c2o-learn` | `/c2o:c2o-learn` |
 
@@ -265,9 +287,10 @@ Start a fresh session with `agy`, then invoke the main workflow with `/c2o:c2o-w
 | `c2o-shape` | Turn a vague request into an observable, bounded outcome. |
 | `c2o-decide` | Compare viable options and resolve consequential trade-offs. |
 | `c2o-grill` | Expose dependent decisions through prerequisite-aware inquiry. |
-| `c2o-spec` | Produce a concise, implementation-ready mini-spec. |
-| `c2o-slice` | Reduce large work to the smallest valuable vertical slice. |
-| `c2o-execute` | Implement an approved slice while preserving scope and evidence. |
+| `c2o-spec` | Produce a concise, action-ready mini-spec. |
+| `c2o-slice` | Reduce large work to the smallest valuable end-to-end slice. |
+| `c2o-deliver` | Produce an approved non-software outcome within explicit action boundaries. |
+| `c2o-execute` | Implement an approved software slice while preserving scope and evidence. |
 | `c2o-verify` | Verify claims against acceptance criteria using direct evidence. |
 | `c2o-learn` | Preserve durable decisions, assumptions, progress, and learning. |
 
@@ -290,6 +313,7 @@ skills/
   c2o-grill/
   c2o-spec/
   c2o-slice/
+  c2o-deliver/
   c2o-execute/
   c2o-verify/
   c2o-learn/

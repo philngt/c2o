@@ -1,6 +1,6 @@
 ---
 name: c2o-work
-description: Orchestrate a Context-to-Outcome work loop that turns a rough request into the smallest verified result. Use when a task is ambiguous, spans several stages, needs coordination across discovery, decisions, implementation, and verification, or when the user asks to manage work without already knowing how to write a complete specification. Avoid for simple questions or one-step edits that can be answered or completed directly.
+description: Orchestrate a Context-to-Outcome work loop that turns a rough request into the smallest verified result. Use when knowledge work or software work is ambiguous, spans several stages, needs coordination across discovery, decisions, delivery or implementation, and verification, or when the user asks to manage work without already knowing how to specify it completely. Avoid for simple questions or one-step actions that can be answered or completed directly.
 ---
 
 # C2O Work
@@ -15,11 +15,11 @@ Own the outcome from intake through evidence. Scale the process to the task; do 
    - known;
    - safely inferable;
    - requires a user decision;
-   - can be verified after a prototype or implementation.
+   - can be verified after a prototype, delivery, or implementation.
 4. Select the lowest sufficient intervention level from [framework.md](references/framework.md).
 5. Continue without questions when a reversible default is safe. Ask only questions that change the next action; offer at most three mutually exclusive choices and recommend one.
 
-When the request asks what should be built, do not jump from a broad desire to one domain solution. First shape the desired change, then compare up to three materially different hypotheses. A recommended hypothesis remains an experiment until evidence supports it.
+When the request asks what should be created or changed, do not jump from a broad desire to one domain solution. First shape the desired change, then compare up to three materially different hypotheses. A recommended hypothesis remains an experiment until evidence supports it.
 
 ## Enter deep inquiry only when needed
 
@@ -34,7 +34,7 @@ If a sibling skill cannot be loaded, preserve the minimum protocol:
 3. Ask only the currently unblocked, independent decisions and give a recommendation for each.
 4. Route questions that talking cannot settle to a prototype or vertical slice.
 5. Recompute dependent decisions after every answer.
-6. Require the user to confirm shared understanding before specification or execution.
+6. Require the user to confirm shared understanding before specification, delivery, or implementation.
 
 ## Run the loop
 
@@ -44,8 +44,8 @@ Move only as far as the task requires:
 
 - Skip gates for small, clear, reversible work.
 - Treat `INQUIRING` as optional. Never use it to manufacture questions or delay a cheap experiment.
-- Stop at the requested artifact for answer, planning, diagnosis, or review requests. Do not implement unless the user asked for a change.
-- For a change, define acceptance before editing, implement one coherent slice, then gather evidence.
+- Stop at the requested boundary for answer, planning, diagnosis, or review requests. Do not create, apply, publish, send, or implement beyond what the user requested.
+- For an authorized change, define acceptance before acting. Route source-code and system implementation through `c2o-execute`; route non-software artifacts and operational delivery through `c2o-deliver`; then gather evidence.
 - Keep the main thread responsible for scope and synthesis. Delegate only bounded, independent investigations or checks using [agent-contracts.md](references/agent-contracts.md).
 - Treat a plausible explanation as a hypothesis until evidence supports it.
 - Do not invent numeric success thresholds without a baseline, business constraint, or explicit user target. Define the measurement method first and mark any proposed threshold as provisional.

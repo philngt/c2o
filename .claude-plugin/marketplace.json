@@ -8,8 +8,8 @@
     {
       "name": "c2o",
       "source": "./",
-      "description": "Turn rough requests into the smallest verified outcome.",
-      "version": "0.5.0",
+      "description": "Turn ambiguous knowledge or software work into the smallest verified outcome.",
+      "version": "0.6.0",
       "author": {
         "name": "philngt"
       },

@@ -18,8 +18,8 @@ Choose the lowest level that still controls likely cost or risk.
 | 0 | Clear question or tiny edit | Direct answer or action |
 | 1 | Several easy-to-miss checks | Short checklist |
 | 2 | Meaningful choice among options | Decision note, up to three options |
-| 3 | Handoff or multi-step implementation | Mini-spec and acceptance criteria |
-| 4 | Cross-component work or costly rollback | Spec, vertical slice, verification plan |
+| 3 | Handoff or multi-step delivery | Mini-spec and acceptance criteria |
+| 4 | Cross-component or cross-workstream change with costly rollback | Spec, end-to-end slice, verification plan |
 | 5 | High-stakes or effectively irreversible work | Independent evidence, risk review, rollout and recovery plan |
 
 Lower the level when the change is small, reversible, familiar, and locally testable. Raise it when ambiguity, blast radius, cost of reversal, novelty, or safety risk increases.
@@ -34,7 +34,7 @@ Lower the level when the change is small, reversible, familiar, and locally test
 | `DECIDED` | Blocking alternatives are resolved or a reversible default is accepted |
 | `SPECIFIED` | Behavior, constraints, failure states, acceptance, and non-goals are explicit |
 | `READY` | A coherent vertical slice can be executed safely |
-| `EXECUTING` | The approved slice is implemented without uncontrolled expansion |
+| `EXECUTING` | The approved slice is delivered or implemented without uncontrolled expansion |
 | `VERIFYING` | Each material criterion has evidence or is marked untested |
 | `DONE` | The requested outcome is accepted and durable learning is captured |
 
@@ -67,7 +67,7 @@ Input: a shaped level 4–5 problem with several dependent decisions, or an expl
 
 Output: a prerequisite-aware decision tree, researched facts, explicit experiments for unanswerable uncertainties, accepted choices, deferred branches, and user confirmation of shared understanding.
 
-Skip this stage for simple, reversible, or independently decidable work. Do not proceed from Grill to Spec or Execute without confirmation.
+Skip this stage for simple, reversible, or independently decidable work. Do not proceed from Grill to Spec, Deliver, or Execute without confirmation.
 
 ### Spec
 
@@ -83,9 +83,15 @@ Output: trigger-to-result path, explicit exclusions, risk learned, acceptance, a
 
 ### Execute
 
-Input: approved slice.
+Input: approved software slice.
 
-Output: the smallest coherent change plus actual checks.
+Output: the smallest coherent source-code or system change plus actual checks.
+
+### Deliver
+
+Input: approved non-software slice.
+
+Output: a usable artifact, analysis, process, or authorized operational change plus actual checks and an explicit external-action status.
 
 ### Verify
 

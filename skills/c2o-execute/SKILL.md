@@ -1,6 +1,6 @@
 ---
 name: c2o-execute
-description: Implement an approved, bounded vertical slice while preserving existing work, controlling scope, following repository instructions, and producing verification evidence. Use when the user has authorized a concrete change and the expected outcome is sufficiently clear. Do not use merely to diagnose, review, explain, or plan unless implementation was also requested.
+description: Implement an approved, bounded software slice while preserving existing work, controlling scope, following repository instructions, and producing verification evidence. Use when the user has authorized a concrete source-code, configuration, migration, or software-system change and the expected outcome is sufficiently clear. Avoid for non-software documents, analysis, content, or operational delivery, which should use c2o-deliver, and for diagnosis, review, explanation, or planning unless implementation was also requested.
 ---
 
 # C2O Execute

@@ -1,11 +1,11 @@
 ---
 name: c2o-spec
-description: Convert a shaped outcome and resolved decisions into a concise, implementation-ready mini-spec with scope, requirements, failure states, constraints, acceptance criteria, and non-goals. Use when work must be handed to an implementer or preserved across sessions. Do not inflate a simple task into a full product requirements document.
+description: Convert a shaped outcome and resolved decisions into a concise, action-ready mini-spec with scope, requirements or deliverables, failure states, constraints, acceptance criteria, and non-goals. Use when software or knowledge work must be handed to another person or agent, executed across several steps, or preserved across sessions. Do not inflate a simple task into a full requirements document.
 ---
 
 # C2O Spec
 
-Write the smallest specification that prevents expensive misunderstanding.
+Write the smallest specification that prevents expensive misunderstanding in delivery or implementation.
 
 ## Readiness gate
 
@@ -22,7 +22,7 @@ Proceed when the actor, triggering situation, outcome, key constraint, and at le
 7. Declare non-goals and deferred decisions.
 8. Note assumptions whose failure would invalidate the spec.
 
-Do not invent personas, metrics, features, architecture, analytics, accounts, backends, or rollout processes without evidence that they are needed.
+Do not invent personas, metrics, features, processes, roles, architecture, analytics, accounts, backends, or rollout mechanisms without evidence that they are needed.
 
 ## Output
 
@@ -32,7 +32,7 @@ Do not invent personas, metrics, features, architecture, analytics, accounts, ba
 ## Context and outcome
 ## Primary scenario
 ## Scope
-## Functional requirements
+## Requirements or deliverables
 ## Constraints
 ## Failure and edge states
 ## Acceptance criteria
