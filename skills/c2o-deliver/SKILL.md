@@ -1,54 +1,38 @@
 ---
 name: c2o-deliver
-description: Produce an approved, bounded non-software outcome such as a document, research synthesis, decision memo, operating procedure, content package, analysis, or reversible workflow change while controlling scope and returning evidence. Use when the user has authorized concrete knowledge-work or operational delivery and the desired result is clear enough to act. Avoid for creative work that still needs concept exploration or art direction, which should use c2o-create, source-code implementation, planning-only requests, or external publishing, sending, purchasing, or production actions without explicit authorization.
+description: Deliver an approved non-software artifact, analysis, process, or reversible operation with usable handoff and acceptance evidence. Use when the outcome is clear enough to produce. Avoid unresolved creative direction, source-code implementation, planning-only requests, and unauthorized sending, publishing, purchasing, or production actions.
 ---
 
 # C2O Deliver
 
-Turn an approved outcome into a usable non-software result. A draft, recommendation, or plan is not evidence that an external effect occurred.
+Deliver to the state requested, not merely to the existence of a draft or a file.
 
 ## Establish the delivery contract
 
-1. Identify the audience or operator, triggering situation, and observable result.
-2. Classify the delivery mode:
-   - artifact: brief, document, content, presentation, spreadsheet, or template;
-   - analysis: research synthesis, evaluation, forecast, or decision support;
-   - process: checklist, operating procedure, workflow, or training material;
-   - bounded operation: an authorized, reversible change using available tools.
-3. Confirm acceptance criteria, authoritative inputs, format, destination, constraints, and non-goals.
-4. Distinguish the requested state: `drafted`, `prepared`, `applied`, `published`, or `sent`.
-5. Resolve only ambiguity that changes the result or crosses an action boundary. Route an unclear outcome through `c2o-shape` or `c2o-spec` first.
+1. Identify the audience/operator, trigger, outcome, required deliverables, completion level, and non-goals.
+2. Classify artifact, analysis, process, or bounded operation. Confirm authoritative inputs, formats, destination, constraints, and acceptance.
+3. Distinguish the requested state: drafted, prepared, applied, published, or sent. Explicit permission is still required for the corresponding external action.
+4. Use [outcome-contract.md](../c2o-work/references/outcome-contract.md) for material implications and authorization. Shape only ambiguities that change the result or boundary.
+5. Use `c2o-create` first when direction still needs exploration, selection, or creative critique; resume delivery for packaging and handoff.
 
-Use `c2o-create` first when a design or creative artifact still needs divergent directions, selection, prototyping, or critique. Resume delivery after the creative direction is approved when packaging, handoff, publishing, or another operational action remains.
+## Produce and check
 
-## Deliver
+Load relevant source material, existing templates, and available format-specific skills. Prefer native tools where available; preserve approved source content and user work over generic conventions.
 
-1. Load the smallest relevant set of source material, existing artifacts, templates, and specialist skills. Prefer the native tool or format-specific skill when one exists.
-2. Inspect the current state and preserve user-owned work. Treat approved source material as authoritative over generic conventions.
-3. Choose the smallest coherent deliverable or operational slice that can be used and verified end to end.
-4. Produce the result without adding unsupported claims, invented metrics, decorative sections, or adjacent work.
-5. Preserve provenance for material facts, calculations, decisions, and assumptions.
-6. Run the strongest proportionate checks: structural inspection, calculation reconciliation, source comparison, rendered review, reproducible walkthrough, or direct observation.
-7. Inspect the final result for scope drift, missing states, audience mismatch, confidentiality risk, and claims that exceed the evidence.
+Apply only relevant [quality profiles](../c2o-work/references/quality-profiles.md). Complete each committed deliverable without unsupported claims, invented metrics, decorative sections, or adjacent work. Preserve provenance for facts, calculations, decisions, and assumptions.
 
-C2O controls the outcome and evidence; it does not replace domain expertise. For legal, medical, financial, safety-critical, or regulated work, use authoritative sources, label uncertainty, and preserve required expert review.
+Use the [quality loop](../c2o-work/references/quality-loop.md): open/render or exercise the result, check structure/calculations/sources/walkthroughs as appropriate, repair material gaps within authorization, and recheck. A file's existence is not proof its contents are usable. Inspect confidentiality, missing states, audience fit, scope drift, and claims beyond evidence.
+
+For consequential legal, medical, financial, safety-critical, or regulated work, use authoritative sources, label uncertainty, and preserve qualified review. C2O does not replace domain expertise.
+
+## Make the handoff usable
+
+When independent use is part of the goal, include only what the recipient needs: how to open/run/use the result, a representative input, how to recognize success or failure, and material limitations. Reproduce the intended walkthrough when tools permit. Do not claim the recipient succeeded without observation; distinguish an agent walkthrough from a real user test. Do not create a manual for a trivial deliverable.
 
 ## Respect the action boundary
 
-- Create or edit local artifacts when that is within the request.
-- Do not send messages, publish content, change production systems, spend money, alter access, make commitments, or perform destructive operations unless the user explicitly authorized that exact action.
-- Before a consequential external action, show what will happen, identify the target, and resolve any choice that could materially change the outcome.
-- Report `prepared, not sent` or the equivalent whenever execution stopped at the boundary.
+Prepare local artifacts when authorized. Do not send, publish, spend, change production, alter access, make commitments, or perform destructive operations without authorization for the exact action and target. Before a consequential external action, show what will happen and resolve material choices. Prior approval of preparation is not approval of distribution.
 
 ## Finish
 
-Return:
-
-- result delivered and its location or form;
-- intended audience and use;
-- acceptance evidence;
-- material sources and assumptions;
-- external actions performed or deliberately not performed;
-- remaining gap or review requirement.
-
-Do not claim delivery beyond the state actually reached. If independent verification matters, hand the completed result and acceptance contract to `c2o-verify`.
+Return deliverable coverage, location/form, intended use, usable handoff, actual checks and evidence, sources/assumptions, external actions performed or deliberately not performed, and remaining gaps. Report prepared-not-sent or equivalent when appropriate. Route independent checking to `c2o-verify` when it matters; do not claim effects beyond the state actually reached.
