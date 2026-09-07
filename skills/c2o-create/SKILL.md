@@ -1,74 +1,46 @@
 ---
 name: c2o-create
-description: Develop and refine a design or creative outcome through a brief, divergent concepts, selection, prototyping, critique, production, and verification. Use for visual identity, campaign concepts, UI or UX direction, presentations, infographics, editorial or content concepts, storyboards, motion or audio direction, and other creative work where intent and taste must become reviewable. Avoid for purely mechanical formatting or distribution of an approved artifact, which should use c2o-deliver, and for implementation of an approved interface or creative system in product code, which should use c2o-execute.
+description: Develop a creative outcome from brief and distinct directions through selection, prototyping, rendered critique, and production at the requested quality. Use for visual identity, UI/UX direction, presentations, editorial concepts, storyboards, motion, or audio. Avoid mechanical delivery and implementation of an already-approved interface in product code.
 ---
 
 # C2O Create
 
-Turn creative intent into a reviewable, usable result without forcing convergence before the important possibilities have been explored.
+Turn creative intent into a reviewable, usable result. Do not confuse an attractive concept with complete production or observed real-world impact.
 
 ## Establish the creative contract
 
-1. Identify the audience, use context, desired response, and core message or experience.
-2. Record the medium, deliverables, mandatory content, source assets, brand constraints, technical requirements, deadline, and non-goals.
-3. Separate acceptance into:
-   - objective constraints that can be checked directly;
-   - judgment criteria that require comparison or human review;
-   - real-world effects that can be measured only after release.
-4. State who selects the direction. A recommendation is not approval unless the user delegated that choice.
-5. Translate references into observable attributes such as composition, rhythm, tone, texture, hierarchy, or motion. Do not substitute imitation for art direction.
+1. Identify audience, use context, desired response, and core message or experience.
+2. Preserve required deliverables, formats, languages, flows, copy, assets, brand constraints, technical limits, deadline, and non-goals.
+3. Establish the completion level and quality references. Translate references into observable composition, hierarchy, rhythm, typography, texture, tone, interaction, or motion attributes; do not substitute imitation for art direction.
+4. Separate objective constraints, reviewable quality judgments, and real-world effects measurable only after use.
+5. State who selects the direction and what is already delegated. A recommendation is not approval. Use [outcome-contract.md](../c2o-work/references/outcome-contract.md) for multi-step work.
 
-Route an unclear purpose through `c2o-shape`. Route consequential unresolved trade-offs through `c2o-decide`. Do not ask for preferences that a cheap prototype can reveal more reliably.
+Shape unclear purpose and resolve consequential decisions first. Do not ask preferences that an authorized cheap prototype can reveal more reliably.
 
-## Choose the smallest useful creative loop
+## Explore and select proportionately
 
-- Produce directly when the direction is already approved and remaining choices are low-risk.
-- Explore two or three directions when the organizing idea, voice, experience, or visual language is unresolved.
-- Prototype before polishing when appearance, feel, timing, interaction, or audience comprehension is uncertain.
-- Use one direction only when explicit constraints genuinely leave one viable path; do not manufacture alternatives for ceremony.
+Produce directly when direction is approved and remaining choices are low-risk. Explore two or three materially distinct directions when the organizing idea, voice, or experience is unresolved, not cosmetic variants. Do not manufacture alternatives when constraints settle the direction.
 
-## Explore and select
+Give each direction a premise, rationale, defining choices, trade-off, and risk. Use the lowest fidelity that enables a real comparison: thumbnail, style frame, wireframe, copy sample, storyboard, animatic, or audio sketch. Recommend against the contract, preserve material uncertainty, and obtain selection before expensive refinement unless that choice was delegated.
 
-1. Create materially distinct directions, not cosmetic variants of the same answer.
-2. Give each direction a concise premise, rationale, defining choices, accepted trade-off, and risk.
-3. Represent each direction at the lowest fidelity that permits a real comparison: thumbnail, moodboard, style frame, wireframe, copy sample, storyboard, animatic, or audio sketch.
-4. Use the strongest available medium-specific skill or tool. For raster concepts or assets, use an available image-generation or image-editing skill such as `imagegen`; inspect supplied references before generating replacements and inspect every rendered result.
-5. Recommend one direction against the creative contract, while preserving meaningful dissent or uncertainty.
-6. Obtain selection from the user or authorized reviewer before expensive refinement. If selection authority was delegated, choose one and record why.
+## Establish quality before multiplying output
 
-## Produce and refine
+Use relevant installed specialist skills and [quality-profiles.md](../c2o-work/references/quality-profiles.md), loading only applicable guidance. Preserve the user's approved design system over generic conventions. For raster assets use available image-generation/editing tools when appropriate; inspect supplied references before replacing them. Do not assume a tool exists or purchase assets without authority.
 
-1. Develop only the selected direction to the fidelity required by the request.
-2. Maintain consistency across the creative system: hierarchy, layout, typography, color, voice, pacing, interaction, imagery, and sound where applicable.
-3. Preserve required copy, facts, brand assets, attribution, and source provenance. Do not imply that generated or sourced material has been legally cleared.
-4. Inspect the actual rendered or experienced artifact, not only its source representation.
-5. Critique against the intended outcome using only relevant lenses:
-   - comprehension and hierarchy;
-   - coherence, craft, and distinctiveness;
-   - audience and channel fit;
-   - usability and accessibility;
-   - technical and production readiness;
-   - content, source, and rights integrity.
-6. Separate objective defects, judgment gaps, and optional polish. Refine material gaps first and stop when the contract is satisfied.
+For repeated screens, scenes, or artifacts, produce one representative quality slice that exercises important content, interaction, and failure states at the requested fidelity. Verify that the direction can be implemented and maintained, then extend the shared decisions and assets to every committed deliverable. The representative slice is not permission to stop early or substitute a prototype for full delivery.
 
-For an approved interface or coded experience, hand the selected design contract and assets to `c2o-execute`. For packaging, distribution, publishing, or another operational action, hand the finished artifact to `c2o-deliver`.
+## Produce, observe, and refine
 
-## Respect the action boundary
+Follow [quality-loop.md](../c2o-work/references/quality-loop.md): inspect the rendered or experienced artifact, compare against the contract, repair the highest-impact material gap within authorization, and recheck affected work.
 
-- Create or edit local creative artifacts when the request authorizes production.
-- Do not publish, send, purchase assets, commission work, alter a shared brand library, or make an external commitment without explicit authorization for that action.
-- Label the achieved state accurately: `concept`, `selected`, `prototype`, `production-ready`, `prepared-not-published`, or `published`.
-- Preserve human review for consequential brand, cultural, legal, safety, or accessibility judgments.
+Maintain coherence in layout, typography, color, voice, imagery, interaction, pacing, and sound where relevant. Critique comprehension, craft, distinctiveness, audience/channel fit, usability, accessibility, production readiness, and source integrity only where applicable. Distinguish objective defects, judgment gaps, and optional polish. Do not iterate indefinitely on taste after the contract is satisfied.
 
-## Finish
+Preserve required facts, copy, assets, attribution, and provenance. Generated or sourced assets are not automatically rights-cleared. Keep consequential brand, cultural, legal, safety, and accessibility review explicit.
 
-Return:
+Hand approved interfaces and assets to `c2o-execute` when they must become product code. Use `c2o-deliver` for packaging, sending, or publication under a separate applicable action boundary.
 
-- creative outcome and intended audience response;
-- direction selected and rationale;
-- artifacts produced and their locations or formats;
-- objective checks and judgment review performed;
-- sources, generated elements, and material rights assumptions;
-- current delivery state and any remaining approval or production gap.
+## Finish within the action boundary
 
-Do not claim that a polished artifact achieved its real-world effect before that effect is observed.
+Create or edit local artifacts only as authorized. Do not publish, send, purchase, commission, alter shared brand libraries, or make external commitments without explicit permission.
+
+Return required-deliverable coverage, selected direction and rationale, artifact locations/formats, actual objective and judgment checks, sources/rights assumptions, and remaining gaps. Label the state accurately: concept, selected, prototype, production-ready, prepared-not-published, or published. Do not claim an audience or business effect that has not been observed.

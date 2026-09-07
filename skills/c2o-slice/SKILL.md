@@ -1,37 +1,44 @@
 ---
 name: c2o-slice
-description: Reduce a large initiative, project, feature, creative system, or specification to the smallest end-to-end slice that delivers observable value and tests the riskiest useful assumption. Use when planned software, creative, or knowledge work crosses several layers or workstreams and feels too large to produce and verify safely in one pass. Avoid horizontal slices that complete only one document, asset, function, or technical layer without a usable result.
+description: Break large software, creative, or knowledge work into coherent end-to-end slices while preserving the full requested scope. Use either an experiment slice to test a hypothesis or delivery slices to complete a larger commitment. Avoid horizontal unfinished layers and never silently replace a full delivery request with an MVP.
 ---
 
 # C2O Slice
 
-Find a thin, complete path through the system rather than a broad unfinished layer.
+Minimize the path to value, not the promised result.
+
+## Choose the slice mode
+
+- `experiment`: the agreed outcome is learning about a hypothesis. A bounded prototype may satisfy this task; label what it does not establish.
+- `delivery`: the agreed outcome contains all requested deliverables. Slices order implementation; they do not remove scope. Completing one slice is progress, not completion of the whole commitment.
+
+Do not downgrade delivery into an experiment without the user's agreement. Preserve required flows, languages, formats, variants, and quality targets using [outcome-contract.md](../c2o-work/references/outcome-contract.md).
 
 ## Slice
 
-1. Identify the triggering event and the final observable result.
-2. Trace the minimum path connecting them.
-3. Identify the assumption most worth learning now.
-4. Remove variants, extra formats or channels, optimization, automation, configuration, migration, polish, and generalized abstractions unless required for the path to work.
-5. Preserve enough error handling and safety for the slice to be usable.
-6. Define how the slice will be demonstrated or tested.
-7. Confirm that completing it changes knowledge or value, not merely output volume.
+1. Identify the trigger, final result, and full set of committed deliverables.
+2. Trace the minimum usable end-to-end path and the assumption worth learning now.
+3. Separate work excluded from this slice from work excluded from the whole task. Defer committed work to later delivery slices, not to non-goals.
+4. Remove unsupported extras and unnecessary abstractions. Do not remove requested polish, accessibility, error handling, safety, or completeness merely to make a slice smaller.
+5. For repeated screens, assets, or outputs, choose a representative quality slice when useful. Prove the quality and implementation approach, then apply it to the remaining committed work.
+6. Define acceptance and a demonstration that can be exercised end to end.
+7. In delivery mode, record coverage: complete, in-progress, blocked, or pending for every required deliverable. Continue authorized remaining work or report the concrete blocker.
 
-Prefer one real case over a framework for all future cases. Prefer one supported path over several partially supported paths.
+Prefer one supported path over several broken paths within a slice. Never use that preference to claim a larger unfinished request is complete.
 
 ## Output
 
 ```markdown
 ## Vertical slice
-Trigger:
-End result:
-Minimum path:
-Included behavior:
-Explicit exclusions:
+Mode: experiment | delivery
+Full commitment:
+Current slice trigger and end result:
+Minimum path and included behavior:
 Risk or assumption tested:
-Acceptance criteria:
-Demo or verification:
-What becomes possible next:
+Acceptance and demonstration:
+Deferred to later delivery slices:
+True non-goals:
+Remaining commitment and blockers:
 ```
 
-Reject a proposed slice when it cannot be exercised end to end, has no observable result, or still contains multiple independently valuable outcomes.
+Reject a slice without a usable end-to-end result. Split independently valuable outcomes into separate slices while preserving the overall commitment.

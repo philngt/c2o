@@ -1,49 +1,40 @@
 ---
 name: c2o-decide
-description: Frame and resolve a consequential choice by comparing viable options against explicit criteria, reversibility, evidence, cost, and risk, then record the recommendation and assumptions. Use for architecture, product, creative direction, workflow, tooling, prioritization, or implementation decisions where trade-offs matter, including when an inexperienced user needs a plain-language expert recommendation among viable choices. Avoid when there is only one viable option or a trivial reversible default.
+description: Resolve a consequential choice against explicit criteria, reversibility, evidence, cost, and risk. Use for architecture, product, creative direction, workflow, tooling, or prioritization decisions, including expert recommendations for unfamiliar domains. Avoid when a trivial reversible default is sufficient.
 ---
 
 # C2O Decide
 
-Produce a decision, not an unranked catalogue of possibilities.
+Produce a supported decision or a useful experiment, not an unranked catalogue.
+
+## Resolve uncertainty with the right action
+
+Identify what would change the next action. Resolve an accessible fact through inspection or research; a user-owned preference through a concrete choice; uncertain appearance or feel through an authorized prototype; technical behavior through a bounded test; and authority through explicit approval. Do not replace observable evidence with more discussion. A proposed experiment is not permission to run it outside the existing boundary.
 
 ## Decide
 
-1. Express the decision as one mutually exclusive question.
-2. Classify it as user-owned, advisor-led, or requiring qualified review.
-3. Explain the decision and its practical consequence in language the user can evaluate.
-4. State why it must be decided now and what can remain deferred.
-5. Classify reversibility:
-   - easy to reverse;
-   - costly to reverse;
-   - effectively irreversible.
-6. Select three to five criteria tied to the outcome. Weight only when priorities genuinely differ.
-7. Compare no more than three viable options. Include `do nothing` when it is credible.
-8. Distinguish evidence, inference, and assumption.
-9. Recommend one option with a confidence level. Prefer the cheapest reversible experiment when uncertainty dominates.
-10. State what evidence would cause the decision to be revisited.
+1. Express one mutually exclusive choice and why it matters now.
+2. Classify ownership: user, advisor-led, or qualified review. Explain practical consequences plainly.
+3. Classify reversal as easy, costly, or effectively irreversible.
+4. Select three to five relevant criteria only when a comparison warrants them. Preserve dominant constraints; weight only when priorities justify it.
+5. Compare up to three viable options, including doing nothing when credible.
+6. Distinguish evidence, inference, assumption, and necessary implications from optional expansion using [outcome-contract.md](../c2o-work/references/outcome-contract.md) when needed.
+7. Recommend one option with confidence, rationale, trade-off, and a revisit trigger. Prefer a cheap reversible experiment when uncertainty dominates.
+8. Record whether the recommendation is proposed, accepted, or already covered by delegated authority. Do not present a recommendation as an accepted decision.
 
-For an advisor-led choice, investigate and recommend the specialist means instead of asking the user to select unfamiliar jargon. For a user-owned choice, explain consequences and ground the recommendation in the user's stated values rather than substituting the advisor's preferences. Make any required qualified review explicit.
-
-Avoid false numerical precision. Do not let a scoring table override a dominant constraint.
+Research specialist means rather than asking an inexperienced user to guess. Ground value choices in the user's stated priorities. Preserve qualified review and exact action boundaries. Do not invent numerical precision or ask for an approval already given for the same choice.
 
 ## Output
 
 ```markdown
 ## Decision
-Question:
-Decision owner: user | advisor-led | qualified-review
-Why now:
-Reversibility:
-
-| Criterion | Option A | Option B | Option C |
-|---|---|---|---|
-
-Recommendation:
-Reason:
-Confidence: low | medium | high
-Accepted trade-off:
-Assumptions:
+Question and owner:
+Why now and reversibility:
+Options against relevant criteria:
+Evidence, inference, and assumptions:
+Recommendation or smallest useful experiment:
+Confidence and accepted trade-off:
+Status: proposed | accepted | delegated
 Revisit trigger:
-Next action:
+Next action and authorization needed:
 ```

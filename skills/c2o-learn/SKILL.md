@@ -1,41 +1,44 @@
 ---
 name: c2o-learn
-description: Distill completed work, feedback, failures, and verification results into durable project context by updating decisions, assumptions, current goals, and progress without preserving noisy conversation history. Use after meaningful evidence changes what future work should know or when closing a work loop. Avoid recording transient details, guesses, or information already recoverable from source artifacts, operational records, or version history.
+description: Distill evidence, feedback, and completed work into scoped lessons that change future decisions or execution. Use after meaningful learning or when closing a work loop. Preserve provenance and applicability; avoid transcripts, transient details, unsupported preferences, and automatic changes to shared skills.
 ---
 
 # C2O Learn
 
-Preserve only information that would materially improve a future decision or execution.
+Keep learning only when it will change a future action under identifiable conditions.
 
 ## Distill
 
-1. Compare expected and observed results.
-2. Identify which assumptions were confirmed, weakened, or disproved.
-3. Record decisions only when a real alternative was considered or a costly constraint was established.
-4. Promote durable facts to project context; keep task-local details in progress.
-5. Remove or mark stale statements superseded by new evidence.
-6. Preserve provenance: test, user decision, production observation, document, or inference.
-7. State the next meaningful step only if it follows from remaining evidence or risk.
+1. Compare expected and observed results, including what remains untested.
+2. Identify assumptions confirmed, weakened, or disproved. Separate observation, feedback, and inference.
+3. For each material lesson, record the evidence, applicable project/task/domain, future action it changes, and a revisit or invalidation trigger.
+4. Retain consequential decisions and costly constraints, not every rejected possibility. Keep task-local facts local; promote only durable evidence.
+5. Mark stale statements superseded and invalidate evidence affected by changed artifacts or assumptions. Do not erase the rationale of consequential decisions.
+6. Do not infer a global user preference from one selection or a universal rule from one successful task. Confirm broader application when material.
+7. Turn recurring, evidenced failures into proposed regression scenarios after removing secrets and unrelated personal data. Do not automatically modify shared skills, global policy, or other projects from local feedback.
 
-When `.context/` exists, update the smallest applicable set:
+## Update minimally
 
-- `decisions.md` for consequential choices and revisit triggers;
-- `assumptions.md` for confidence changes and validation evidence;
-- `current-goal.md` for outcome or scope changes;
-- `progress.md` for verified completion, blockers, and next action;
-- `open-questions.md` only for questions that can change future work.
+When `.context/` exists, use the smallest relevant set:
 
-Do not duplicate source artifacts, logs, full conversations, routine commands, or temporary working notes.
+- `decisions.md`: accepted choices, evidence, applicability, and revisit triggers;
+- `assumptions.md`: confidence and validation changes;
+- `current-goal.md`: scope changes or remaining commitment for this task;
+- `acceptance.md`: changed evidence and invalidated checks;
+- `progress.md`: verified completion, blockers, and the next useful action;
+- `open-questions.md`: only questions that can change future work.
+
+Use [context-schema.md](../c2o-work/references/context-schema.md) for persistent work. Do not overwrite another task's goal, duplicate source artifacts, or store command logs and full conversations. No material learning is a valid result; do not manufacture a lesson to fill a template.
 
 ## Output
 
 ```markdown
 ## Learning captured
-Confirmed:
-Changed:
-Disproved:
-Context updated:
-Stale context removed:
+Observation and evidence:
+Confirmed, changed, or disproved:
+Applies when:
+Future action changed:
+Revisit or invalidate when:
+Context updated and stale evidence marked:
 Remaining uncertainty:
-Next meaningful step:
 ```

@@ -1,126 +1,59 @@
 ---
 name: c2o-grill
-description: Stress-test a consequential plan, decision, or idea by mapping dependencies, researching facts, and interviewing the user in prerequisite-aware, expert-guided rounds with plain-language explanations and professional recommendations. Use when the user asks to be grilled or challenged, requests guided interviewing through several consequential decisions in an unfamiliar domain, or when C2O intervention level 4–5 contains several branching decisions whose answers depend on one another. Avoid for small reversible tasks, already-clear specifications, or questions that require a prototype or direct evidence rather than more discussion.
+description: Stress-test a consequential plan through prerequisite-aware expert guidance, evidence gathering, and user-owned decisions. Use when explicitly asked to be grilled or when several consequential decisions depend on one another. Avoid small reversible tasks, clear specifications, and uncertainties better resolved by direct observation or an authorized prototype.
 ---
 
 # C2O Grill
 
-Expose hidden decisions without replacing the user's values or authority. Act as an experienced advisor when the user lacks domain knowledge: research specialist facts, explain consequences plainly, and make a recommendation instead of asking the user to guess. Treat this as an optional deep-inquiry stage between shaping and deciding, not as the entire C2O workflow.
+Expose hidden decisions without replacing the user's values or authority. Research specialist facts and recommend means instead of asking an inexperienced user to guess. This is an optional deep-inquiry stage, not the whole workflow.
 
 ## Establish the boundary
 
-1. State the outcome being protected by the inquiry.
-2. Define the subject boundary and explicit non-goals.
-3. Load only relevant facts, decisions, and assumptions from project context.
-4. Confirm that the issue contains dependent, consequential decisions. Exit to normal C2O flow when a reversible default or a single decision is sufficient.
+State the protected outcome, full required scope, non-goals, and current authorization. Load only relevant facts and decisions. Exit to normal C2O flow when shaping, a reversible default, or one decision is sufficient.
 
-## Assign decision ownership
+Classify decisions before asking:
 
-Classify every material decision before asking about it:
+- user-owned: outcome, values, priorities, taste, budget, risk tolerance, commitments, approval;
+- advisor-led: methods, tools, architecture, or implementation choices supportable from evidence;
+- qualified review: consequential legal, medical, financial, safety, regulatory, or licensed judgment.
 
-- **User-owned:** desired outcome, values, priorities, taste, budget or time boundary, acceptable risk, commitments, and approval.
-- **Advisor-led:** research method, tool, technique, architecture, implementation detail, or other specialist means that can be recommended from evidence and constraints.
-- **Qualified review:** consequential legal, medical, financial, safety, regulatory, or other licensed judgment that C2O may prepare but must not approve.
+Use plain language. Do not infer competence from brevity, language fluency, disability, job title, or jargon. Ask about experience only when it changes safety, viable options, or useful explanation depth.
 
-Use plain language by default and offer deeper detail when useful. Do not infer competence from brevity, language fluency, disability, job title, or familiarity with jargon. Ask about experience only when it materially changes safety, the viable options, or the explanation required.
+## Build and work the decision frontier
 
-For an advisor-led decision, investigate first and recommend one option with its rationale, evidence, accepted trade-off, confidence, and revisit trigger. Apply a reversible default only when the user already authorized that level of action; otherwise ask them to accept the recommendation. For a user-owned decision, clarify consequences without substituting the advisor's preferences. Make any required qualified review explicit.
+For each material node record kind (`fact`, `decision`, `experiment`), question, prerequisites, consequence, status (`open`, `researching`, `provisional`, `settled`, `deferred`), and evidence. Add branches only when they change outcome, scope, cost, risk, quality, or verification.
 
-## Build the decision tree
+1. Resolve unblocked fact nodes through accessible sources or bounded read-only investigation. Do not ask the user for facts the environment can establish.
+2. Choose the least costly useful evidence: inspect for facts, ask for user values, prototype for feel, test for behavior, and seek approval for authority. Talking is not a substitute for an observable experiment.
+3. Convert empirically answerable uncertainty into an experiment proposal with a question, boundary, expected observation, and authorization needed. Pause only dependent branches; do not perform production work inside this inquiry skill.
+4. Recommend advisor-led choices with rationale, evidence, trade-off, confidence, and revisit trigger. A reversible choice may proceed later only within existing delegated authority.
+5. Ask only currently unblocked user-owned decisions and consequential approvals. Give at most three viable options unless the domain requires more; include doing nothing when credible.
+6. Wait for necessary answers, record accepted decisions, and recompute dependencies. Do not pre-write later rounds or repeat settled questions.
 
-Represent each unresolved node with:
+Ask one question at a time for unfamiliar users or guided interviewing. Group independent simple questions only when it improves the decision. Accept not knowing: offer a concrete example, recommendation, or prototype proposal rather than pressuring the user into false certainty.
 
-- `kind`: fact, decision, or experiment;
-- `question`: one answerable uncertainty;
-- `prerequisites`: nodes that must settle first;
-- `consequence`: what changes based on its answer;
-- `status`: open, researching, provisional, settled, or deferred;
-- `evidence`: direct observation or source when available.
-
-Use the shaped outcome as the root. Add a branch only when its answer can materially change scope, behavior, architecture, cost, risk, or verification.
-
-## Work the frontier
-
-Repeat:
-
-1. Recompute the frontier: every open node whose prerequisites are settled.
-2. Resolve fact nodes through files, tools, documents, tests, or bounded read-only exploration. Do not ask the user for facts the environment can establish.
-3. Convert uncertainties that discussion cannot settle into experiment nodes. Propose the smallest prototype or observation and pause only the dependent branch.
-4. Ask the user only the user-owned decisions in the current manageable frontier. Present an advisor-led recommendation for acceptance only when it is consequential, difficult to reverse, or requires authority; do not ask the user to choose specialist means they have no basis to evaluate.
-5. Wait for required answers or acceptance. Recommendations do not become decisions until the user accepts them or has explicitly delegated that class of reversible choice.
-6. Record settled decisions and changed assumptions, then recompute the tree. Never pre-write later rounds.
-
-Ask one question at a time when the user says they are unfamiliar with the domain, requests guided interviewing, or when language, accessibility, or cognitive-load needs make rounds counterproductive. Group independent questions only when each is simple and seeing them together improves the decision.
+Use [outcome-contract.md](../c2o-work/references/outcome-contract.md) to keep necessary implications separate from optional additions. Do not invent numeric thresholds or let an expert recommendation silently reduce requested scope.
 
 ## Format a round
 
 ```markdown
 ## Decision round <n>
-
-### Q1 — <decision title>
-What this means:
-Why it matters now:
-Options:
-Expert recommendation:
-Evidence and confidence:
-Accepted trade-off if chosen:
-Question or approval needed:
-
-### Q2 — <decision title>
-...
-
-Answer by number. “Use your recommendation” accepts an advisor-led recommendation only; it does not waive qualified review or authorize action beyond the existing boundary.
+Question and owner:
+What this means and why it matters now:
+Viable options:
+Recommendation:
+Evidence, confidence, and trade-off:
+Decision or approval needed:
 ```
 
-Offer no more than three viable options per decision unless the domain genuinely requires more. Include `do nothing` when credible. Translate specialist terms into consequences the user can evaluate. Distinguish evidence, inference, and assumption; label confidence as `low`, `medium`, or `high` without false precision.
+Accepting a recommendation does not waive qualified review or authorize publishing, spending, production changes, or other new action boundaries.
 
-## Handle unknowns honestly
+## Preserve context and exit
 
-- Research an answerable fact.
-- Propose a cheap reversible experiment when evidence is missing.
-- Route questions about appearance, feel, voice, or creative direction to `c2o-create`; route other emergent behavior to a prototype or C2O vertical slice.
-- Accept “I do not know” as information. For an advisor-led choice, make the best supported recommendation instead of repeating the question. For a user-owned preference, offer concrete examples or a cheap prototype rather than pressuring the user into false certainty.
-- Mark an irrelevant branch as a non-goal.
-- Split the inquiry when the tree reveals that the original scope contains several independent outcomes.
+Store only durable choices, assumptions, evidence gaps, and revisit triggers in relevant `.context/` files. Keep the current task in `INQUIRING`; never overwrite another active goal or save the interview transcript.
 
-Do not invent numeric thresholds without a baseline or explicit constraint.
+Finish when no material decision is silently open, remaining facts/experiments are explicit, and shared understanding is confirmed. Summarize practical consequences and invite correction, not a terminology quiz. An existing explicit approval of the same summary counts; changed material scope or risk requires renewed resolution.
 
-Confirm understanding by summarizing the practical consequence and inviting correction. Do not quiz the user on terminology or treat “yes” to “do you understand?” as evidence of informed agreement.
+Return outcome, scope/non-goals, accepted/delegated decisions, assumptions, experiments/evidence needed, deferred branches, qualified review, revisit triggers, and `shared understanding: confirmed | awaiting-confirmation`.
 
-## Preserve context
-
-When `.context/` exists, store only durable results:
-
-- accepted choices, delegated expert recommendations, confidence, and revisit triggers in `decisions.md`;
-- open, confirmed, or disproved beliefs in `assumptions.md`;
-- unresolved material branches in `open-questions.md`;
-- the current state as `INQUIRING` in `current-goal.md`.
-
-Do not save the interview transcript or every discarded possibility.
-
-## Exit gate
-
-Finish only when:
-
-1. no material decision node remains silently open;
-2. unresolved fact or experiment nodes are explicit;
-3. the user confirms that the shared understanding is sufficient for the next step.
-
-Do not create, deliver, or implement during this skill. Return:
-
-```markdown
-## Grill summary
-Outcome:
-Scope and non-goals:
-Decisions accepted:
-Expert recommendations accepted or delegated:
-Assumptions:
-Evidence still needed:
-Deferred branches:
-Revisit triggers:
-Qualified review required:
-Shared understanding: confirmed | awaiting-confirmation
-Recommended next C2O stage:
-```
-
-Move to C2O Spec only after confirmation. Move to C2O Slice first when an experiment or prototype is needed.
+Do not create, deliver, or implement during this skill. Recommend Spec after confirmation, or Slice when an authorized experiment must be planned. Inquiry alone does not authorize that experiment.

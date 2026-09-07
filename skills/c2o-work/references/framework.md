@@ -1,162 +1,67 @@
 # C2O Framework Reference
 
-## Contents
-
-1. Intervention levels
-2. Work-state gates
-3. Decision ownership
-4. Information classes
-5. Stage contracts
-6. Delegation packet
-7. Completion contract
+Use invariants and outcome contracts, not mandatory ceremony. Read only the section needed for the current blocker.
 
 ## Intervention levels
 
-Choose the lowest level that still controls likely cost or risk.
-
-| Level | Use when | Maximum ceremony |
+| Level | Use when | Maximum usual ceremony |
 |---:|---|---|
-| 0 | Clear question or tiny edit | Direct answer or action |
+| 0 | Clear question or tiny reversible edit | Direct answer or action |
 | 1 | Several easy-to-miss checks | Short checklist |
 | 2 | Meaningful choice among options | Decision note, up to three options |
-| 3 | Handoff or multi-step creation or delivery | Mini-spec or creative contract and acceptance criteria |
-| 4 | Cross-component or cross-workstream change with costly rollback | Spec, end-to-end slice, verification plan |
-| 5 | High-stakes or effectively irreversible work | Independent evidence, risk review, rollout and recovery plan |
+| 3 | Handoff or multi-step production | Mini-spec/creative contract and acceptance |
+| 4 | Cross-component work with costly rollback | Contract, delivery slices, verification plan |
+| 5 | High-stakes or effectively irreversible work | Independent evidence, risk review, authorized rollout/recovery plan |
 
-Lower the level when the change is small, reversible, familiar, and locally testable. Raise it when ambiguity, blast radius, cost of reversal, novelty, or safety risk increases.
+Lower intervention for small, familiar, reversible, locally testable work. Raise it for ambiguity, novelty, blast radius, reversal cost, or safety risk. A high quality target does not automatically require more documents.
 
 ## Work-state gates
 
 | State | Exit condition |
 |---|---|
-| `CAPTURED` | The request and task class are understood |
-| `SHAPED` | Actor, situation, outcome, boundary, and success signal are clear |
-| `INQUIRING` | Dependent material decisions are exposed, evidence gaps are explicit, and the user confirms shared understanding |
-| `DECIDED` | Blocking alternatives are resolved or a reversible default is accepted |
-| `SPECIFIED` | Behavior, constraints, failure states, acceptance, and non-goals are explicit |
-| `READY` | A coherent vertical slice can be executed safely |
-| `EXECUTING` | The approved slice is created, delivered, or implemented without uncontrolled expansion |
-| `VERIFYING` | Each material criterion has evidence or is marked untested |
-| `DONE` | The requested outcome is accepted and durable learning is captured |
+| CAPTURED | Request and provisional task class understood |
+| SHAPED | Actor, situation, outcome/direction, boundary, and success signal clear |
+| INQUIRING | Material dependencies exposed, evidence gaps explicit, shared understanding confirmed |
+| DECIDED | Blocking choices resolved or authorized reversible default selected |
+| SPECIFIED | Full deliverables, completion level, quality, constraints, acceptance, and non-goals clear |
+| READY | A coherent experiment or delivery slice can safely proceed within authority |
+| EXECUTING | Current slice produced while preserving the full commitment |
+| VERIFYING | Required criteria mapped to current evidence or marked untested |
+| DONE | The requested task is complete and verification/delivery status honestly reported |
 
-Skip gates when their exit condition is already satisfied. Never force an answer-only request through execution.
+Skip satisfied gates. Do not force answer-only requests into execution. These states describe work; skill text does not enforce transitions or host permissions. A completed review can report a failed artifact. A larger implementation is not DONE merely because one slice passed. Capture durable learning when there is something material to retain, not as a ritual.
 
-## Decision ownership
+## Choose the next action
 
-| Owner | C2O behavior | Examples |
-|---|---|---|
-| User | Explain consequences and obtain the user's judgment or authority | Outcome, values, priorities, taste, budget, risk tolerance, commitments, approval |
-| Advisor-led | Research and recommend one specialist choice; apply only within existing authorization | Method, tool, technique, architecture, implementation detail, reversible professional default |
-| Qualified reviewer | Prepare evidence and options but keep expert approval explicit | Consequential legal, medical, financial, safety, regulatory, or licensed judgment |
+Evidence gaps call for inspection/research; user values call for a concrete decision; feel calls for an authorized prototype; behavior calls for a bounded test. Missing authority requires approval. Objective defects return to production for repair only when that is authorized. Invalidated assumptions may return to Shape/Decide; preserve unaffected work and invalidate affected checks.
 
-Default to plain language. Do not transfer a specialist choice to the user merely because several technical options exist. A recommendation becomes a decision only when the user accepts it, delegates that reversible class of choice, or already authorized the applicable execution boundary.
+Do not repeat questions already answered or run iterations without new evidence. Stop for completed scope/quality, a real blocker, a new action boundary, or disproportionate further effort. Report partial work honestly when constrained.
 
-## Information classes
+## Decision ownership and information
 
-- **Known:** Explicit user input or direct evidence.
-- **Safely inferable or advisor-recommended:** A supported professional choice or reversible default. State its consequence and confidence when material.
-- **Requires user decision:** Alternatives depend on the user's values, authority, commitments, or acceptable risk.
-- **Requires qualified review:** A consequential regulated or licensed judgment that C2O must not present as approved.
-- **Verify later:** Information cheaper to learn from a prototype, test, or observation than from discussion.
+The user owns outcomes, values, priorities, taste, constraints, risk tolerance, commitments, and authority. The advisor researches and recommends specialist means within delegated bounds. Qualified reviewers retain consequential regulated or licensed judgments.
+
+Separate known facts, reported observations, supported professional defaults, hypotheses, user decisions, qualified-review requirements, and facts best verified after a prototype. An accepted recommendation is not permission to cross an external action boundary.
+
+See outcome-contract.md for requirement classes, quality levels, evidence validity, and separate task/verification/delivery states. Keep the contract in context unless persistence is useful.
 
 ## Stage contracts
 
-### Shape
+| Stage | Result |
+|---|---|
+| Shape | Evidence-backed problem direction or brief, including necessary implications without optional scope expansion |
+| Decide | Supported choice or bounded experiment proposal, ownership, acceptance state, and revisit trigger |
+| Grill | Dependency-aware facts/decisions/experiments and confirmed shared understanding; no implementation |
+| Spec | Full required deliverables, quality/completion level, criteria origins, acceptance methods, boundaries |
+| Slice | Explicit experiment or delivery mode; current path, later committed slices, and true non-goals |
+| Create | Distinct directions when needed, selection, representative quality slice, complete creative output, observed critique |
+| Execute | Coherent implementation, actual checks, bounded repair, and coverage of the software commitment |
+| Deliver | Usable non-software result, appropriate handoff, evidence, and exact external-action state |
+| Verify | Independent compliance and outcome-fit checks with criterion-level evidence and limitations |
+| Learn | Evidence-backed lessons with applicability, changed future action, and invalidation triggers |
 
-Input: rough intent, weak signal, complaint, or poorly described problem.
+## Delegation and completion
 
-Output: either a shaped brief or a problem direction containing the initial signal, representative example, actor and trigger, actual result, desired observable change, impact, direct evidence, clearly labeled hypotheses, material unknowns, recommended next investigation or stage, and readiness.
+Delegate only bounded independent investigation, critique, or verification. Supply the original relevant requirements, artifact/revision, scope, allowed actions, evidence locations, and definition of done. Keep simple sequential work in the main thread. The orchestrator resolves disagreement by inspecting evidence, not majority vote.
 
-When the user cannot describe the problem, ask one observable question at a time, inspect accessible evidence directly, and never ask them to supply a root cause or preferred solution. Stop when the next useful action is clear.
-
-### Decide
-
-Input: one blocking choice.
-
-Output: criteria, up to three viable options, evidence and assumptions, recommendation, accepted trade-off, and revisit trigger.
-
-### Grill
-
-Input: a shaped level 4–5 problem with several dependent decisions, or an explicit request to stress-test thinking.
-
-Output: a prerequisite-aware decision tree, researched facts, plain-language expert recommendations, explicit experiments for unanswerable uncertainties, accepted choices, qualified-review boundaries, deferred branches, and user confirmation of shared understanding.
-
-Skip this stage for simple, reversible, or independently decidable work. Do not proceed from Grill to Spec, Create, Deliver, or Execute without confirmation.
-
-### Spec
-
-Input: shaped outcome and resolved blocking decisions.
-
-Output: primary scenario, requirements, constraints, failure states, acceptance criteria, non-goals, assumptions, and verification approach.
-
-### Slice
-
-Input: specification too large for one safe pass.
-
-Output: trigger-to-result path, explicit exclusions, risk learned, acceptance, and demonstration method.
-
-### Create
-
-Input: a shaped creative brief or approved creative outcome.
-
-Output: materially distinct directions when needed, an explicit selection, the produced creative artifact, rendered critique, and an accurate production or publication state.
-
-### Execute
-
-Input: approved software slice.
-
-Output: the smallest coherent source-code or system change plus actual checks.
-
-### Deliver
-
-Input: approved non-software slice.
-
-Output: a usable artifact, analysis, process, or authorized operational change plus actual checks and an explicit external-action status.
-
-### Verify
-
-Input: result and acceptance contract.
-
-Output: criterion-by-criterion evidence with `pass`, `partial`, `fail`, or `not-tested`.
-
-### Learn
-
-Input: expected outcome, observed result, feedback, and verification.
-
-Output: updated durable context without conversation noise.
-
-## Delegation packet
-
-Delegate only a bounded task with this contract:
-
-```yaml
-task:
-  type: investigate | critique | verify
-  question: "One answerable question"
-scope:
-  include: []
-  exclude: []
-context:
-  facts: []
-deliverable:
-  - required output
-done_when:
-  - observable condition
-constraints:
-  - read-only or permitted mutations
-```
-
-The orchestrator retains scope, resolves conflicts, and synthesizes the result. Do not delegate the final decision merely to create distance from responsibility.
-
-## Completion contract
-
-A task is complete only when:
-
-1. the requested observable outcome exists;
-2. the work remains within agreed scope;
-3. relevant acceptance criteria have evidence;
-4. untested areas are explicit;
-5. material decisions and changed assumptions are retained;
-6. shared understanding was confirmed when the optional deep-inquiry gate was used;
-7. required qualified review remains explicit and is not claimed as completed;
-8. no unsafe or destructive follow-up is implied as already authorized.
+Before reporting verified completion, check full requested coverage, agreed quality, current evidence for required acceptance, honest untested areas, material decisions/assumptions, and required human review. Report external actions only when actually performed with authority. Do not claim unobserved real-world effects.
