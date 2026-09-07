@@ -14,6 +14,8 @@ Minimize the path to value, not the promised result.
 
 Do not downgrade delivery into an experiment without the user's agreement. Preserve required flows, languages, formats, variants, and quality targets using [outcome-contract.md](../c2o-work/references/outcome-contract.md).
 
+When a critical premise is still unresolved, use [expertise-discovery.md](../c2o-work/references/expertise-discovery.md) to separate the hypothesis being tested from committed delivery. An experiment may settle a missing professional decision, but its outcome cannot silently authorize a different goal or delete deliverables. Revisit only affected dependencies and preserve the remaining commitment.
+
 ## Slice
 
 1. Identify the trigger, final result, and full set of committed deliverables.

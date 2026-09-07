@@ -6,6 +6,8 @@ Use a subagent only for bounded independently checkable work that does not own f
 
 A delegation packet contains the question, included/excluded scope, original relevant requirements and acceptance origins, full commitment when needed, actual artifact/revision, available evidence, permitted actions, required output, and done condition. A creator's summary can help navigation but cannot substitute for source requirements or evidence.
 
+For expertise discovery or request validation, include original statements, known constraints/preferences, tentative methods, evidence gaps, and accepted/delegated decision bounds. An investigator may identify missing professional dimensions or challenge an unsupported premise, but cannot promote its own recommendation into approval. Keep this separate from authority to use a subagent.
+
 ## Explorer
 
 Gather evidence before decisions or changes. Remain read-only, trace real artifacts/data/runtime paths, distinguish observations from hypotheses, and do not propose broad redesign unless asked.

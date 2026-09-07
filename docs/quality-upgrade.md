@@ -30,6 +30,27 @@ For repeated UI, one representative path demonstrates the selected design and im
 
 The handoff contains the artifact, minimal use instructions, observed checks, unresolved gaps, and prepared-not-deployed state. An agent walkthrough is not evidence of real user satisfaction or business impact.
 
+## Cross-domain expertise discovery and request validation
+
+The [shared discovery protocol](../skills/c2o-work/references/expertise-discovery.md) is part of shaping, not a new skill or a mandatory interview. Work selects it when a missing professional decision, dubious premise, or delegated unfamiliar process can affect the outcome. All eleven specialist entrypoints link to it for their relevant responsibilities.
+
+Separate the user's goal from a proposed method. Keep statement source, kind, evidence state, and decision authority distinct: a user report is not automatically a verified fact, and an agent recommendation is not approval. Preserve intentional constraints and taste. Explain material revisions and obtain acceptance unless that class of choice was already delegated.
+
+Discover missing dimensions from intended use, inputs, structure/process, quality, failures, continued use, and verification. For each material addition, explain the outcome it serves, the consequence of omitting it, and the lightest adequate treatment. This includes professional quality decisions the user may not know to name; it does not mandate a catalogue of documents or a design system for every task.
+
+Synthetic examples:
+
+| Request | Discovery target, not an automatic prescription |
+|---|---|
+| Make this scaffold feel finished | Determine unsettled experience/visual decisions, reuse real approved constraints, and produce coherent output without asking for specialist vocabulary. |
+| Add a cache because the export is slow | Inspect the relevant timing evidence before accepting the proposed cause or replacing the explicit method. |
+| Prove this campaign succeeded | Check the conclusion against data and provide truthful findings rather than forcing the requested narrative. |
+| Have managers approve every reply | Investigate the actual error types, consequences, and handoffs before recommending proportional controls. |
+
+Delegating the process permits only agreed classes of choices inside the existing boundary. It does not authorize spending, publishing, changing access, or production actions. Agent assumptions receive the same scrutiny as user assumptions; high-stakes judgments retain qualified review.
+
+A tiny, well-founded task stays direct. A settled method is not reopened without new conflicting evidence. Converge when the next step is justified and authorized, with residual uncertainties explicitly testable; continue independent safe work. This is cross-domain prompt guidance, not a certified SwiftUI design system or proof that every professional omission will be discovered.
+
 ## Existing projects
 
 No context migration or automatic overwrite is required. Existing .context files remain usable. Add fields only where helpful for the active task, keep other tasks' goals intact, and retain accepted decisions. The initializer copies missing files but does not update existing context files or custom agent TOML files. Review and deliberately update copied verifier templates when adopting the new guidance.

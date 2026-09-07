@@ -11,6 +11,12 @@ Produce a supported decision or a useful experiment, not an unranked catalogue.
 
 Identify what would change the next action. Resolve an accessible fact through inspection or research; a user-owned preference through a concrete choice; uncertain appearance or feel through an authorized prototype; technical behavior through a bounded test; and authority through explicit approval. Do not replace observable evidence with more discussion. A proposed experiment is not permission to run it outside the existing boundary.
 
+## Validate the choice before comparing options
+
+Use [expertise-discovery.md](../c2o-work/references/expertise-discovery.md) when the proposed method may be mistaken or a professional decision is missing. First check whether the question expresses the user's actual goal, a fixed constraint, or a suggested solution. Research the material premise, including your own proposed alternative. Preserve intentional constraints; challenge unsupported causal claims with evidence or a bounded test, not superior-sounding confidence.
+
+Record the practical consequence of a proposed change and the source of acceptance or delegated authority. Do not substitute a different explicit method without that authority. Unknown specialist details are normally research/recommendation work, not a reason to quiz the user.
+
 ## Decide
 
 1. Express one mutually exclusive choice and why it matters now.

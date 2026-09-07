@@ -7,6 +7,8 @@ description: Implement an approved software slice at the agreed scope and qualit
 
 Deliver the approved outcome with the smallest coherent change, not a smaller outcome.
 
+When implementation exposes an unsupported material premise or a missing professional prerequisite, use [expertise-discovery.md](../c2o-work/references/expertise-discovery.md) to inspect the evidence and reopen only affected decisions. A named technique is not proof it solves the problem, but do not replace an explicit method or accepted architecture without applicable delegated authority or agreement. Continue safe independent authorized work; preserve requirements, existing changes, and the review-only boundary. Do not conduct a new strategy interview for a settled bounded change.
+
 ## Execute
 
 1. Load applicable repository instructions, inspect the real execution path and working tree, and preserve unrelated user changes.

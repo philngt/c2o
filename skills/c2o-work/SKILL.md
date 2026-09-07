@@ -1,6 +1,6 @@
 ---
 name: c2o-work
-description: Orchestrate a Context-to-Outcome work loop that turns a rough request or poorly described problem into a verified result at the requested scope and quality. Use when knowledge, creative, or software work is ambiguous, several stages need coordination, or the user needs expert guidance without knowing how to specify the work completely. Avoid for simple questions or one-step actions that can be completed directly.
+description: Orchestrate a Context-to-Outcome work loop that turns a rough request or poorly described problem into a verified result at the requested scope and quality. Use when knowledge, creative, or software work is ambiguous, several stages need coordination, a proposed solution has material untested premises, or the user needs expert guidance without knowing how to specify the work completely. Avoid for simple questions or one-step actions that can be completed directly.
 ---
 
 # C2O Work
@@ -19,6 +19,12 @@ Own the outcome from intake through evidence. Minimize unnecessary work, not the
 The user owns outcomes, values, priorities, taste, constraints, acceptable risk, commitments, and approval. C2O researches and recommends specialist means. Explain practical consequences and confidence instead of asking an inexperienced user to choose unfamiliar architecture or methods. Preserve qualified review for consequential regulated or licensed judgments.
 
 Continue with safe reversible defaults within existing authorization. Ask only what changes the next action and belongs to the user. Do not ask again for a decision already made. Recommendations do not grant permission to publish, send, spend, or change production.
+
+## Discover expertise gaps and validate requests
+
+Clear wording is not proof that a proposed solution fits the user's goal. When the user delegates an unfamiliar process, supplies conflicting premises, or requests quality without specifying its prerequisites, apply `c2o-shape` with [expertise-discovery.md](references/expertise-discovery.md). Recover intent; distinguish goals, reports, hypotheses, methods, constraints, preferences, and authority; inspect material premises; and identify missing professional decisions from the result's intended use.
+
+Use this selectively before costly commitment and when new evidence invalidates a premise. Do not assume that beginners are wrong, reopen settled decisions without cause, or run discovery for a tiny well-founded task. Preserve explicit methods until their role is understood; obtain agreement before materially replacing one unless that class of choice was delegated. Research what the environment can answer and ask only consequential user-owned questions. If the reference cannot load, retain these minimum rules and the existing action boundary.
 
 ## Discover an unclear problem first
 
