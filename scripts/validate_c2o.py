@@ -116,6 +116,39 @@ def scenario_errors(data: object) -> list[str]:
     return errors
 
 
+
+def scenario_suite_errors(root: Path) -> list[str]:
+    """Validate all fixture suites and case-ID uniqueness; never run a model."""
+    root = root.resolve()
+    paths = sorted((root / "evals").glob("*scenarios.json"))
+    errors: list[str] = []
+    seen: dict[str, Path] = {}
+    if root / "evals/scenarios.json" not in paths:
+        errors.append("scenario fixtures: missing required evals/scenarios.json")
+    for path in paths:
+        if path.is_symlink() or not path.resolve().is_relative_to(root):
+            errors.append(f"{path}: scenario suite must be a local non-symlink file")
+            continue
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (ValueError, OSError) as exc:
+            errors.append(f"{path}: scenario fixtures: {exc}")
+            continue
+        errors.extend(f"{path}: {error}" for error in scenario_errors(data))
+        cases = data.get("cases", []) if isinstance(data, dict) else []
+        if not isinstance(cases, list):
+            continue
+        for case in cases:
+            identifier = case.get("id") if isinstance(case, dict) else None
+            if not isinstance(identifier, str) or not NAME.fullmatch(identifier):
+                continue
+            if identifier in seen and seen[identifier] != path:
+                errors.append(f"{path}: duplicate case id across suites: {identifier} ({seen[identifier]})")
+            else:
+                seen[identifier] = path
+    return errors
+
+
 def validate(root: Path) -> list[str]:
     errors = []
     root = root.resolve()
@@ -143,11 +176,7 @@ def validate(root: Path) -> list[str]:
             errors.extend(local_link_errors(path, root))
         except (ValueError, OSError) as exc:
             errors.append(f"{path}: {exc}")
-    try:
-        data = json.loads((root / "evals/scenarios.json").read_text(encoding="utf-8"))
-        errors.extend(scenario_errors(data))
-    except (ValueError, OSError) as exc:
-        errors.append(f"scenario fixtures: {exc}")
+    errors.extend(scenario_suite_errors(root))
     return errors
 
 

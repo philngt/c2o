@@ -1,6 +1,6 @@
 ---
 name: c2o-shape
-description: Turn a vague idea, complaint, weak signal, creative intention, or feature request into a shaped brief with observable evidence, outcome, scope, constraints, assumptions, and acceptance signals. Use when the user cannot describe the problem or lacks the specialist knowledge to specify it. Avoid when the request is already clear enough for direct action.
+description: Turn a vague idea, complaint, weak signal, creative intention, or feature request into a shaped brief with observable evidence, outcome, scope, constraints, assumptions, and acceptance signals. Use when the user cannot describe the problem or lacks the specialist knowledge to specify it. Also use for a clearly worded solution with material untested premises. Avoid tiny well-founded tasks and settled specifications without new conflicting evidence.
 ---
 
 # C2O Shape
@@ -18,6 +18,14 @@ Convert intent into a decision-ready problem without demanding a diagnosis or pr
 7. Recommend the next investigation or stage, not an unsupported solution.
 
 Do not ask for a root cause, domain label, method, architecture, or preferred tool. When the user says they do not know, anchor on a real example or inspect evidence instead of repeating the abstract question. Stop when the next useful action is clear.
+
+## Discover professional dimensions and validate the request
+
+Apply [expertise-discovery.md](../c2o-work/references/expertise-discovery.md) when a knowledge/process gap or questionable premise can change the result. Separate each material statement's source, kind, evidence state, and decision authority. Explicit user input may be a goal, a reported fact, a hypothesis, a preference, a proposed method, or a fixed constraint; do not flatten them into equally validated requirements.
+
+Recover the desired change and test the material link between the proposed method and that change. Inspect evidence before agreeing or challenging. For missing dimensions, examine intended use, inputs, organizing decisions, quality, failure consequences, handoff, and verification only where relevant. Tie each addition to a goal or constraint, explain the risk of omission, and recommend the lightest adequate treatment. Do not wait for the user to name a professional process or supply its documents.
+
+Keep fixed constraints and informed preferences intact. Explain material changes and obtain acceptance unless already delegated. Record agent assumptions as carefully as user assumptions. Converge when the next authorized step is sound and residual uncertainty has an evidence route, not when every field has been filled.
 
 ## Fill the expertise gap without expanding scope
 
@@ -44,8 +52,9 @@ Actor and situation:
 Current difficulty:
 Outcome and required deliverables:
 Constraints and completion level:
-Necessary implications and rationale:
-Specialist choices or decision needed:
+Premises checked and evidence gaps:
+Necessary implications, rationale, and lightest treatment:
+Specialist choices, delegated scope, or decision needed:
 Non-goals and optional enhancements:
 Acceptance signals:
 Working assumptions:

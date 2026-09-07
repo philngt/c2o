@@ -15,6 +15,12 @@ Use invariants and outcome contracts, not mandatory ceremony. Read only the sect
 
 Lower intervention for small, familiar, reversible, locally testable work. Raise it for ambiguity, novelty, blast radius, reversal cost, or safety risk. A high quality target does not automatically require more documents.
 
+## Expertise discovery is part of shaping
+
+Use [expertise-discovery.md](expertise-discovery.md) selectively when missing professional dimensions or questionable premises can change the result, even if the requested action is clearly worded. Discover what the outcome needs, distinguish goal from proposed method, validate material assumptions, and establish bounded delegation. Profiles support this inquiry; they do not replace it or automatically add scope.
+
+Skip this for tiny well-founded tasks and settled choices without new conflicting evidence. Stop when the next authorized step is feasible and remaining uncertainties have an evidence route. Preserve deliberate constraints, taste, original requirements, and the source of any accepted revision. This adds no compulsory state or approval ceremony.
+
 ## Work-state gates
 
 | State | Exit condition |
@@ -49,7 +55,7 @@ See outcome-contract.md for requirement classes, quality levels, evidence validi
 
 | Stage | Result |
 |---|---|
-| Shape | Evidence-backed problem direction or brief, including necessary implications without optional scope expansion |
+| Shape | Evidence-backed direction or brief, validated material premises, justified missing professional decisions, and bounded delegation without optional scope expansion |
 | Decide | Supported choice or bounded experiment proposal, ownership, acceptance state, and revisit trigger |
 | Grill | Dependency-aware facts/decisions/experiments and confirmed shared understanding; no implementation |
 | Spec | Full required deliverables, quality/completion level, criteria origins, acceptance methods, boundaries |

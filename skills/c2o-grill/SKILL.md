@@ -1,6 +1,6 @@
 ---
 name: c2o-grill
-description: Stress-test a consequential plan through prerequisite-aware expert guidance, evidence gathering, and user-owned decisions. Use when explicitly asked to be grilled or when several consequential decisions depend on one another. Avoid small reversible tasks, clear specifications, and uncertainties better resolved by direct observation or an authorized prototype.
+description: Stress-test a consequential plan through prerequisite-aware expert guidance, evidence gathering, and user-owned decisions. Use when explicitly asked to be grilled or when several consequential decisions depend on one another. Avoid small reversible tasks, settled specifications without new conflicting evidence, and uncertainties better resolved by direct observation or an authorized prototype.
 ---
 
 # C2O Grill
@@ -18,6 +18,8 @@ Classify decisions before asking:
 - qualified review: consequential legal, medical, financial, safety, regulatory, or licensed judgment.
 
 Use plain language. Do not infer competence from brevity, language fluency, disability, job title, or jargon. Ask about experience only when it changes safety, viable options, or useful explanation depth.
+
+Use [expertise-discovery.md](../c2o-work/references/expertise-discovery.md) to expose missing professional dimensions and questionable premises before expanding the decision tree. Keep statement source and evidence separate from acceptance or delegation. A clearly stated method can still need validation; an intentional constraint must not be discarded. Research the premise before challenging it, and use a concrete comparison when preferences cannot be articulated. Do not add branches that cannot affect the next action, quality, or risk.
 
 ## Build and work the decision frontier
 

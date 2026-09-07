@@ -34,9 +34,11 @@ One entry per consequential decision:
 - Revisit when:
 ```
 
+When request validation changes a consequential decision, preserve the original statement/reference, its kind (goal, report, hypothesis, preference, method, constraint, or authority), the evidence, and who accepted or delegated the revision. Record the scope and escalation conditions of delegated choices, not a blanket approval. These are optional fields in existing files, not a new mandatory ledger or migration.
+
 ### assumptions.md
 
-Keep assumption, confidence, impact if false, validation/evidence, and status (open, confirmed, disproved). Distinguish observation from inference. Record which decisions or criteria change if the assumption fails.
+Keep assumption, confidence, impact if false, validation/evidence, and status (open, confirmed, disproved). Distinguish observation from inference and record whether the premise came from the user, an artifact, or the agent. Approval does not establish factual truth. Record which decisions or criteria change if the assumption fails.
 
 ### open-questions.md
 

@@ -13,6 +13,8 @@ Read the original request, accepted decisions, required deliverables, completion
 
 Use [outcome-contract.md](../c2o-work/references/outcome-contract.md) for criterion origin, status aggregation, and evidence validity. For creative work separate objective checks, quality judgments, and effects requiring later observation.
 
+For material premises and inferred requirements, apply [expertise-discovery.md](../c2o-work/references/expertise-discovery.md) to trace the original goal, statement kind, evidence, and authorized revisions. Check the agent's assumptions as well as the user's. A proposal must not have become an accepted requirement without authority, and necessary implications must have a goal-linked rationale rather than generic professional ceremony. If the request rests on a contradicted premise, report that gap and any observed compliance separately; never repair the subject, rewrite acceptance, or manufacture evidence during review-only work.
+
 ## Check two layers
 
 - Compliance: all requested deliverables, constraints, behaviors, and quality commitments are covered; relevant regressions and failure states are checked.

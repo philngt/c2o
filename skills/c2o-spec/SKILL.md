@@ -11,6 +11,8 @@ Write the smallest specification that prevents expensive misunderstanding withou
 
 Proceed when the actor, trigger, outcome, key constraints, and at least one acceptance signal are clear. Shape only missing parts. Resolve consequential choices; do not hide them in implementation defaults.
 
+Use [expertise-discovery.md](../c2o-work/references/expertise-discovery.md) if a clear request rests on an untested consequential premise or omits professional decisions needed for its quality target. Preserve the original statement and distinguish its source, kind, evidence, and authority before promoting it into a requirement. Record accepted revisions and their reasons; an unresolved method remains a proposal or open decision, not a silently settled constraint. A necessary implication needs an outcome link, omission consequence, and proportionate treatment. Do not respecify settled work without new evidence.
+
 ## Write the contract
 
 1. State the outcome and primary scenario as trigger, action, observable result.

@@ -2,6 +2,18 @@
 
 The scenarios in [scenarios.json](scenarios.json) are synthetic fixtures, not user testimonials, recorded product results, or executed model tests. Their initial execution status is not-run. Passing repository checks validates their structure only.
 
+## Scenario suites and controls
+
+[expertise-scenarios.json](expertise-scenarios.json) adds sixteen synthetic cases for missing professional dimensions, doubtful requested methods, bounded process delegation, and mistaken agent assumptions. The original nineteen cases in scenarios.json remain unchanged. Both suites are definitions, explicitly not-run.
+
+The structural validator checks every `*scenarios.json` directly inside evals, requires the original scenarios.json, and rejects duplicate IDs across suites. Put actual run results elsewhere so they cannot be confused with fixtures. Unit tests check discovery, parsing, links, and fixture structure, not whether a model follows the protocol.
+
+For this follow-up, use e50c2c9d33f74595e46b19f752225e72a8ca15c6 as the previous-PR baseline and the actual candidate commit. Include the fixed-method, intentional-taste, and tiny-task controls alongside the doubtful-method cases. Improvements in challenging unsupported requests must not come at the cost of overriding deliberate constraints or unnecessary questioning.
+
+Give the agent only normal prompts, fixture data, and applicable authority. Do not leak must/must-not rubrics or insert specialist trigger words into the novice prompts. Judge whether the missing decisions and evidence were handled, not whether the agent says art direction, design system, or a particular framework name. Run direct specialist invocation trials as well as work-orchestrated trials. For initial multi-turn discovery, evaluate the first useful question and record any subsequent user input; never invent successful follow-up answers.
+
+The SwiftUI fixture is a source-level starting point. A real native render requires the host's actual supported project/runtime setup; record unavailable rendering as an environment limitation, not an imagined screenshot or proof of native quality.
+
 ## Run a real comparison
 
 Use identical model/version, host/version, available tools, permission configuration, initial fixtures, and budget for the baseline and candidate. Record both C2O commit IDs. The initial baseline for this upgrade is cd407d77ebeb954a9e34cd0f7f4a1711a796993c. An optional third arm may omit C2O; do not conflate a changed model with a changed skill suite.

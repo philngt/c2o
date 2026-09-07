@@ -17,6 +17,8 @@ Keep learning only when it will change a future action under identifiable condit
 6. Do not infer a global user preference from one selection or a universal rule from one successful task. Confirm broader application when material.
 7. Turn recurring, evidenced failures into proposed regression scenarios after removing secrets and unrelated personal data. Do not automatically modify shared skills, global policy, or other projects from local feedback.
 
+For request-validation lessons, use [expertise-discovery.md](../c2o-work/references/expertise-discovery.md): retain which premise was tested, whether it came from the user or agent, what evidence changed it, and which revisions were accepted or delegated. Do not turn an uncertain correction into a fact or one expertise gap into a global judgment about the user. Preserve intentional constraints and record when a lesson should no longer apply.
+
 ## Update minimally
 
 When `.context/` exists, use the smallest relevant set:

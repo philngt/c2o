@@ -2,12 +2,18 @@
 
 Use only fields that change action or verification. Keep a tiny task in the conversation; persist a contract only for handoff, long-lived work, or meaningful risk. This is guidance, not a permission-enforcement runtime.
 
+## Validate statements before promoting them to requirements
+
+Apply [expertise-discovery.md](expertise-discovery.md) when missing professional decisions, conflicting expectations, or an untested method can materially affect the outcome. Separate statement source, kind, evidence state, and decision authority. A user statement can be an observation, hypothesis, preference, proposed method, fixed constraint, or authorization; its explicitness alone does not validate its factual premise.
+
+Preserve the original request. Inspect before challenging a method, and record accepted or delegated revisions with their reasons. A method is not automatically negotiable; do not replace an explicit choice without applicable authority. Deliberate preferences and constraints remain binding unless changed through the proper decision. A revised contract must not erase inconvenient requirements or manufacture a pass.
+
 ## Requirements and scope
 
 | Class | Treatment |
 |---|---|
 | Explicit | Preserve requested outcomes, deliverables, flows, variants, formats, and constraints. |
-| Necessary implication | Explain why it is needed for the requested result to work safely/usefully. Implement only within existing authority; resolve material cost, privacy, risk, or scope changes first. |
+| Necessary implication | Link it to the outcome or constraint, explain the consequence of omission, and choose the lightest adequate treatment for safe/useful quality. Implement only within existing authority; resolve material cost, privacy, risk, or scope changes first. |
 | Specialist choice | Research and recommend means; use already-delegated reversible choices without repeat questions. |
 | Optional enhancement | Keep outside committed scope until accepted. A common industry practice is not proof of necessity. |
 
@@ -24,7 +30,8 @@ For material work, retain:
 ```markdown
 Outcome and full required deliverables:
 Completion level and quality references:
-Requirement/criterion IDs, origins, and necessity:
+Requirement/criterion IDs, statement kinds, origins, and necessity:
+Material premises, evidence state, and accepted revisions:
 Constraints and non-goals:
 Acceptance methods and required reviewers:
 Authorized actions/targets and delegated choices:

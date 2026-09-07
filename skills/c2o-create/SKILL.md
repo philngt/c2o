@@ -17,6 +17,8 @@ Turn creative intent into a reviewable, usable result. Do not confuse an attract
 
 Shape unclear purpose and resolve consequential decisions first. Do not ask preferences that an authorized cheap prototype can reveal more reliably.
 
+Use [expertise-discovery.md](../c2o-work/references/expertise-discovery.md) when the user cannot name the professional work needed. Infer and research relevant organizing, experience, and quality decisions from the brief; do not demand art direction, a design system, or another specialist document as an entry ticket. Existing scaffold or draft choices are not necessarily an approved direction, but their presence is not permission to discard behavior or settled constraints. Recommend the lightest shared decisions and observable examples that serve the goal. Treat requested effects or decorative techniques as methods to assess, while preserving intentional taste and explicit constraints.
+
 ## Explore and select proportionately
 
 Produce directly when direction is approved and remaining choices are low-risk. Explore two or three materially distinct directions when the organizing idea, voice, or experience is unresolved, not cosmetic variants. Do not manufacture alternatives when constraints settle the direction.

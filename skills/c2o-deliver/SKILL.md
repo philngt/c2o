@@ -15,6 +15,8 @@ Deliver to the state requested, not merely to the existence of a draft or a file
 4. Use [outcome-contract.md](../c2o-work/references/outcome-contract.md) for material implications and authorization. Shape only ambiguities that change the result or boundary.
 5. Use `c2o-create` first when direction still needs exploration, selection, or creative critique; resume delivery for packaging and handoff.
 
+Use [expertise-discovery.md](../c2o-work/references/expertise-discovery.md) when an analysis, process, or artifact request assumes a conclusion or omits necessary professional decisions. Distinguish approved wording and constraints from factual claims that still need evidence. Find missing definitions, source checks, exception handling, or handoff needs from the actual goal, not a generic document template. Do not force data to support a desired conclusion or add approvals/process steps without a justified need. Explain consequential revisions and preserve the applicable action boundary.
+
 ## Produce and check
 
 Load relevant source material, existing templates, and available format-specific skills. Prefer native tools where available; preserve approved source content and user work over generic conventions.

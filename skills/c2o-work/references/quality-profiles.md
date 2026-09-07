@@ -4,6 +4,8 @@ These are starting lenses, not exhaustive standards or automatic requirements. L
 
 For a custom profile record: use-when, required outcome, applicable checks, evidence, common overreach, and stop condition. No new user-facing skill is required.
 
+Use [expertise-discovery.md](expertise-discovery.md) to find which professional decisions are actually missing before selecting or extending a profile. The user need not know the terms for the process or its artifacts. Derive necessary quality and process conditions from the goal and evidence; prefer the lightest adequate treatment. No matching profile is a reason to research and qualify uncertainty, not to invent a standard or refuse all progress.
+
 ## Interfaces and photo/content viewers
 
 Use for visual and interactive products. Check the intended journey, navigation, hierarchy, readable content, consistent components, target viewports, and relevant keyboard/touch/accessibility behavior. For native mobile, consult the actual platform guidance and existing patterns; a generic web layout is not proof of native quality.
