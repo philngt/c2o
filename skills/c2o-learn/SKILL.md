@@ -19,6 +19,8 @@ Keep learning only when it will change a future action under identifiable condit
 
 For request-validation lessons, use [expertise-discovery.md](../c2o-work/references/expertise-discovery.md): retain which premise was tested, whether it came from the user or agent, what evidence changed it, and which revisions were accepted or delegated. Do not turn an uncertain correction into a fact or one expertise gap into a global judgment about the user. Preserve intentional constraints and record when a lesson should no longer apply.
 
+For domain-guidance lessons, use [domain-context.md](../c2o-work/references/domain-context.md). Preserve the source/version, observed result, applicability, proposed future change, and invalidation trigger. Keep shared-pack or provider updates as proposals for authorized review, not automatic writes or evidence that the model has learned permanently. If the reference is unavailable, retain these boundaries; no provider or new knowledge store is required.
+
 ## Update minimally
 
 When `.context/` exists, use the smallest relevant set:

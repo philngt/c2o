@@ -27,6 +27,8 @@ Recover the desired change and test the material link between the proposed metho
 
 Keep fixed constraints and informed preferences intact. Explain material changes and obtain acceptance unless already delegated. Record agent assumptions as carefully as user assumptions. Converge when the next authorized step is sound and residual uncertainty has an evidence route, not when every field has been filled.
 
+Use [domain-context.md](../c2o-work/references/domain-context.md) when domain guidance could explain the signal or expose a material gap. Link observations to testable mechanism hypotheses and inspect applicability and exceptions; a retrieved pattern is not a diagnosis. Use available project documents without requiring a provider. If the reference is unavailable, keep source scope, uncertainty, and the existing action boundary explicit.
+
 ## Fill the expertise gap without expanding scope
 
 Use [outcome-contract.md](../c2o-work/references/outcome-contract.md) for consequential or multi-step work. Distinguish:

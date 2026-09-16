@@ -20,6 +20,12 @@ The user owns outcomes, values, priorities, taste, constraints, acceptable risk,
 
 Continue with safe reversible defaults within existing authorization. Ask only what changes the next action and belongs to the user. Do not ask again for a decision already made. Recommendations do not grant permission to publish, send, spend, or change production.
 
+## Use domain context when it changes the next step
+
+Use [domain-context.md](references/domain-context.md) when specialist guidance, a reusable rule, or conflicting sources can change a material decision or check. Request only the relevant concepts, mechanisms, applicability, exceptions, and evidence needs; plain project documents are sufficient and no context provider is required. Pass the selected source references and unresolved gaps to the relevant specialist, not an entire knowledge library.
+
+If the reference cannot load, retain these minimum rules: inspect relevant available sources; check their project, version, and applicability; distinguish guidance from evidence; preserve the user's constraints and action boundary; verify against the actual artifact; and report missing required evidence. Do not install a provider or block independent safe work merely because one is absent.
+
 ## Discover expertise gaps and validate requests
 
 Clear wording is not proof that a proposed solution fits the user's goal. When the user delegates an unfamiliar process, supplies conflicting premises, or requests quality without specifying its prerequisites, apply `c2o-shape` with [expertise-discovery.md](references/expertise-discovery.md). Recover intent; distinguish goals, reports, hypotheses, methods, constraints, preferences, and authority; inspect material premises; and identify missing professional decisions from the result's intended use.

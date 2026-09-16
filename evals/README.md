@@ -14,6 +14,14 @@ Give the agent only normal prompts, fixture data, and applicable authority. Do n
 
 The SwiftUI fixture is a source-level starting point. A real native render requires the host's actual supported project/runtime setup; record unavailable rendering as an environment limitation, not an imagined screenshot or proof of native quality.
 
+## Domain-context follow-up
+
+[domain-context-scenarios.json](domain-context-scenarios.json) adds fourteen synthetic, not-run cases for bounded source selection, missing providers/references, wrong project scope, adversarial content, rule exceptions, conflicting constraints, metadata-only input, stale evidence, review-only limits, scoped learning, cross-domain trade-offs, required professional review, and a tiny-task negative control.
+
+For this independent follow-up, use ae4366b55df2b0ae9ac85f84c0d4981d3470c834 as the baseline and record the actual candidate commit. The older baseline IDs elsewhere in this document describe previous upgrades, not this comparison. Keep source fixtures identical across arms. Run work and direct specialist trials; for the missing-reference case, configure the harness to deny the shared reference read rather than deleting unrelated installed skills. A source being supplied or retrieved is not evidence it was applied correctly.
+
+Do not pass fixture rubric fields to the agent or execute adversarial instructions. The structural tests check suite format, source links, fallback documentation, and regression coverage only. They do not grade domain judgment or show that prompt instructions enforce a boundary. See the [domain-context guide](../docs/domain-context.md) for scope and examples.
+
 ## Run a real comparison
 
 Use identical model/version, host/version, available tools, permission configuration, initial fixtures, and budget for the baseline and candidate. Record both C2O commit IDs. The initial baseline for this upgrade is cd407d77ebeb954a9e34cd0f7f4a1711a796993c. An optional third arm may omit C2O; do not conflate a changed model with a changed skill suite.

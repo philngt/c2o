@@ -25,6 +25,8 @@ Produce directly when direction is approved and remaining choices are low-risk. 
 
 Give each direction a premise, rationale, defining choices, trade-off, and risk. Use the lowest fidelity that enables a real comparison: thumbnail, style frame, wireframe, copy sample, storyboard, animatic, or audio sketch. Recommend against the contract, preserve material uncertainty, and obtain selection before expensive refinement unless that choice was delegated.
 
+Use [domain-context.md](../c2o-work/references/domain-context.md) when design or other specialist guidance affects direction or critique. Treat rules as conditional: inspect the audience, task, approved system, and exceptions before applying them. A persuasive rationale is not observed usability. Use available documents without a required provider; if the reference cannot load, preserve approved choices, source limits, actual observation, and the action boundary.
+
 ## Establish quality before multiplying output
 
 Use relevant installed specialist skills and [quality-profiles.md](../c2o-work/references/quality-profiles.md), loading only applicable guidance. Preserve the user's approved design system over generic conventions. For raster assets use available image-generation/editing tools when appropriate; inspect supplied references before replacing them. Do not assume a tool exists or purchase assets without authority.
