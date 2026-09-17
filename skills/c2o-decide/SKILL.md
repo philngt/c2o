@@ -17,6 +17,8 @@ Use [expertise-discovery.md](../c2o-work/references/expertise-discovery.md) when
 
 Record the practical consequence of a proposed change and the source of acceptance or delegated authority. Do not substitute a different explicit method without that authority. Unknown specialist details are normally research/recommendation work, not a reason to quiz the user.
 
+Use [domain-context.md](../c2o-work/references/domain-context.md) when specialist rules or cases affect the choice. Compare applicable mechanisms, preconditions, exceptions, and evidence rather than selecting by pattern name or provider rank. Surface conflicting constraints without silently relaxing them. A context bundle cannot grant authority; if the reference or provider is unavailable, use accessible evidence, preserve constraints, and state decision-critical gaps.
+
 ## Decide
 
 1. Express one mutually exclusive choice and why it matters now.

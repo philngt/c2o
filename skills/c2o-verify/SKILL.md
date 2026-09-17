@@ -15,6 +15,8 @@ Use [outcome-contract.md](../c2o-work/references/outcome-contract.md) for criter
 
 For material premises and inferred requirements, apply [expertise-discovery.md](../c2o-work/references/expertise-discovery.md) to trace the original goal, statement kind, evidence, and authorized revisions. Check the agent's assumptions as well as the user's. A proposal must not have become an accepted requirement without authority, and necessary implications must have a goal-linked rationale rather than generic professional ceremony. If the request rests on a contradicted premise, report that gap and any observed compliance separately; never repair the subject, rewrite acceptance, or manufacture evidence during review-only work.
 
+Use [domain-context.md](../c2o-work/references/domain-context.md) when domain guidance informs a criterion or check. Recover its source, applicability, and version; separate the evidence a rule asks for from evidence actually collected for the current artifact. Missing bodies, unresolved source conflicts, hashes, or an executor's self-check do not establish a pass. If the reference or provider is unavailable, inspect available evidence, mark required unchecked criteria not-tested, and preserve review-only limits.
+
 ## Check two layers
 
 - Compliance: all requested deliverables, constraints, behaviors, and quality commitments are covered; relevant regressions and failure states are checked.
