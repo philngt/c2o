@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "project_name": "Plantline - illustrative design slice",
+  "framework_version": "1.5.0",
+  "platform": "swiftui",
+  "mode": "standard",
+  "example_only": true,
+  "acceptance_state": "proposed",
+  "precondition": "Existing local plant records; this example uses hypothetical fixtures. A new product must separately define how users create or import records.",
+  "outcome": "Find the correct individual plant, inspect its record, edit location or notes, and persist changes offline without changing another plant.",
+  "scope": {
+    "included": [
+      "Search list",
+      "Individual plant detail",
+      "Edit location and notes",
+      "Local save, cancel and recovery"
+    ],
+    "deferred": [
+      "Add plant",
+      "Edit taxonomy",
+      "Pedigree editor",
+      "Cross-device sync",
+      "Genetic inference"
+    ]
+  },
+  "documents": {
+    "brief": "brief.md",
+    "experience": "experience.md",
+    "options": "options.md",
+    "decision": "decision.md",
+    "baseline": "baseline.md",
+    "layout": "layout.md",
+    "direction": "design-direction.md",
+    "data_views": "data-views.md",
+    "components": "components.md",
+    "ui_composition": "ui-composition.md",
+    "asset_brief": "asset-brief.md",
+    "asset_manifest": "assets.json",
+    "review_plan": "review-example.md"
+  },
+  "design_contract": {
+    "decision_id": "DEC-01",
+    "selected_option_id": "O-01",
+    "baseline_id": "B-01",
+    "baseline_revision": "1",
+    "layout_ids": [
+      "L-01",
+      "L-02"
+    ],
+    "data_view_ids": [
+      "DV-01",
+      "DV-02"
+    ],
+    "component_ids": [
+      "CMP-01",
+      "CMP-02",
+      "CMP-03"
+    ],
+    "screen_ids": [
+      "SCR-01",
+      "SCR-02"
+    ],
+    "asset_ids": [
+      "A-01",
+      "A-02",
+      "A-03"
+    ],
+    "selection_note": "Illustrative selection within this example; not a user decision or a tested design"
+  },
+  "criteria": [
+    {
+      "id": "PL-01",
+      "title": "Search by plant ID opens the correct individual when names or variety labels overlap",
+      "type": "functional",
+      "method": "manual",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "PL-02",
+      "title": "Individual ID, display name and species or variety are distinct; unverified labels retain uncertainty",
+      "type": "content",
+      "method": "manual",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "PL-03",
+      "title": "Offline save updates only the selected plant and persists after closing and reopening the app",
+      "type": "functional",
+      "method": "automated",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "PL-04",
+      "title": "Save failure preserves the draft; cancel, back and changing selection handle unsaved work explicitly",
+      "type": "functional",
+      "method": "manual",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "PL-05",
+      "title": "The flow remains usable on selected iPhone and iPad configurations with large text and selected accessibility tools",
+      "type": "accessibility",
+      "method": "manual",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "PL-06",
+      "title": "Origin preserves propagation method, known relationships and unknown information without inferring missing parents",
+      "type": "content",
+      "method": "manual",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "PL-07",
+      "title": "Integrated assets retain truthful content and provenance, with correct fallback, appearance and semantics in the selected runtime; optional missing photos remain usable",
+      "type": "content",
+      "method": "manual",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "PL-08",
+      "title": "List and detail read/edit layouts preserve baseline B-01 revision 1 across scoped states, including identity, components, terminology, selection, drafts and feedback",
+      "type": "consistency",
+      "method": "manual",
+      "required": true,
+      "allow_not_applicable": false
+    }
+  ]
+}

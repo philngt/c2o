@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "project_sha256": null,
+  "results": [
+    {
+      "criterion_id": "C-001",
+      "status": "NOT_RUN",
+      "rationale": "",
+      "inputs": [],
+      "evidence": []
+    },
+    {
+      "criterion_id": "C-002",
+      "status": "NOT_RUN",
+      "rationale": "",
+      "inputs": [],
+      "evidence": []
+    },
+    {
+      "criterion_id": "C-003",
+      "status": "NOT_RUN",
+      "rationale": "",
+      "inputs": [],
+      "evidence": []
+    }
+  ]
+}

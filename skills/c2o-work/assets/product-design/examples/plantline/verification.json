@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "framework_version": "1.1.0",
+  "project_sha256": null,
+  "example_only": true,
+  "results": [
+    {"criterion_id": "PL-01", "status": "NOT_RUN", "rationale": "Illustrative design only; no app implementation or execution evidence", "inputs": [], "evidence": []},
+    {"criterion_id": "PL-02", "status": "NOT_RUN", "rationale": "Illustrative design only; no app implementation or execution evidence", "inputs": [], "evidence": []},
+    {"criterion_id": "PL-03", "status": "NOT_RUN", "rationale": "Illustrative design only; no app implementation or execution evidence", "inputs": [], "evidence": []},
+    {"criterion_id": "PL-04", "status": "NOT_RUN", "rationale": "Illustrative design only; no app implementation or execution evidence", "inputs": [], "evidence": []},
+    {"criterion_id": "PL-05", "status": "NOT_RUN", "rationale": "Illustrative design only; no app implementation or execution evidence", "inputs": [], "evidence": []},
+    {"criterion_id": "PL-06", "status": "NOT_RUN", "rationale": "Illustrative design only; no app implementation or execution evidence", "inputs": [], "evidence": []},
+    {"criterion_id": "PL-07", "status": "NOT_RUN", "rationale": "Planning-only asset inventory; no source or derived image files, implemented glyph mapping, or runtime evidence", "inputs": [], "evidence": []},
+    {"criterion_id": "PL-08", "status": "NOT_RUN", "rationale": "Baseline and layout proposals only; no implemented screens or cross-screen state verification", "inputs": [], "evidence": []}
+  ]
+}

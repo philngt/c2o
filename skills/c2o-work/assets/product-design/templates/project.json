@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "project_name": "Replace with project name",
+  "framework_version": "1.5.0",
+  "platform": "swiftui",
+  "mode": "standard",
+  "outcome": "Replace with an observable user outcome",
+  "scope": {
+    "included": [
+      "One usable flow"
+    ],
+    "deferred": []
+  },
+  "supported_themes": [
+    "light",
+    "dark"
+  ],
+  "supported_locales": [
+    "vi"
+  ],
+  "configuration_note": "Optional legacy evidence-checker profile, not a C2O requirement. Use only when explicitly selected; keep the existing C2O/native acceptance source authoritative, or record the selected source responsibility without creating competing criteria. Theme, locale, platform, historical mode and scope values are examples. Replace them with the actual support contract. This profile cannot represent C2O partial; do not convert partial evidence into PASS.",
+  "documents": {
+    "brief": ".design/brief.md",
+    "experience": ".design/experience.md",
+    "direction": ".design/design-direction.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Replace: primary task completes and its data result persists as specified",
+      "type": "functional",
+      "method": "manual",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "C-002",
+      "title": "Replace: applicable error or recovery state preserves user work and offers a valid next action",
+      "type": "functional",
+      "method": "manual",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "C-003",
+      "title": "Replace: relevant platform, accessibility and content variants remain usable",
+      "coverage_note": "Define required variants before checking. Record each variant result in evidence; PASS requires all required variants to pass. Split into separate criteria when independent tracking is needed.",
+      "type": "accessibility",
+      "method": "manual",
+      "required": true,
+      "allow_not_applicable": false
+    }
+  ]
+}

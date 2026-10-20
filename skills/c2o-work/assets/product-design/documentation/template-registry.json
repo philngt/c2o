@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "standard_version": "1.0.0",
+  "templates": [
+    {
+      "id": "TPL-ASSET-BRIEF",
+      "path": "templates/asset-brief.md",
+      "version": "1.1.0",
+      "family": "ux-ui"
+    },
+    {
+      "id": "TPL-BASELINE",
+      "path": "templates/baseline.md",
+      "version": "1.1.0",
+      "family": "ux-ui"
+    },
+    {
+      "id": "TPL-BRIEF",
+      "path": "templates/brief.md",
+      "version": "1.1.0",
+      "family": "ux-ui"
+    },
+    {
+      "id": "TPL-COMPONENT",
+      "path": "templates/component.md",
+      "version": "1.1.0",
+      "family": "ux-ui"
+    },
+    {
+      "id": "TPL-DATA-VIEW",
+      "path": "templates/data-view.md",
+      "version": "1.1.0",
+      "family": "ux-ui"
+    },
+    {
+      "id": "TPL-DECISION",
+      "path": "templates/decision.md",
+      "version": "1.1.0",
+      "family": "ux-ui"
+    },
+    {
+      "id": "TPL-DESIGN-DIRECTION",
+      "path": "templates/design-direction.md",
+      "version": "1.1.0",
+      "family": "ux-ui"
+    },
+    {
+      "id": "TPL-EXPERIENCE",
+      "path": "templates/experience.md",
+      "version": "1.1.0",
+      "family": "ux-ui"
+    },
+    {
+      "id": "TPL-LAYOUT",
+      "path": "templates/layout.md",
+      "version": "1.1.0",
+      "family": "ux-ui"
+    },
+    {
+      "id": "TPL-OPTIONS",
+      "path": "templates/options.md",
+      "version": "1.1.0",
+      "family": "ux-ui"
+    },
+    {
+      "id": "TPL-BUSINESS-DESIGN",
+      "path": "templates/product/business-design.md",
+      "version": "1.1.0",
+      "family": "product"
+    },
+    {
+      "id": "TPL-DELIVERY-PLAN",
+      "path": "templates/product/delivery-plan.md",
+      "version": "1.1.0",
+      "family": "product"
+    },
+    {
+      "id": "TPL-DOCUMENT-INDEX",
+      "path": "templates/product/document-index.md",
+      "version": "1.1.0",
+      "family": "product"
+    },
+    {
+      "id": "TPL-DOMAIN-MODEL",
+      "path": "templates/product/domain-model.md",
+      "version": "1.1.0",
+      "family": "product"
+    },
+    {
+      "id": "TPL-FEATURE-SPEC",
+      "path": "templates/product/feature-spec.md",
+      "version": "1.1.0",
+      "family": "product"
+    },
+    {
+      "id": "TPL-PRD",
+      "path": "templates/product/prd.md",
+      "version": "1.1.0",
+      "family": "product"
+    },
+    {
+      "id": "TPL-PRODUCT-BLUEPRINT",
+      "path": "templates/product/product-blueprint.md",
+      "version": "1.1.0",
+      "family": "product"
+    },
+    {
+      "id": "TPL-PRODUCT-PACK",
+      "path": "templates/product/product-pack.md",
+      "version": "1.1.0",
+      "family": "product"
+    },
+    {
+      "id": "TPL-RELEASE-OPERATIONS",
+      "path": "templates/product/release-operations.md",
+      "version": "1.1.0",
+      "family": "product"
+    },
+    {
+      "id": "TPL-SERVICE-BLUEPRINT",
+      "path": "templates/product/service-blueprint.md",
+      "version": "1.1.0",
+      "family": "product"
+    },
+    {
+      "id": "TPL-TECHNICAL-SPEC",
+      "path": "templates/product/technical-spec.md",
+      "version": "1.1.0",
+      "family": "product"
+    },
+    {
+      "id": "TPL-VALIDATION-PLAN",
+      "path": "templates/product/validation-plan.md",
+      "version": "1.1.0",
+      "family": "product"
+    },
+    {
+      "id": "TPL-REVIEW",
+      "path": "templates/review.md",
+      "version": "1.1.0",
+      "family": "ux-ui"
+    },
+    {
+      "id": "TPL-SCREEN",
+      "path": "templates/screen.md",
+      "version": "1.1.0",
+      "family": "ux-ui"
+    }
+  ]
+}
