@@ -26,6 +26,8 @@ Use [domain-context.md](references/domain-context.md) when specialist guidance, 
 
 If the reference cannot load, retain these minimum rules: inspect relevant available sources; check their project, version, and applicability; distinguish guidance from evidence; preserve the user's constraints and action boundary; verify against the actual artifact; and report missing required evidence. Do not install a provider or block independent safe work merely because one is absent.
 
+For product or UI work, [product-design.md](references/product-design.md) routes to optional design guidance, catalogs, templates, and source starters within the existing stages. Load only what changes the next decision or check; preserve native project sources, existing authority, and the full requested scope. No additional skill, records format, or initialization is required.
+
 ## Discover expertise gaps and validate requests
 
 Clear wording is not proof that a proposed solution fits the user's goal. When the user delegates an unfamiliar process, supplies conflicting premises, or requests quality without specifying its prerequisites, apply `c2o-shape` with [expertise-discovery.md](references/expertise-discovery.md). Recover intent; distinguish goals, reports, hypotheses, methods, constraints, preferences, and authority; inspect material premises; and identify missing professional decisions from the result's intended use.

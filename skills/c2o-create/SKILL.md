@@ -27,6 +27,8 @@ Give each direction a premise, rationale, defining choices, trade-off, and risk.
 
 Use [domain-context.md](../c2o-work/references/domain-context.md) when design or other specialist guidance affects direction or critique. Treat rules as conditional: inspect the audience, task, approved system, and exceptions before applying them. A persuasive rationale is not observed usability. Use available documents without a required provider; if the reference cannot load, preserve approved choices, source limits, actual observation, and the action boundary.
 
+For product interfaces, [product-design.md](../c2o-work/references/product-design.md) provides optional exploration, composition, component, layout, baseline, and asset resources. Select only relevant guidance, preserve the approved system and delegated choices, and stop at the requested design boundary when implementation was not requested.
+
 ## Establish quality before multiplying output
 
 Use relevant installed specialist skills and [quality-profiles.md](../c2o-work/references/quality-profiles.md), loading only applicable guidance. Preserve the user's approved design system over generic conventions. For raster assets use available image-generation/editing tools when appropriate; inspect supplied references before replacing them. Do not assume a tool exists or purchase assets without authority.
