@@ -17,6 +17,8 @@ For material premises and inferred requirements, apply [expertise-discovery.md](
 
 Use [domain-context.md](../c2o-work/references/domain-context.md) when domain guidance informs a criterion or check. Recover its source, applicability, and version; separate the evidence a rule asks for from evidence actually collected for the current artifact. Missing bodies, unresolved source conflicts, hashes, or an executor's self-check do not establish a pass. If the reference or provider is unavailable, inspect available evidence, mark required unchecked criteria not-tested, and preserve review-only limits.
 
+For product or UI review, [product-design.md](../c2o-work/references/product-design.md) supplies selective checks and the optional design-record status mapping. Keep native acceptance authoritative, preserve partial coverage, and inspect current evidence. Template or records-checker success is not product verification; the pack does not authorize repair during review-only work.
+
 ## Check two layers
 
 - Compliance: all requested deliverables, constraints, behaviors, and quality commitments are covered; relevant regressions and failure states are checked.

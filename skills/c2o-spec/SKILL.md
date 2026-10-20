@@ -13,6 +13,8 @@ Proceed when the actor, trigger, outcome, key constraints, and at least one acce
 
 Use [expertise-discovery.md](../c2o-work/references/expertise-discovery.md) if a clear request rests on an untested consequential premise or omits professional decisions needed for its quality target. Preserve the original statement and distinguish its source, kind, evidence, and authority before promoting it into a requirement. Record accepted revisions and their reasons; an unresolved method remains a proposal or open decision, not a silently settled constraint. A necessary implication needs an outcome link, omission consequence, and proportionate treatment. Do not respecify settled work without new evidence.
 
+For product or UI specifications, [product-design.md](../c2o-work/references/product-design.md) offers optional product, domain, feature, interface, and validation templates. Reuse existing canonical documents and acceptance; select only missing sections that prevent misunderstanding. Templates do not require new metadata, a document set, or JSON records for the project.
+
 ## Write the contract
 
 1. State the outcome and primary scenario as trigger, action, observable result.

@@ -1,0 +1,160 @@
+{
+  "manifest_version": "1.0",
+  "framework_version": "1.5.0",
+  "example_only": true,
+  "planning_only": true,
+  "contract_note": "Descriptive inventory for people and agents; not an executable job queue or an automatically validated schema. No asset files have been produced or runtime checks performed.",
+  "decision": {
+    "id": "DEC-01",
+    "selected_option_id": "O-01",
+    "document": "decision.md"
+  },
+  "baseline": {
+    "id": "B-01",
+    "revision": "1",
+    "document": "baseline.md"
+  },
+  "layout_document": "layout.md",
+  "ui_owned_by_code": [
+    "Navigation, selection and list rows",
+    "Plant names, individual IDs, taxonomy, origin and uncertainty labels",
+    "Location and note fields, labels and validation",
+    "Edit, save, cancel and recovery controls",
+    "Surfaces, separators, focus and state feedback",
+    "Empty, no-results, missing-image and image-error text"
+  ],
+  "assets": [
+    {
+      "asset_id": "A-01",
+      "purpose": "Optional supporting photo of the actual individual plant after the primary data on detail; not required for list recognition or editing",
+      "kind": "individual_photo",
+      "route": "real_capture",
+      "production_state": "optional_not_provided",
+      "used_by": [
+        {
+          "layout_id": "L-02",
+          "region": "Read state, after primary plant data"
+        }
+      ],
+      "brief": "asset-brief.md#asset-a-01",
+      "criterion_ids": [
+        "PL-02",
+        "PL-07",
+        "PL-08"
+      ],
+      "source": {
+        "reference_files": [],
+        "provenance_note": "No real photo is supplied for hypothetical fixtures PLT-014 or PLT-027. Any future source must identify the actual individual, source and allowed use; retain the original and its mapping to the record.",
+        "allowed_changes": [
+          "Documented orientation, crop and resizing that preserve identifying information and factual color"
+        ],
+        "prohibited_changes": [
+          "Generated specimen substitution",
+          "Inventing plant features or changing factual coloration to match a palette"
+        ],
+        "prompt_file": null,
+        "tool_model": null
+      },
+      "display": {
+        "aspect_ratio": null,
+        "logical_size": null,
+        "export_size_px": null,
+        "alpha": null,
+        "crop_focal_point": null,
+        "appearance_variants": [],
+        "appearance_note": "Preserve the same factual photo across appearances; review surrounding UI, contrast and crop in the implemented target.",
+        "fallback": "Show Chưa có ảnh cá thể when absent, or Không đọc được ảnh cá thể when unreadable; retain identity, record content and read/edit/save actions. Do not add a photo-upload action in this slice."
+      },
+      "outputs": [],
+      "integration": {
+        "destination": null,
+        "runtime": null,
+        "evidence_files": []
+      }
+    },
+    {
+      "asset_id": "A-02",
+      "purpose": "Optional decorative illustration for the collection-empty state; carries no specimen or provenance information",
+      "kind": "illustration",
+      "route": "generated_raster",
+      "production_state": "deferred",
+      "used_by": [
+        {
+          "layout_id": "L-01",
+          "region": "Collection-empty state only; deferred and not integrated"
+        }
+      ],
+      "brief": "asset-brief.md#asset-a-02",
+      "criterion_ids": [
+        "PL-07",
+        "PL-08"
+      ],
+      "source": {
+        "reference_files": [],
+        "provenance_note": "No reference, prompt, generation call or output exists. Route is a possible future production choice, not authorization or execution. Artwork must remain visibly illustrative and unrelated to an individual record.",
+        "prompt_file": null,
+        "tool_model": null
+      },
+      "display": {
+        "aspect_ratio": null,
+        "logical_size": null,
+        "export_size_px": null,
+        "alpha": null,
+        "crop_focal_point": null,
+        "appearance_variants": [],
+        "fallback": "Use the complete UI-owned Chưa có cây nào empty-state text. No decorative asset or fake add-plant button is needed."
+      },
+      "outputs": [],
+      "integration": {
+        "destination": null,
+        "runtime": null,
+        "evidence_files": []
+      }
+    },
+    {
+      "asset_id": "A-03",
+      "purpose": "Consistent system glyph family for applicable navigation, search and record actions, paired with UI-owned labels and semantics",
+      "kind": "system_glyph_set",
+      "route": "system",
+      "production_state": "planned_system_selection",
+      "used_by": [
+        {
+          "layout_id": "L-01",
+          "region": "Native list/search/navigation controls where appropriate"
+        },
+        {
+          "layout_id": "L-02",
+          "region": "Native detail/edit controls where appropriate"
+        }
+      ],
+      "brief": "asset-brief.md#asset-a-03",
+      "criterion_ids": [
+        "PL-05",
+        "PL-07",
+        "PL-08"
+      ],
+      "source": {
+        "reference_files": [],
+        "provenance_note": "Prefer system-provided controls and SF Symbols appropriate to the chosen build target. Exact glyph names, availability and code mapping have not been selected or verified.",
+        "prompt_file": null,
+        "tool_model": null
+      },
+      "display": {
+        "aspect_ratio": null,
+        "logical_size": null,
+        "export_size_px": null,
+        "alpha": null,
+        "crop_focal_point": null,
+        "appearance_variants": [],
+        "appearance_note": "Use platform/control styling and semantic colors; verify real sizes, appearances, disabled states and accessibility behavior.",
+        "fallback": "Use a clear text-labeled native control or verified available symbol. Do not export replacement raster icons or make actions depend on an unavailable glyph."
+      },
+      "outputs": [],
+      "integration": {
+        "destination": null,
+        "runtime": null,
+        "evidence_files": []
+      }
+    }
+  ]
+}

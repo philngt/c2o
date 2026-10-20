@@ -23,3 +23,9 @@ jobs:
         run: python3 scripts/validate_c2o.py
       - name: Run unit tests
         run: python3 -m unittest discover -s tests -v
+      - name: Check optional product-design template catalog
+        run: python3 skills/c2o-work/assets/product-design/tools/template_check.py --root skills/c2o-work/assets/product-design
+      - name: Run optional product-design checker tests
+        run: python3 -m unittest discover -s skills/c2o-work/assets/product-design/tests -v
+      - name: Run Apple source generator tests
+        run: python3 -m unittest discover -s skills/c2o-work/assets/product-design/starters/apple/tests -v

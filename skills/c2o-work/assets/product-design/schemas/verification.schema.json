@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:c2o-design:verification:1.0",
+  "title": "C2O Design evidence records v1.0",
+  "type": "object",
+  "required": ["schema_version", "project_sha256", "results"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "results": {"type": "array", "items": {"$ref": "#/$defs/result"}}
+  },
+  "allOf": [
+    {
+      "if": {"required": ["project_sha256"], "properties": {"project_sha256": {"type": "null"}}},
+      "then": {"properties": {"results": {"items": {"properties": {"status": {"const": "NOT_RUN"}}}}}}
+    }
+  ],
+  "additionalProperties": true,
+  "$defs": {
+    "file": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1, "description": "Project-relative POSIX file path; runtime rejects traversal, absolute paths, backslashes and symlinks escaping the project root."},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      },
+      "additionalProperties": true
+    },
+    "result": {
+      "type": "object",
+      "required": ["criterion_id", "status", "rationale", "inputs", "evidence"],
+      "properties": {
+        "criterion_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"},
+        "status": {"enum": ["PASS", "FAIL", "BLOCKED", "NOT_RUN", "NOT_APPLICABLE"]},
+        "rationale": {"type": "string"},
+        "inputs": {"type": "array", "items": {"$ref": "#/$defs/file"}},
+        "evidence": {"type": "array", "items": {"$ref": "#/$defs/file"}}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"status": {"const": "PASS"}}, "required": ["status"]},
+          "then": {"properties": {"inputs": {"minItems": 1}, "evidence": {"minItems": 1}}}
+        },
+        {
+          "if": {"properties": {"status": {"enum": ["BLOCKED", "NOT_APPLICABLE"]}}, "required": ["status"]},
+          "then": {"properties": {"rationale": {"pattern": "\\S"}}}
+        }
+      ],
+      "additionalProperties": true
+    }
+  },
+  "$comment": "Schema validity alone cannot establish readiness. design_check.py additionally checks criterion identity/coverage, allowed N/A, root boundaries, full file hashes, project binding and at least one applicable required criterion."
+}

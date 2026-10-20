@@ -11,6 +11,8 @@ When implementation exposes an unsupported material premise or a missing profess
 
 ## Execute
 
+For approved product interfaces, [product-design.md](../c2o-work/references/product-design.md) routes to optional behavior contracts, platform guidance, and source starters. Preserve the current implementation and acceptance sources; use a generator only for requested scaffolding in a new authorized path. Source generation does not establish native build or runtime success.
+
 1. Load applicable repository instructions, inspect the real execution path and working tree, and preserve unrelated user changes.
 2. Recover required deliverables, acceptance, completion level, approved design, non-goals, and authorization. Resolve only ambiguity that changes the implementation. Do not lower the quality target or replace a full request with a demo.
 3. Use existing project patterns and relevant specialist skills. Consult [quality-profiles.md](../c2o-work/references/quality-profiles.md) only for applicable checks; do not invent dependencies or infrastructure.

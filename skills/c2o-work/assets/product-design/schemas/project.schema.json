@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:c2o-design:project:1.0",
+  "title": "C2O Design project criteria v1.0",
+  "type": "object",
+  "required": ["schema_version", "project_name", "criteria"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project_name": {"type": "string", "pattern": "\\S"},
+    "criteria": {
+      "type": "array",
+      "minItems": 1,
+      "contains": {"type": "object", "required": ["required"], "properties": {"required": {"const": true}}},
+      "minContains": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "required", "allow_not_applicable"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"},
+          "title": {"type": "string", "pattern": "\\S"},
+          "required": {"type": "boolean"},
+          "allow_not_applicable": {"type": "boolean"}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$comment": "Criterion IDs must be unique; design_check.py checks identity, report coverage and current file hashes. Descriptive metadata such as platform, mode, type and method is allowed but does not execute or verify anything."
+}

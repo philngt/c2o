@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "framework_version": "1.5.0",
+  "project_name": "Text Utility — documentation example",
+  "platform": "swiftui",
+  "mode": "standard",
+  "category": "utility",
+  "outcome": "Adapt and verify the selected local Apple starter for the project's actual user task.",
+  "scope": {
+    "included": [
+      "utility starter",
+      "iOS/iPadOS",
+      "native macOS",
+      "summary widgets"
+    ],
+    "deferred": [
+      "cloud sync",
+      "accounts",
+      "payments",
+      "notifications",
+      "interactive widget intents",
+      "Live Activities"
+    ]
+  },
+  "criteria": [
+    {
+      "id": "APP-01",
+      "title": "Build and launch the iOS/iPadOS app on the selected supported SDK and configuration",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "APP-02",
+      "title": "Build and launch the native macOS app and use menus, keyboard and Settings",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "APP-03",
+      "title": "Storage read/write failures preserve user work and never replace unreadable data with an empty store",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "APP-04",
+      "title": "Selected phone, resizable iPad and Mac layouts remain usable with large text and accessibility input",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "APP-05",
+      "title": "Valid deep links open the right context; invalid links do not mutate data or discard drafts",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "UTL-01",
+      "title": "Normalize whitespace and count graphemes, whitespace-delimited tokens and lines according to the declared rules",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "UTL-02",
+      "title": "Copy/share the actual result; input is preserved; history is off by default and opt-in retention/clear behavior is accurate",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "WID-01",
+      "title": "Both widget extensions build with the intended signing/App Group and read only the published summary",
+      "required": true,
+      "allow_not_applicable": false
+    },
+    {
+      "id": "WID-02",
+      "title": "Small, medium and large widget states keep privacy, timestamp/fallback and valid app navigation without promising an exact refresh time",
+      "required": true,
+      "allow_not_applicable": false
+    }
+  ],
+  "example_only": true,
+  "documents": {
+    "product_pack": "product-pack.md"
+  },
+  "document_path_base": "Directory containing this example project.json; descriptive metadata only.",
+  "documentation_note": "Business hypotheses are illustrative. Native execution remains NOT_RUN. Reuse actual project criteria when adopting this pack; do not overwrite an existing report."
+}

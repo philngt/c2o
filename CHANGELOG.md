@@ -18,6 +18,8 @@
 
 ### Added
 
+- [Optional product-design resources](docs/product-design.md), adapted from the standalone C2O Design 1.5 pack: 24 standardized templates, design catalogs, platform guidance, examples, and Apple source starters. Existing skills load selected resources while retaining C2O scope, decision ownership, native acceptance, and verification authority. No new skill, manifest change, mandatory JSON records, or initializer behavior.
+- Read-only CI checks for the bundled template catalog, evidence-record checker, and Apple generator, plus nine synthetic product-design scenarios marked not run. Structural and generator checks do not establish native runtime readiness or model effectiveness.
 - [Upgrade guide](docs/quality-upgrade.md), optional shared references, and expanded templates for new contexts.
 - Dependency-free structural checks and unit tests, plus synthetic behavioral scenarios and an honest evaluation protocol.
 - A shared expertise-discovery reference, sixteen additional unrun cross-domain scenarios with negative controls, and validation of all scenario suites and globally unique case IDs.

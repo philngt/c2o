@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "project_sha256": null,
+  "results": [
+    {
+      "criterion_id": "APP-01",
+      "status": "NOT_RUN",
+      "rationale": "Generated starter; collect evidence on the actual project and Apple runtime.",
+      "inputs": [],
+      "evidence": []
+    },
+    {
+      "criterion_id": "APP-02",
+      "status": "NOT_RUN",
+      "rationale": "Generated starter; collect evidence on the actual project and Apple runtime.",
+      "inputs": [],
+      "evidence": []
+    },
+    {
+      "criterion_id": "APP-03",
+      "status": "NOT_RUN",
+      "rationale": "Generated starter; collect evidence on the actual project and Apple runtime.",
+      "inputs": [],
+      "evidence": []
+    },
+    {
+      "criterion_id": "APP-04",
+      "status": "NOT_RUN",
+      "rationale": "Generated starter; collect evidence on the actual project and Apple runtime.",
+      "inputs": [],
+      "evidence": []
+    },
+    {
+      "criterion_id": "APP-05",
+      "status": "NOT_RUN",
+      "rationale": "Generated starter; collect evidence on the actual project and Apple runtime.",
+      "inputs": [],
+      "evidence": []
+    },
+    {
+      "criterion_id": "LIF-01",
+      "status": "NOT_RUN",
+      "rationale": "Generated starter; collect evidence on the actual project and Apple runtime.",
+      "inputs": [],
+      "evidence": []
+    },
+    {
+      "criterion_id": "LIF-02",
+      "status": "NOT_RUN",
+      "rationale": "Generated starter; collect evidence on the actual project and Apple runtime.",
+      "inputs": [],
+      "evidence": []
+    },
+    {
+      "criterion_id": "WID-01",
+      "status": "NOT_RUN",
+      "rationale": "Generated starter; collect evidence on the actual project and Apple runtime.",
+      "inputs": [],
+      "evidence": []
+    },
+    {
+      "criterion_id": "WID-02",
+      "status": "NOT_RUN",
+      "rationale": "Generated starter; collect evidence on the actual project and Apple runtime.",
+      "inputs": [],
+      "evidence": []
+    }
+  ]
+}

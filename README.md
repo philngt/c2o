@@ -118,6 +118,12 @@ The skill names are the same in all three hosts; only the invocation prefix chan
 | Content and communication | Produce an approved brief, playbook, or content package without silently publishing it. |
 | Software | Specify, implement, and verify the smallest coherent code change. |
 
+## Optional product-design resources
+
+For application design work, C2O can selectively use a [product-design resource pack](docs/product-design.md): creative exploration and layout guidance, component/data-view catalogs, 24 document templates, and Lifestyle/Utility Apple source starters. Most detailed resources are in Vietnamese; the routing and adoption guides are in English.
+
+Start with `c2o-work` or the specialist skill you already use. Load only the resources that answer a current question. Existing project documents and acceptance criteria remain authoritative; the pack adds no skill, required document set, context migration, or separate workflow. Apple starters are source scaffolds with native build and runtime verification still required.
+
 ## Copy-paste examples
 
 The examples below use Codex syntax. In Claude Code or Antigravity CLI, replace `$c2o:` with `/c2o:`; the rest of each prompt stays the same.
@@ -346,6 +352,8 @@ assets/
   icon.svg
 skills/
   c2o-work/
+    references/product-design.md
+    assets/product-design/
   c2o-shape/
   c2o-decide/
   c2o-grill/
@@ -358,4 +366,4 @@ skills/
   c2o-learn/
 ```
 
-The Codex, Claude Code, and Antigravity manifests all use the same `./skills/` directory, so the workflow stays consistent across hosts. Each skill keeps its instructions, UI metadata, references, scripts, and assets together.
+The Codex, Claude Code, and Antigravity manifests all use the same `./skills/` directory, so the workflow stays consistent across hosts. Each skill keeps its instructions, UI metadata, references, scripts, and assets together. The product-design pack is an optional resource under `c2o-work`, discovered through the existing skills.

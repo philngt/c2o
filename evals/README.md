@@ -22,6 +22,12 @@ For this independent follow-up, use ae4366b55df2b0ae9ac85f84c0d4981d3470c834 as 
 
 Do not pass fixture rubric fields to the agent or execute adversarial instructions. The structural tests check suite format, source links, fallback documentation, and regression coverage only. They do not grade domain judgment or show that prompt instructions enforce a boundary. See the [domain-context guide](../docs/domain-context.md) for scope and examples.
 
+## Optional product-design resources
+
+[product-design-scenarios.json](product-design-scenarios.json) adds nine synthetic, not-run cases for a tiny UI edit, existing acceptance authority, review-only work, design-only output, a full multiscreen commitment, missing native tools, evidence-record limits, delegated design choice, and an unavailable optional pack. Use 6bebd212c09e7c82a4148f36d737b0e3b7aa16ed as this follow-up's baseline and record the actual candidate commit. Run work-orchestrated and relevant direct specialist trials under the same scope and permissions.
+
+For the missing-pack trial, deny access only to `skills/c2o-work/assets/product-design/`; keep entrypoints and shared context references available. For the native-toolchain case, provide Python but no Swift, Xcode, XcodeGen, or simulator. Treat source generation and Python test results as evidence of those operations only. The captured `RECORDS_READY` fixture is supplied data, not a command run by the evaluated agent or proof that the original acceptance criteria passed. CI checks catalog structure, checker behavior, and generator behavior; it neither executes these scenarios nor establishes product quality or native runtime success.
+
 ## Run a real comparison
 
 Use identical model/version, host/version, available tools, permission configuration, initial fixtures, and budget for the baseline and candidate. Record both C2O commit IDs. The initial baseline for this upgrade is cd407d77ebeb954a9e34cd0f7f4a1711a796993c. An optional third arm may omit C2O; do not conflate a changed model with a changed skill suite.

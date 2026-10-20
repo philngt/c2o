@@ -10,6 +10,8 @@ Use [expertise-discovery.md](expertise-discovery.md) to find which professional 
 
 Use for visual and interactive products. Check the intended journey, navigation, hierarchy, readable content, consistent components, target viewports, and relevant keyboard/touch/accessibility behavior. For native mobile, consult the actual platform guidance and existing patterns; a generic web layout is not proof of native quality.
 
+Use [product-design.md](product-design.md) when a product or interface decision needs more detail: it routes to optional composition, data-view, component, layout, asset, and platform resources. Select relevant material within the existing contract; templates, JSON records, and source starters are optional and do not establish verified behavior.
+
 For a photo viewer, relevant checks may include differing aspect ratios, loading/empty/broken-image states, scrolling under intended conditions, and preservation of navigation state. Use rendered and interactive evidence for those claims. Data privacy and public access depend on the actual source and authorization.
 
 Do not automatically add accounts, comments, analytics, administration consoles, or a backend. Stop at required flows and quality, not at an isolated attractive screen or an endless redesign.

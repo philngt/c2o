@@ -1,0 +1,58 @@
+{
+  "manifest_version": "1.0",
+  "framework_version": "1.5.0",
+  "planning_only": true,
+  "contract_note": "Descriptive inventory for people and agents; not an executable job queue or an automatically validated schema.",
+  "template_note": "Replace sample values and remove template_note before project use; retain contract_note.",
+  "baseline": {
+    "id": "B-01",
+    "revision": "1",
+    "document": ".design/baseline.md"
+  },
+  "ui_owned_by_code": [
+    "Navigation",
+    "Text and fields",
+    "Buttons",
+    "Surfaces and state feedback"
+  ],
+  "assets": [
+    {
+      "asset_id": "A-01",
+      "purpose": "Replace: why this asset is needed",
+      "kind": "illustration",
+      "route": "generated_raster",
+      "production_state": "planned",
+      "used_by": [
+        {
+          "layout_id": "L-01",
+          "region": "Replace with a region"
+        }
+      ],
+      "brief": ".design/asset-brief.md",
+      "criterion_ids": [
+        "C-003"
+      ],
+      "source": {
+        "reference_files": [],
+        "provenance_note": "Replace with actual source and allowed use",
+        "prompt_file": null,
+        "tool_model": null
+      },
+      "display": {
+        "aspect_ratio": null,
+        "logical_size": null,
+        "export_size_px": null,
+        "alpha": null,
+        "crop_focal_point": null,
+        "appearance_variants": [],
+        "fallback": "Replace with fallback behavior"
+      },
+      "outputs": [],
+      "integration": {
+        "destination": null,
+        "runtime": null,
+        "evidence_files": []
+      }
+    }
+  ]
+}
