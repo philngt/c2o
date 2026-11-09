@@ -28,6 +28,8 @@ Stop when the contracted quality and coverage are met, a real capability/authori
 
 Do not polish endlessly after acceptance. Do not label a budget-limited partial result complete. Preserve completed artifacts and state required gaps, evidence unavailable, and the decision or capability needed to proceed. Continue independent authorized slices when safe rather than blocking the whole task unnecessarily.
 
+When the approach itself needs reconsideration, use [adaptive-replanning.md](adaptive-replanning.md) to compare the evidence, preserve valid work, and explain changes to the plan. Ordinary local repairs stay in this loop.
+
 ## Usable handoff
 
 When independent use is required, provide the minimum opening/running instructions, representative input or example, success/failure signals, and relevant limitations. Perform an agent walkthrough when possible and label it as such. Actual recipient success or business impact requires separate observation.

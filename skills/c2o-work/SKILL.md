@@ -1,6 +1,6 @@
 ---
 name: c2o-work
-description: Orchestrate a Context-to-Outcome work loop that turns a rough request or poorly described problem into a verified result at the requested scope and quality. Use when knowledge, creative, or software work is ambiguous, several stages need coordination, a proposed solution has material untested premises, or the user needs expert guidance without knowing how to specify the work completely. Avoid for simple questions or one-step actions that can be completed directly.
+description: Orchestrate a Context-to-Outcome work loop that turns a rough request or poorly described problem into a verified result at the requested scope and quality. Use when knowledge, creative, or software work is ambiguous, several stages need coordination, an ongoing approach needs evidence-based revision, a proposed solution has material untested premises, or the user needs expert guidance without knowing how to specify the work completely. Avoid for simple questions or one-step actions that can be completed directly.
 ---
 
 # C2O Work
@@ -65,6 +65,12 @@ These are working states, not a mandatory checklist or an enforced runtime. Skip
 - Do not invent numeric success thresholds without a baseline, explicit target, or real constraint. Distinguish artifact quality from unobserved real-world effects.
 
 Stop for completion, a real blocker, a new action boundary, or diminishing returns within the available budget. Repeated attempts without new evidence call for a different check or an honest blocked result, not endless polish. Ask only for the consequential decision that blocks progress; continue independent authorized work when safe.
+
+## Reconsider an ongoing approach
+
+Use [adaptive-replanning.md](references/adaptive-replanning.md) when new evidence, unresolved contradictions, ineffective repeated attempts, or changed resources could materially alter the next action. Synthesize existing findings, compare approaches only when useful, and record which tasks change and why. Keep the current approach when supported. Preserve full coverage, valid work, and existing delegation; small local adjustments do not need a separate planning cycle.
+
+If the reference cannot load, recover the goal and current plan, inspect relevant evidence, separate observation from hypothesis, and return a bounded next action with the necessary plan changes and stop condition. Preserve source/version and affected-check validity. A saved source, a repeatable procedure, and an actually repeated check are different evidence states; never invent a missing historical observation.
 
 ## Maintain context
 

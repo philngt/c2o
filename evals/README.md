@@ -22,6 +22,14 @@ For this independent follow-up, use ae4366b55df2b0ae9ac85f84c0d4981d3470c834 as 
 
 Do not pass fixture rubric fields to the agent or execute adversarial instructions. The structural tests check suite format, source links, fallback documentation, and regression coverage only. They do not grade domain judgment or show that prompt instructions enforce a boundary. See the [domain-context guide](../docs/domain-context.md) for scope and examples.
 
+## Adaptive-replanning follow-up
+
+[adaptive-replanning-scenarios.json](adaptive-replanning-scenarios.json) adds synthetic, not-run cases for stalled exploration, changed premises, retaining an effective plan, unavailable replay, fixed methods, tiny tasks, repeated attempts without new evidence, review-only work, and source conflicts. Use `6bebd212c09e7c82a4148f36d737b0e3b7aa16ed` as this follow-up's baseline and record the actual candidate commit. The suite uses existing skills and the existing validator; it adds no runtime or required context schema.
+
+Compare identical inputs, model/host, tools, permissions, and budget in fresh sessions. Give the agent only the prompt, raw fixtures, and authorization; keep evaluator rubrics separate. Evaluate decision-relevant evidence, supported plan changes, retained required coverage and unaffected work, selective rechecks, and a usable next action. Retaining the current strategy is a valid result. Test both `c2o-work` orchestration and relevant direct specialist calls, including a missing-reference trial where the harness denies only the new reference.
+
+Distinguish access to an original record, availability of a rerun procedure, and actual execution of that check. Record new observations of changed systems as new evidence. Measure time/tool use only when available, and never present an unrun fixture or structural pass as evidence of reduced investigation cost. Store any observed trials separately from scenario definitions and state their limited scope; no live-host effectiveness comparison is claimed by this addition.
+
 ## Run a real comparison
 
 Use identical model/version, host/version, available tools, permission configuration, initial fixtures, and budget for the baseline and candidate. Record both C2O commit IDs. The initial baseline for this upgrade is cd407d77ebeb954a9e34cd0f7f4a1711a796993c. An optional third arm may omit C2O; do not conflate a changed model with a changed skill suite.

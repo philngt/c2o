@@ -36,6 +36,8 @@ One entry per consequential decision:
 
 When request validation changes a consequential decision, preserve the original statement/reference, its kind (goal, report, hypothesis, preference, method, constraint, or authority), the evidence, and who accepted or delegated the revision. Record the scope and escalation conditions of delegated choices, not a blanket approval. These are optional fields in existing files, not a new mandatory ledger or migration.
 
+For a material change to an ongoing approach, retain the trigger, previous plan/reference, evidence, and which tasks are kept, changed, added, deferred, or removed. Keep required coverage and the acceptance/delegation source explicit. Link rerun inputs/procedures/results at their existing locations when needed; a recorded procedure is not an executed check. Preserve superseded rationale without duplicating the full plan or raw logs.
+
 ### assumptions.md
 
 Keep assumption, confidence, impact if false, validation/evidence, and status (open, confirmed, disproved). Distinguish observation from inference and record whether the premise came from the user, an artifact, or the agent. Approval does not establish factual truth. Record which decisions or criteria change if the assumption fails.

@@ -4,6 +4,9 @@
 
 ### Changed
 
+- Add selective evidence-grounded replanning within `c2o-work`, with shared guidance for decide, verify, and learn. Preserve goals, deliberate method constraints, valid work, and required coverage while recording consequential plan changes and the next bounded action.
+- Distinguish saved evidence, a repeatable check, and an actually repeated check; preserve historical observations and selectively revalidate affected decisions and criteria.
+
 - Keep eleven skills and existing host invocation names; upgrade their contracts across discovery/decision, production, and coordination/verification/learning.
 - Separate explicit requirements, necessary implications, specialist choices, and optional enhancements. Preserve all requested deliverables and quality targets across delivery slices.
 - Add completion levels, selective quality profiles, representative quality slices, and bounded observe-repair-recheck loops using actual host capabilities.
@@ -17,6 +20,8 @@
 - Add optional, provider-neutral domain-context use to work, shape, decide, create, verify, and learn. Select relevant sources; check scope, mechanisms, exceptions, and evidence without requiring contextd or changing action boundaries.
 
 ### Added
+
+- An [adaptive replanning reference](skills/c2o-work/references/adaptive-replanning.md), a usage example, and synthetic not-run scenarios using the existing evaluation protocol and validator. Keep all eleven skills, manifests, and context storage conventions unchanged.
 
 - [Upgrade guide](docs/quality-upgrade.md), optional shared references, and expanded templates for new contexts.
 - Dependency-free structural checks and unit tests, plus synthetic behavioral scenarios and an honest evaluation protocol.

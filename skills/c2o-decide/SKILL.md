@@ -21,6 +21,8 @@ Use [domain-context.md](../c2o-work/references/domain-context.md) when specialis
 
 ## Decide
 
+When the choice would materially revise an ongoing approach, use [adaptive-replanning.md](../c2o-work/references/adaptive-replanning.md) to connect the inspected evidence to specific plan changes and a bounded next action. If the reference is unavailable, preserve the goal, fixed methods, existing delegation, unaffected work, and the reasons for each proposed change; keeping the plan is a valid decision.
+
 1. Express one mutually exclusive choice and why it matters now.
 2. Classify ownership: user, advisor-led, or qualified review. Explain practical consequences plainly.
 3. Classify reversal as easy, costly, or effectively irreversible.

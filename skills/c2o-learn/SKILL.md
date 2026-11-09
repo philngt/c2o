@@ -23,6 +23,8 @@ For domain-guidance lessons, use [domain-context.md](../c2o-work/references/doma
 
 ## Update minimally
 
+When a finding changes the current task's next action, use [adaptive-replanning.md](../c2o-work/references/adaptive-replanning.md) to hand the orchestrator the evidence, changed assumption, and proposed plan changes. If the reference is unavailable, retain that compact handoff and existing authority; do not start another execution loop or manufacture a durable lesson. Keep historical observations distinct from later checks and mark affected evidence for revalidation.
+
 When `.context/` exists, use the smallest relevant set:
 
 - `decisions.md`: accepted choices, evidence, applicability, and revisit triggers;
