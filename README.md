@@ -157,6 +157,20 @@ I confirm our shared understanding.
 
 Use Grill for branching, consequential decisions—not for a vague request that shaping, one expert recommendation, or a cheap prototype can resolve faster.
 
+### Reconsider an approach that is no longer helping
+
+```text
+Use $c2o:c2o-work to reassess our current investigation.
+
+We have been inspecting components one by one to map this system, but progress
+is slow. Combine the findings and sources already available, check what remains
+uncertain, and recommend the next useful step. Explain which tasks in the current
+plan should stay or change and the evidence for each change. Preserve the agreed
+coverage and identify which checks can actually be repeated.
+```
+
+This uses the optional [adaptive replanning protocol](skills/c2o-work/references/adaptive-replanning.md) inside `c2o-work`; the existing eleven skill names and invocation syntax stay the same.
+
 ### Prepare work for handoff
 
 ```text

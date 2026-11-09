@@ -34,6 +34,8 @@ An agent walkthrough is not a real user study. A polished artifact is not proof 
 
 Read-only review must not repair source artifacts or change the subject's state. Tests that write caches or build outputs need an authorized disposable workspace. If unavailable, report them not tested instead of weakening the sandbox or using live credentials.
 
+When findings materially undermine the current approach, use [adaptive-replanning.md](../c2o-work/references/adaptive-replanning.md) to identify the affected assumptions, tasks, and checks for the orchestrator. If the reference is unavailable, retain source/revision, actual observations, and the proposed changes with their limits. Distinguish accessible evidence, a documented rerun procedure, and a check actually rerun; a new observation does not recover missing history. Review-only findings remain recommendations, not permission to execute a revised plan.
+
 ## Output
 
 ```markdown
